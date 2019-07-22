@@ -89,3 +89,28 @@
   100% {
     -webkit-transform: rotateZ(0);
     transform: rotateZ(0); } }
+
+body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1rem 1fr 1rem 1fr 1rem 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: auto 0 auto 0 auto;
+  grid-template-areas: "h h h h" "m m m m" "f f f f";
+  gap: 0 1rem;
+  color: #424141;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  min-width: 320px; }
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%; }
+
+.wf-loading body {
+  visibility: hidden; }
+
+.wf-active body {
+  visibility: visible; }

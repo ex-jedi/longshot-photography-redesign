@@ -12,6 +12,31 @@
 // ** Wrappers  **
 // =========================================
 
+body {
+  @include main-grid;
+  @include font-stack;
+  color: $font-colour;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  min-width: 320px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+
+//Hiding font till Typekit loads
+.wf-loading body {
+  visibility: hidden;
+}
+
+.wf-active body {
+  visibility: visible;
+}
+
 // =========================================
 // ** Content container and block **
 // =========================================

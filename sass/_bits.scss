@@ -2,7 +2,6 @@
 // ** Colour, font stacks, media queries, that kind of thing.  **
 // =======================================================================================
 
-
 // =========================================
 // ** Media Queries  **
 // =========================================
@@ -11,21 +10,26 @@
 
 @mixin breakpoint($point) {
   @if $point == 2000 {
-    @media (max-width: 2000px) { @content; }
+    @media (max-width: 2000px) {
+      @content;
+    }
   }
 }
 
 //********** Alternative Media queries **********
 
 @mixin breakpoint($point) {
-    @if unitless($point) { $point: 1px * $point; }
-    @media (max-width: $point) { @content; }
+  @if unitless($point) {
+    $point: 1px * $point;
+  }
+  @media (max-width: $point) {
+    @content;
+  }
 }
 
 // =========================================
 // ** Mixins  **
 // =========================================
-
 
 //********** Layout **********
 
@@ -37,7 +41,7 @@
     "h h h h"
     "m m m m"
     "f f f f";
-  grid-gap: $grid-gap;
+  gap: $grid-gap;
 }
 
 //Flex Mixin
@@ -49,16 +53,13 @@
 //Layout Variables
 $grid-gap: 0 1rem;
 
-
 //********** Typeography **********
 
 //Font Stacks
 @mixin heading-font-stack {
-
 }
 
 @mixin font-stack {
-
 }
 
 //Fancy Link Underline
@@ -112,14 +113,12 @@ $grid-gap: 0 1rem;
   }
 }
 
-
 //********** Backgrounds **********
 
 @mixin main-background {
   // background-color: $white;
   background-image: url("/images/white_wall_hash.png");
 }
-
 
 //********** Animation Stagger **********
 
@@ -202,9 +201,7 @@ $grid-gap: 0 1rem;
 // ** Variables  **
 // =========================================
 
-
 //********** Colours **********
-
 
 //Main Font Colours
 
@@ -219,26 +216,19 @@ $link-colour: #486a8d;
 //Background Colours
 $background-colour: #e9e9e9;
 
-
-
 //********** Transition Timings**********
 
-
-$transition-duration: 0.3s  ease-in-out 0s;
-$transition-duration-fast: 0.2s  ease-in-out 0s;
-$transition-duration-slow: 0.8s  ease-in-out 0s;
-
-
+$transition-duration: 0.3s ease-in-out 0s;
+$transition-duration-fast: 0.2s ease-in-out 0s;
+$transition-duration-slow: 0.8s ease-in-out 0s;
 
 //********** Spacing & layout  **********
-
 
 //Headings
 $large-h1-spacing: 5rem;
 $h1-spacing: 2.5rem;
 $h2-spacing: 1.5rem;
 $h3-spacing: 1rem;
-
 
 //Articles
 $large-article-spacing: 5rem;
@@ -258,8 +248,6 @@ $paragraph-spacing: 1.5rem;
 $input-spacing: 1%;
 
 //Other Spacing
-
-
 
 // =========================================
 // ** Browser Quirks  **
