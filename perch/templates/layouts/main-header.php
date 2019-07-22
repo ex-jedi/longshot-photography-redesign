@@ -3,6 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- Typekit Fonts -->
+	<link rel="stylesheet" href="https://use.typekit.net/mud2esb.css">
 	<link rel="stylesheet" href="/css/universal.css?v=1.0">
 	<!-- TODO: Add version query string to CSS file for cache busting  -->
 	<link rel="stylesheet" href="<?php perch_page_attribute('css', array('template' => 'bits.html')) ;?>">

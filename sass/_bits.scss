@@ -57,9 +57,15 @@ $grid-gap: 0 1rem;
 
 //Font Stacks
 @mixin heading-font-stack {
+  font-family: "ff-dagny-web-pro", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 @mixin font-stack {
+  font-family: "ff-dagny-web-pro", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 //Fancy Link Underline
