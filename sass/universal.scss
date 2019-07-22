@@ -13,6 +13,7 @@
 // =========================================
 html {
   font-size: 20px;
+  line-height: 1.5;
   overflow-x: hidden;
 }
 
@@ -29,6 +30,7 @@ body {
   margin: 0 auto;
   padding: 0;
   width: 100%;
+  position: relative;
 }
 
 //Hiding font till Typekit loads
@@ -63,9 +65,18 @@ body {
 // =========================================
 
 header {
+  @include flex(row);
   grid-area: h;
   height: 100vh;
   background-color: #293c38;
+  position: relative;
+
+}
+
+.main-header-text {
+  @include heading-font-stack;
+  color: $light-font-colour;
+  font-size: 4rem;
 }
 
 // =========================================

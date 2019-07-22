@@ -67,4 +67,5 @@
 				</nav>
 
 				<?php perch_content("Main Header Image"); ?>
+				<?php perch_content("Main Header Text"); ?>
 			</header>

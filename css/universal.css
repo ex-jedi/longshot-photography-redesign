@@ -92,6 +92,7 @@
 
 html {
   font-size: 20px;
+  line-height: 1.5;
   overflow-x: hidden; }
 
 body {
@@ -113,7 +114,8 @@ body {
   gap: 0 1rem;
   margin: 0 auto;
   padding: 0;
-  width: 100%; }
+  width: 100%;
+  position: relative; }
 
 .wf-loading body {
   visibility: hidden; }
@@ -125,9 +127,24 @@ header {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
   grid-area: h;
   height: 100vh;
-  background-color: #293c38; }
+  background-color: #293c38;
+  position: relative; }
+
+.main-header-text {
+  font-family: "ff-dagny-web-pro", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #eff5f6;
+  font-size: 4rem; }
 
 nav {
   display: none; }
