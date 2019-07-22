@@ -90,7 +90,20 @@
     -webkit-transform: rotateZ(0);
     transform: rotateZ(0); } }
 
+html {
+  font-size: 20px;
+  overflow-x: hidden; }
+
 body {
+  font-family: "ff-dagny-web-pro", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #424141;
+  width: 100%;
+  margin: 0 auto;
+  min-width: 320px; }
+
+.site-wrapper {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1rem 1fr 1rem 1fr 1rem 1fr;
@@ -98,16 +111,6 @@ body {
   -ms-grid-rows: auto 0 auto 0 auto;
   grid-template-areas: "h h h h" "m m m m" "f f f f";
   gap: 0 1rem;
-  font-family: "ff-dagny-web-pro", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  color: #424141;
-  width: 100%;
-  margin: 0 auto;
-  overflow: hidden;
-  min-width: 320px; }
-
-.wrapper {
   margin: 0 auto;
   padding: 0;
   width: 100%; }
@@ -118,5 +121,20 @@ body {
 .wf-active body {
   visibility: visible; }
 
+header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
+  grid-area: h;
+  height: 100vh;
+  background-color: #293c38; }
+
 nav {
   display: none; }
+
+footer {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
+  grid-area: f;
+  height: 100px; }

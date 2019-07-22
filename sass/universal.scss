@@ -11,18 +11,21 @@
 // =========================================
 // ** Wrappers  **
 // =========================================
+html {
+  font-size: 20px;
+  overflow-x: hidden;
+}
 
 body {
-  @include main-grid;
   @include font-stack;
   color: $font-colour;
   width: 100%;
   margin: 0 auto;
-  overflow: hidden;
   min-width: 320px;
 }
 
-.wrapper {
+.site-wrapper {
+  @include main-grid;
   margin: 0 auto;
   padding: 0;
   width: 100%;
@@ -59,6 +62,12 @@ body {
 // ** Header  **
 // =========================================
 
+header {
+  grid-area: h;
+  height: 100vh;
+  background-color: #293c38;
+}
+
 // =========================================
 // ** Main Nav  **
 // =========================================
@@ -79,3 +88,8 @@ nav {
 // =========================================
 // ** Footer  **
 // =========================================
+
+footer {
+  grid-area: f;
+  height: 100px;
+}
