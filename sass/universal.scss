@@ -86,7 +86,7 @@ header {
   flex-wrap: wrap;
   grid-area: h;
   position: relative;
-  // height: 100vh;
+  height: 100vh;
   background-color: #293c38;
   overflow: hidden;
   padding: $section-spacing;
@@ -94,12 +94,14 @@ header {
 
 .header-logo-wrapper {
   position: absolute;
-  top: 0;
+  top: $section-spacing;
   right: 0;
   left: 0;
 
   img {
     margin: 0 auto;
+    width: 800px;
+    max-width: 100%;
   }
 
 }
@@ -117,7 +119,7 @@ header {
   flex: 1 1 300px;
   color: $light-font-colour;
   font-size: 4rem;
-  padding: $section-spacing;
+  margin: $section-spacing $section-spacing 0;
   word-break: break-word;
 }
 

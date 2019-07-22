@@ -160,17 +160,20 @@ header {
   flex-wrap: wrap;
   grid-area: h;
   position: relative;
+  height: 100vh;
   background-color: #293c38;
   overflow: hidden;
-  padding: 2rem; }
+  padding: 3rem; }
 
 .header-logo-wrapper {
   position: absolute;
-  top: 0;
+  top: 3rem;
   right: 0;
   left: 0; }
   .header-logo-wrapper img {
-    margin: 0 auto; }
+    margin: 0 auto;
+    width: 800px;
+    max-width: 100%; }
 
 .main-header-image-wrapper {
   -webkit-box-flex: 0;
@@ -185,12 +188,13 @@ header {
   font-weight: 700;
   font-style: normal;
   line-height: 1.5;
+  letter-spacing: .2rem;
   -webkit-box-flex: 1;
   -ms-flex: 1 1 300px;
   flex: 1 1 300px;
   color: #eff5f6;
   font-size: 4rem;
-  padding: 2rem;
+  margin: 3rem 3rem 0;
   word-break: break-word; }
 
 nav {

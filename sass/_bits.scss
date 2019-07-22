@@ -61,6 +61,7 @@ $grid-gap: 0 1rem;
   font-weight: 700;
   font-style: normal;
   line-height: 1.5;
+  letter-spacing: .2rem;
 }
 
 @mixin font-stack {
@@ -236,7 +237,7 @@ $transition-duration-slow: 0.8s ease-in-out 0s;
 //Articles
 
 //Sections
-$section-spacing: 2rem;
+$section-spacing: 3rem;
 
 //Paragraphs
 
