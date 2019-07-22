@@ -65,4 +65,6 @@
 							'hide-extensions' => true,
 					)); ?>
 				</nav>
+
+				<?php perch_content("Main Header Image"); ?>
 			</header>
