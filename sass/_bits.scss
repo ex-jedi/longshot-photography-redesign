@@ -60,12 +60,14 @@ $grid-gap: 0 1rem;
   font-family: "ff-dagny-web-pro", sans-serif;
   font-weight: 700;
   font-style: normal;
+  line-height: 1.5;
 }
 
 @mixin font-stack {
   font-family: "ff-dagny-web-pro", sans-serif;
   font-weight: 300;
   font-style: normal;
+  line-height: 1.5;
 }
 
 //Fancy Link Underline
@@ -211,7 +213,6 @@ $grid-gap: 0 1rem;
 
 //Main Font Colours
 
-$font-colour: #424141;
 $light-font-colour: #eff5f6;
 
 //Link Colours
@@ -220,7 +221,7 @@ $main-blue: #486a8d;
 $link-colour: #486a8d;
 
 //Background Colours
-$background-colour: #e9e9e9;
+$light-background-colour: #eff5f6;
 
 //********** Transition Timings**********
 
@@ -231,27 +232,15 @@ $transition-duration-slow: 0.8s ease-in-out 0s;
 //********** Spacing & layout  **********
 
 //Headings
-$large-h1-spacing: 5rem;
-$h1-spacing: 2.5rem;
-$h2-spacing: 1.5rem;
-$h3-spacing: 1rem;
 
 //Articles
-$large-article-spacing: 5rem;
-$article-spacing: 2.5rem;
-$small-article-spacing: 1rem;
 
 //Sections
-$large-section-spacing: 3rem;
-$section-spacing: 1.5rem;
-$small-section-spacing: 1rem;
+$section-spacing: 2rem;
 
 //Paragraphs
-$large-paragraph-spacing: 3rem;
-$paragraph-spacing: 1.5rem;
 
 //Forms
-$input-spacing: 1%;
 
 //Other Spacing
 

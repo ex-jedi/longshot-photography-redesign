@@ -12,14 +12,25 @@
 // ** Wrappers  **
 // =========================================
 html {
+  box-sizing: border-box;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
   font-size: 20px;
-  line-height: 1.5;
   overflow-x: hidden;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 body {
   @include font-stack;
-  color: $font-colour;
+  color: $light-font-colour;
   width: 100%;
   margin: 0 auto;
   min-width: 320px;
@@ -58,6 +69,10 @@ body {
 
 //********** Images **********
 
+img {
+  display: block;
+}
+
 //********** Links **********
 
 // =========================================
@@ -65,18 +80,30 @@ body {
 // =========================================
 
 header {
-  @include flex(row);
+  @include flex(col);
   grid-area: h;
   height: 100vh;
   background-color: #293c38;
   position: relative;
+  align-items: flex-end;
+  overflow: hidden;
+  padding: $section-spacing;
+}
 
+.main-header-image-wrapper {
+  flex: 0 0 500px;
+}
+
+.main-header-image {
+  width: 100%;
 }
 
 .main-header-text {
   @include heading-font-stack;
+  flex: 1 1 auto;
   color: $light-font-colour;
   font-size: 4rem;
+  padding: $section-spacing;
 }
 
 // =========================================
