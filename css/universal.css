@@ -117,3 +117,6 @@ body {
 
 .wf-active body {
   visibility: visible; }
+
+nav {
+  display: none; }
