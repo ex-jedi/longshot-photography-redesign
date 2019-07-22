@@ -81,13 +81,27 @@ img {
 
 header {
   @include flex(col);
-  grid-area: h;
-  height: 100vh;
-  background-color: #293c38;
-  position: relative;
+  justify-content: space-between;
   align-items: flex-end;
+  flex-wrap: wrap;
+  grid-area: h;
+  position: relative;
+  // height: 100vh;
+  background-color: #293c38;
   overflow: hidden;
   padding: $section-spacing;
+}
+
+.header-logo-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  img {
+    margin: 0 auto;
+  }
+
 }
 
 .main-header-image-wrapper {
@@ -100,10 +114,11 @@ header {
 
 .main-header-text {
   @include heading-font-stack;
-  flex: 1 1 auto;
+  flex: 1 1 300px;
   color: $light-font-colour;
   font-size: 4rem;
   padding: $section-spacing;
+  word-break: break-word;
 }
 
 // =========================================
