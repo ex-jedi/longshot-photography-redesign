@@ -103,7 +103,6 @@ header {
     width: 800px;
     max-width: 100%;
   }
-
 }
 
 .main-header-image-wrapper {
@@ -129,7 +128,36 @@ header {
 
 //TODO: Temporarily hide nav
 nav {
+  @include flex(column);
+  position: absolute;
+  top: -530px;
+  right: -530px;
+  background-color: #fff;
+  width: 1300px;
+  height: 1300px;
+  clip-path: circle(3.5%);
+  z-index: 1;
+  transition: clip-path 1s cubic-bezier(.57,-0.29,.45,1.31);
+
+  &:hover {
+    clip-path: circle(45%);
+  }
+}
+
+.main-nav-ul {
   display: none;
+}
+
+.nav-pull-button {
+  @include heading_font-stack;
+  color: $dark-font-colour;
+  text-transform: uppercase;
+  width: fit-content;
+  margin: auto;
+  display: block;
+  background-color: $light-background-colour;
+  border: 0;
+  font-size: .9rem;
 }
 
 // =========================================

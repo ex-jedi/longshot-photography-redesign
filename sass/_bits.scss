@@ -51,7 +51,7 @@
 }
 
 //Layout Variables
-$grid-gap: 0 1rem;
+$grid-gap: 1rem;
 
 //********** Typeography **********
 
@@ -120,13 +120,6 @@ $grid-gap: 0 1rem;
       border-bottom: 3px solid transparent;
     }
   }
-}
-
-//********** Backgrounds **********
-
-@mixin main-background {
-  // background-color: $white;
-  background-image: url("/images/white_wall_hash.png");
 }
 
 //********** Animation Stagger **********
@@ -215,6 +208,7 @@ $grid-gap: 0 1rem;
 //Main Font Colours
 
 $light-font-colour: #eff5f6;
+$dark-font-colour: #293C38;
 
 //Link Colours
 
@@ -233,6 +227,7 @@ $transition-duration-slow: 0.8s ease-in-out 0s;
 //********** Spacing & layout  **********
 
 //Headings
+$large-heading: 4rem;
 
 //Articles
 
