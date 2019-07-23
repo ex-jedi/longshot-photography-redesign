@@ -1,0 +1,45 @@
+.homepage-hero-image-section {
+  position: relative;
+  overflow: hidden; }
+
+.background-image-wrapper {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.homepage-hero-image {
+  width: 100%; }
+
+.homepage-featured-galleries-section {
+  color: #293c38;
+  height: 100vh;
+  margin-top: 4rem; }
+
+.homepage-testimonial-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  background-color: #293c38;
+  color: #eff5f6;
+  min-height: 100vh;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 4rem; }
+
+.testimonial-text {
+  font-size: 2.5rem;
+  width: 80%;
+  text-align: center;
+  line-height: 2; }
+
+.testimonial-source {
+  margin-top: 4rem; }
