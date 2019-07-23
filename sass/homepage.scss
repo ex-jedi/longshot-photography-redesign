@@ -10,10 +10,20 @@
 // ** Main  **
 // =========================================
 
-.homepage-hero-image-wrapper {
+.homepage-hero-image-section {
   position: relative;
+  margin-top: -4rem;
 }
 
 .homepage-hero-image {
   width: 100%;
+}
+
+// =========================================
+// ** Featured Gallery  **
+// =========================================
+
+.homepage-featured-galleries-section {
+  color: $dark-font-colour;
+  height: 100vh;
 }

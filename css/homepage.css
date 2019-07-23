@@ -90,8 +90,13 @@
     -webkit-transform: rotateZ(0);
     transform: rotateZ(0); } }
 
-.homepage-hero-image-wrapper {
-  position: relative; }
+.homepage-hero-image-section {
+  position: relative;
+  margin-top: -4rem; }
 
 .homepage-hero-image {
   width: 100%; }
+
+.homepage-featured-galleries-section {
+  color: #293c38;
+  height: 100vh; }
