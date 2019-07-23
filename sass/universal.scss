@@ -92,7 +92,7 @@ img {
 header {
   @include flex(col);
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   flex-wrap: wrap;
   grid-area: h;
   position: relative;
@@ -128,8 +128,10 @@ header {
   flex: 1 1 300px;
   color: $light-font-colour;
   font-size: 4rem;
-  margin: $section-spacing 0  0 $section-spacing;
+  margin:  0 0 0 $section-spacing;
   word-break: break-word;
+  line-height: 1.2;
+  width: fit-content;
 }
 
 // =========================================

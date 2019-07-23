@@ -92,11 +92,17 @@
 
 .homepage-hero-image-section {
   position: relative;
-  margin-top: -4rem; }
+  overflow: hidden; }
+
+.background-image-wrapper {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .homepage-hero-image {
   width: 100%; }
 
 .homepage-featured-galleries-section {
   color: #293c38;
-  height: 100vh; }
+  height: 100vh;
+  margin-top: 4rem; }

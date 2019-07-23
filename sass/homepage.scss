@@ -12,7 +12,13 @@
 
 .homepage-hero-image-section {
   position: relative;
-  margin-top: -4rem;
+  overflow: hidden;
+}
+
+.background-image-wrapper {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .homepage-hero-image {
@@ -26,4 +32,5 @@
 .homepage-featured-galleries-section {
   color: $dark-font-colour;
   height: 100vh;
+  margin-top: 4rem;
 }

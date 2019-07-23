@@ -159,9 +159,9 @@ header {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   grid-area: h;
@@ -193,15 +193,17 @@ header {
   font-family: "ff-dagny-web-pro", sans-serif;
   font-weight: 700;
   font-style: normal;
-  line-height: 1.5;
-  letter-spacing: .2rem;
   -webkit-box-flex: 1;
   -ms-flex: 1 1 300px;
   flex: 1 1 300px;
   color: #eff5f6;
   font-size: 4rem;
-  margin: 4rem 0 0 4rem;
-  word-break: break-word; }
+  margin: 0 0 0 4rem;
+  word-break: break-word;
+  line-height: 1.2;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content; }
 
 nav {
   display: -webkit-box;
@@ -237,8 +239,6 @@ nav {
   font-family: "ff-dagny-web-pro", sans-serif;
   font-weight: 700;
   font-style: normal;
-  line-height: 1.5;
-  letter-spacing: .2rem;
   color: #293c38;
   text-transform: uppercase;
   width: -webkit-fit-content;
