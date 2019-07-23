@@ -100,7 +100,6 @@ header {
 
   img {
     margin: 0 auto;
-    width: 800px;
     max-width: 100%;
   }
 }
@@ -118,7 +117,7 @@ header {
   flex: 1 1 300px;
   color: $light-font-colour;
   font-size: 4rem;
-  margin: $section-spacing $section-spacing 0;
+  margin: $section-spacing 0  0 $section-spacing;
   word-break: break-word;
 }
 
