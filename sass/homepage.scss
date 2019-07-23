@@ -4,7 +4,7 @@
 
 //********** Imports**********
 
-@import 'bits';
+@import "bits";
 
 // =========================================
 // ** Main  **
@@ -33,4 +33,29 @@
   color: $dark-font-colour;
   height: 100vh;
   margin-top: 4rem;
+}
+
+// =========================================
+// ** Testimonial  **
+// =========================================
+.homepage-testimonial-section {
+  @include flex(column);
+  position: relative;
+  background-color: $dark-background-colour;
+  color: $light-font-colour;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: $section-spacing;
+}
+
+.testimonial-text {
+  font-size: 2.5rem;
+  width: 80%;
+  text-align: center;
+  line-height: $large-line-height;
+}
+
+.testimonial-source {
+  margin-top: $section-spacing;
 }
