@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="https://use.typekit.net/mud2esb.css">
 	<link rel="stylesheet" href="/css/universal.css?v=1.0">
 	<!-- TODO: Add version query string to CSS file for cache busting  -->
-	<link rel="stylesheet" href="<?php perch_page_attribute('css', array('template' => 'bits.html')) ;?>">
+	<link rel="stylesheet" href="<?php perch_page_attribute('css', array('template' => 'bits.html')) ;?>?css.v=1">
 	<!-- Perch Meta -->
 	<?php
 	$domain        = 'https://'.$_SERVER["HTTP_HOST"];
@@ -60,7 +60,7 @@
 	<body class="<?php perch_page_attribute('bodyClass', array('template' => 'bits.html' )); ?>">
 		<div itemscope itemtype="http://schema.org/LocalBusiness" class="site-wrapper <?php perch_page_attribute('wrapperClass', array('template' => 'bits.html'));?>">
 			<header class="main-header">
-				<nav class="main-nav">
+				<nav class="main-nav" :class="{ 'nav-reveal': navPull }"  id="vue-wrapper">
 					<?php perch_pages_navigation(array(
 							'hide-extensions' => true,
 					)); ?>

@@ -100,7 +100,6 @@ header {
 
   img {
     margin: 0 auto;
-    width: 800px;
     max-width: 100%;
   }
 }
@@ -118,7 +117,7 @@ header {
   flex: 1 1 300px;
   color: $light-font-colour;
   font-size: 4rem;
-  margin: $section-spacing $section-spacing 0;
+  margin: $section-spacing 0  0 $section-spacing;
   word-break: break-word;
 }
 
@@ -138,10 +137,10 @@ nav {
   clip-path: circle(3.5%);
   z-index: 1;
   transition: clip-path 1s cubic-bezier(.57,-0.29,.45,1.31);
+}
 
-  &:hover {
+.nav-reveal {
     clip-path: circle(45%);
-  }
 }
 
 .main-nav-ul {
@@ -158,6 +157,7 @@ nav {
   background-color: $light-background-colour;
   border: 0;
   font-size: .9rem;
+  padding: 1rem;
 }
 
 // =========================================
