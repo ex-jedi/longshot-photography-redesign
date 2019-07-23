@@ -14,3 +14,9 @@ document.addEventListener('keyup', evt => {
     app.navPull = false;
   }
 });
+
+// =========================================
+// ** Rellax  **
+// =========================================
+
+let rellax = new Rellax('.rellax');

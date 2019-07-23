@@ -120,15 +120,21 @@ body {
 .site-wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1rem 1fr 1rem 1fr 1rem 1fr;
+  -ms-grid-columns: 1fr 0 1fr 0 1fr 0 1fr;
   grid-template-columns: repeat(4, 1fr);
-  -ms-grid-rows: auto 1rem auto 1rem auto;
+  -ms-grid-rows: auto 0 auto 0 auto;
   grid-template-areas: "h h h h" "m m m m" "f f f f";
-  gap: 1rem;
+  gap: 0;
   margin: 0 auto;
   padding: 0;
   width: 100%;
   position: relative; }
+
+main {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
+  grid-area: m; }
 
 .wf-loading body {
   visibility: hidden; }
