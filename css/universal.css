@@ -296,7 +296,7 @@ header {
     height: auto;
     clip: auto; }
 
-.hide-outline {
+.hide-outline .no-outline {
   outline: none; }
 
 footer {

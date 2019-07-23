@@ -223,8 +223,12 @@ header {
 // Hides outline unless tab key is pressed
 
 .hide-outline {
-  outline: none;
+
+  .no-outline {
+    outline: none;
+  }
 }
+
 // =========================================
 // ** Body **
 // =========================================

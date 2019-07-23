@@ -18,11 +18,11 @@ document.addEventListener('keyup', evt => {
 });
 
 // Removes outline hiding when tab key is pressed
-document.addEventListener('keyup', evt => {
-  if(evt.keyCode === 9) {
-    app.outlineHide = false;
-  }
-});
+// document.addEventListener('keyup', evt => {
+//   if(evt.keyCode === 9) {
+//     app.outlineHide = false;
+//   }
+// });
 
 // =========================================
 // ** Rellax  **
