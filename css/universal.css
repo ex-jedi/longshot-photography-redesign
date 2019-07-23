@@ -169,7 +169,8 @@ header {
   height: 100vh;
   background-color: #293c38;
   overflow: hidden;
-  padding: 4rem; }
+  padding: 4rem;
+  z-index: 1; }
 
 .header-logo-wrapper {
   position: absolute;

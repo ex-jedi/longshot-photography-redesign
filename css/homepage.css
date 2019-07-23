@@ -90,5 +90,8 @@
     -webkit-transform: rotateZ(0);
     transform: rotateZ(0); } }
 
+.homepage-hero-image-wrapper {
+  position: relative; }
+
 .homepage-hero-image {
   width: 100%; }
