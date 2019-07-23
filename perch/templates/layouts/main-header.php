@@ -60,7 +60,7 @@
 	<body class="<?php perch_page_attribute('bodyClass', array('template' => 'bits.html' )); ?>">
 		<div itemscope itemtype="http://schema.org/LocalBusiness" class="site-wrapper <?php perch_page_attribute('wrapperClass', array('template' => 'bits.html'));?>">
 			<header class="main-header">
-				<nav class="main-nav">
+				<nav class="main-nav" :class="{ 'nav-reveal': navPull }"  id="vue-wrapper">
 					<?php perch_pages_navigation(array(
 							'hide-extensions' => true,
 					)); ?>

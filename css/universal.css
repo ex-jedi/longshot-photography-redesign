@@ -218,9 +218,10 @@ nav {
   -o-transition: clip-path 1s cubic-bezier(0.57, -0.29, 0.45, 1.31);
   transition: clip-path 1s cubic-bezier(0.57, -0.29, 0.45, 1.31);
   transition: clip-path 1s cubic-bezier(0.57, -0.29, 0.45, 1.31), -webkit-clip-path 1s cubic-bezier(0.57, -0.29, 0.45, 1.31); }
-  nav:hover {
-    -webkit-clip-path: circle(45%);
-    clip-path: circle(45%); }
+
+.nav-reveal {
+  -webkit-clip-path: circle(45%);
+  clip-path: circle(45%); }
 
 .main-nav-ul {
   display: none; }
@@ -231,7 +232,7 @@ nav {
   font-style: normal;
   line-height: 1.5;
   letter-spacing: .2rem;
-  color: #293C38;
+  color: #293c38;
   text-transform: uppercase;
   width: -webkit-fit-content;
   width: -moz-fit-content;

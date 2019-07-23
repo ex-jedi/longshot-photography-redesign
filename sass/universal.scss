@@ -137,10 +137,10 @@ nav {
   clip-path: circle(3.5%);
   z-index: 1;
   transition: clip-path 1s cubic-bezier(.57,-0.29,.45,1.31);
+}
 
-  &:hover {
+.nav-reveal {
     clip-path: circle(45%);
-  }
 }
 
 .main-nav-ul {
