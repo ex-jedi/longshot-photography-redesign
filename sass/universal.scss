@@ -138,22 +138,44 @@ header {
 // ** Main Nav  **
 // =========================================
 
-//TODO: Temporarily hide nav
-nav {
+
+.main-nav {
   @include flex(column);
-  position: absolute;
+  position: fixed;
   top: -530px;
   right: -530px;
-  background-color: #fff;
+  background-color: $dark-font-colour;
   width: 1300px;
   height: 1300px;
-  clip-path: circle(3.5%);
+  clip-path: circle(4%);
+  transition: clip-path 1s cubic-bezier(.45,-0.20,.45,1.20);
   z-index: 1;
-  transition: clip-path 1s cubic-bezier(.57,-0.29,.45,1.31);
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: $light-background-colour;
+    width: 1300px;
+    height: 1300px;
+    clip-path: circle(3.8%);
+    z-index: -1;
+    transition: clip-path 1s cubic-bezier(.45,-0.20,.45,1.20);
+  }
 }
 
 .nav-reveal {
-    clip-path: circle(45%);
+  clip-path: circle(45%);
+  z-index: 1;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: $light-background-colour;
+    width: 1300px;
+    height: 1300px;
+    clip-path: circle(44.8%);
+    z-index: -1;
+  }
 }
 
 .main-nav-ul {
@@ -170,9 +192,39 @@ nav {
   background-color: $light-background-colour;
   border: 0;
   font-size: .9rem;
-  padding: 1rem;
+  padding: .5rem;
+  z-index: 2;
+  cursor: pointer;
 }
 
+//********** Skip to content link **********
+.show-on-focus {
+	position: absolute;
+	color: $dark-font-colour  ;
+	background-color: $light-background-colour;
+	padding: 10px;
+	font-size: 1.2rem;
+	top: 0;
+	left: 0;
+	width: 1px;
+	height: 1px;
+	margin: 0.5rem 0 0 0.5rem;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+
+	&:focus {
+		z-index: 20;
+		width: auto;
+		height: auto;
+		clip: auto;
+	}
+}
+
+// Hides outline unless tab key is pressed
+
+.hide-outline {
+  outline: none;
+}
 // =========================================
 // ** Body **
 // =========================================
