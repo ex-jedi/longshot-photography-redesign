@@ -2,14 +2,11 @@
 // ** Styles that apply to all pages across the site   **
 //==============================================================================
 
-
 //==============================================================================
 // ** Imports  **
 //==============================================================================
 
 @import "bits"; //Contains variables, media queries mixins etc.
-
-
 
 // =========================================
 // ** Wrappers  **
@@ -46,7 +43,6 @@ body {
   padding: 0;
   width: 100%;
   position: relative;
-
 }
 
 main {
@@ -128,7 +124,7 @@ header {
   flex: 1 1 300px;
   color: $light-font-colour;
   font-size: 4rem;
-  margin:  0 0 0 $section-spacing;
+  margin: 0 0 0 $section-spacing;
   word-break: break-word;
   line-height: 1.2;
   width: fit-content;
@@ -137,7 +133,6 @@ header {
 // =========================================
 // ** Main Nav  **
 // =========================================
-
 
 .main-nav {
   @include flex(column);
@@ -148,10 +143,10 @@ header {
   width: 1300px;
   height: 1300px;
   clip-path: circle(4%);
-  transition: clip-path 1s cubic-bezier(.45,-0.20,.45,1.20);
+  transition: clip-path 1s cubic-bezier(0.45, -0.2, 0.45, 1.2);
   z-index: 1;
 
-  &::after {
+  &::before {
     content: "";
     position: absolute;
     background-color: $light-background-colour;
@@ -159,7 +154,7 @@ header {
     height: 1300px;
     clip-path: circle(3.8%);
     z-index: -1;
-    transition: clip-path 1s cubic-bezier(.45,-0.20,.45,1.20);
+    transition: clip-path 1s cubic-bezier(0.45, -0.2, 0.45, 1.2);
   }
 }
 
@@ -167,7 +162,7 @@ header {
   clip-path: circle(45%);
   z-index: 1;
 
-  &::after {
+  &::before {
     content: "";
     position: absolute;
     background-color: $light-background-colour;
@@ -191,39 +186,38 @@ header {
   display: block;
   background-color: $light-background-colour;
   border: 0;
-  font-size: .9rem;
-  padding: .5rem;
+  font-size: 0.9rem;
+  padding: 0.5rem;
   z-index: 2;
   cursor: pointer;
 }
 
 //********** Skip to content link **********
 .show-on-focus {
-	position: absolute;
-	color: $dark-font-colour  ;
-	background-color: $light-background-colour;
-	padding: 10px;
-	font-size: 1.2rem;
-	top: 0;
-	left: 0;
-	width: 1px;
-	height: 1px;
-	margin: 0.5rem 0 0 0.5rem;
-	overflow: hidden;
-	clip: rect(1px, 1px, 1px, 1px);
+  position: absolute;
+  color: $dark-font-colour;
+  background-color: $light-background-colour;
+  padding: 10px;
+  font-size: 1.2rem;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  margin: 0.5rem 0 0 0.5rem;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
 
-	&:focus {
-		z-index: 20;
-		width: auto;
-		height: auto;
-		clip: auto;
-	}
+  &:focus {
+    z-index: 20;
+    width: auto;
+    height: auto;
+    clip: auto;
+  }
 }
 
 // Hides outline unless tab key is pressed
 
 .hide-outline {
-
   .no-outline {
     outline: none;
   }
