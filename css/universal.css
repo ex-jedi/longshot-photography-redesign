@@ -135,7 +135,7 @@ header {
   transition: clip-path 1s cubic-bezier(0.45, -0.2, 0.45, 1.2);
   transition: clip-path 1s cubic-bezier(0.45, -0.2, 0.45, 1.2), -webkit-clip-path 1s cubic-bezier(0.45, -0.2, 0.45, 1.2);
   z-index: 1; }
-  .main-nav::after {
+  .main-nav::before {
     content: "";
     position: absolute;
     background-color: #eff5f6;
@@ -154,7 +154,7 @@ header {
   -webkit-clip-path: circle(45%);
   clip-path: circle(45%);
   z-index: 1; }
-  .nav-reveal::after {
+  .nav-reveal::before {
     content: "";
     position: absolute;
     background-color: #eff5f6;
@@ -180,8 +180,8 @@ header {
   display: block;
   background-color: #eff5f6;
   border: 0;
-  font-size: .9rem;
-  padding: .5rem;
+  font-size: 0.9rem;
+  padding: 0.5rem;
   z-index: 2;
   cursor: pointer; }
 
