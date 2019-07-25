@@ -4,7 +4,7 @@
 		<article class="gallery-article">
 		<?php
 			perch_gallery_albums(array(
-					'template'=>'gallery-index-page.html',
+					'template'=>'gallery_index_page.html',
 					'image'=>true,
 					'count'=>5,
 					'paginate'=>true
