@@ -11,9 +11,27 @@
   width: 100%; }
 
 .homepage-featured-galleries-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   color: #293c38;
   background-color: #f3edeb;
-  min-height: 100vh; }
+  min-height: 100vh;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0 4rem 4rem; }
+
+.featured-galleries-section-heading {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%; }
 
 .homepage-testimonial-section {
   display: -webkit-box;

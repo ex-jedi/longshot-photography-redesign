@@ -30,9 +30,17 @@
 // =========================================
 
 .homepage-featured-galleries-section {
+  @include flex(row);
+  flex-wrap: wrap;
   color: $dark-font-colour;
   background-color: $light-background-colour;
   min-height: 100vh;
+  justify-content: space-between;
+  padding: 0 $section-spacing $section-spacing;
+}
+
+.featured-galleries-section-heading {
+  flex: 1 1 100%;
 }
 
 // =========================================
