@@ -28,10 +28,10 @@
 }
 
 // =========================================
-// ** Mixins  **
+// ** Layout  **
 // =========================================
 
-//********** Layout **********
+//********** Grid $ Flexbox Mixins **********
 
 //Main Grid Mixin
 @mixin main-grid {
@@ -44,36 +44,58 @@
   gap: $grid-gap;
 }
 
-//Flex Mixin
+//Main Flex Mixin
 @mixin flex($direction) {
   display: flex;
   flex-direction: $direction;
 }
 
-//Layout Variables
+//Mixin Variables
 $grid-gap: 0;
 
-//********** Typeography **********
+//********** Spacing  **********
 
-//Font Stacks
+//Articles
+
+//Sections
+$section-spacing: 4rem;
+
+//Forms
+
+//Other Spacing
+
+// =========================================
+// ** Typography  **
+// =========================================
+
+//********** Font Stacks **********
+
 @mixin heading-font-stack {
   font-family: "ff-dagny-web-pro", sans-serif;
   font-weight: 700;
-  font-style: normal;
+  text-transform: uppercase;
 }
 
 @mixin font-stack {
   font-family: "ff-dagny-web-pro", sans-serif;
   font-weight: 300;
-  font-style: normal;
   line-height: $line-height;
 }
 
-//********** Type Variables **********
+//********** Type Variables & Spacing **********
 
+//Font Sizes
+$h2-size: 4.5rem;
+
+//Font Spacing
+$h2-spacing-large: 10rem;
+
+//Line Height
 $small-line-height: 1.2;
 $line-height: 1.5;
 $large-line-height: 2;
+
+//********** Mixins **********
 
 //Fancy Link Underline
 @mixin link-underline($colour) {
@@ -159,29 +181,13 @@ $main-blue: #486a8d;
 $link-colour: #486a8d;
 
 //Background Colours
-$light-background-colour: #eff5f6;
+$light-background-colour: #f3edeb;
 
 //********** Transition Timings**********
 
 $transition-duration: 0.3s ease-in-out 0s;
 $transition-duration-fast: 0.2s ease-in-out 0s;
 $transition-duration-slow: 0.8s ease-in-out 0s;
-
-//********** Spacing & layout  **********
-
-//Headings
-$large-heading: 4rem;
-
-//Articles
-
-//Sections
-$section-spacing: 4rem;
-
-//Paragraphs
-
-//Forms
-
-//Other Spacing
 
 // =========================================
 // ** Browser Quirks  **

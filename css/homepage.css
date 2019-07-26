@@ -12,8 +12,8 @@
 
 .homepage-featured-galleries-section {
   color: #293c38;
-  height: 100vh;
-  margin-top: 4rem; }
+  background-color: #f3edeb;
+  min-height: 100vh; }
 
 .homepage-testimonial-section {
   display: -webkit-box;

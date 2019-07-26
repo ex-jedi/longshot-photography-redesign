@@ -65,6 +65,20 @@ main {
 
 //********** Headings**********
 
+h1,
+h2,
+h3 {
+  @include heading-font-stack;
+}
+
+h2 {
+  padding: $h2-spacing-large 0;
+  margin: 0 auto;
+  font-size: $h2-size;
+  text-align: center;
+  letter-spacing: 0.5rem;
+}
+
 //********** Containers **********
 
 //********** Paragraphs **********
@@ -126,7 +140,7 @@ header {
   font-size: 4rem;
   margin: 0 0 0 $section-spacing;
   word-break: break-word;
-  line-height: 1.2;
+  line-height: $small-line-height;
   width: fit-content;
 }
 
@@ -178,9 +192,8 @@ header {
 }
 
 .nav-pull-button {
-  @include heading_font-stack;
+  @include heading-font-stack;
   color: $dark-font-colour;
-  text-transform: uppercase;
   width: fit-content;
   margin: auto;
   display: block;

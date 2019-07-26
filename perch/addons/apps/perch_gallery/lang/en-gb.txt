@@ -121,5 +121,9 @@
     "Deleting an album": "Deleting an album",
     "Are you sure you wish to delete \u201c%s\u201d? This will also remove all images contained within it.": "Are you sure you wish to delete \u201c%s\u201d? This will also remove all images contained within it.",
     "Test Album One": "Test Album One",
-    "": ""
+    "": "",
+    "Natural World": "Natural World",
+    "Scotland": "Scotland",
+    "Intereors": "Intereors",
+    "Interiors": "Interiors"
 }
