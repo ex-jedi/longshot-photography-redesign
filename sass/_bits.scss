@@ -28,10 +28,10 @@
 }
 
 // =========================================
-// ** Mixins  **
+// ** Layout  **
 // =========================================
 
-//********** Layout **********
+//********** Grid $ Flexbox Mixins **********
 
 //Main Grid Mixin
 @mixin main-grid {
@@ -44,18 +44,34 @@
   gap: $grid-gap;
 }
 
-//Flex Mixin
+//Main Flex Mixin
 @mixin flex($direction) {
   display: flex;
   flex-direction: $direction;
 }
 
-//Layout Variables
+//Mixin Variables
 $grid-gap: 0;
 
-//********** Typeography **********
+//********** Spacing  **********
 
-//Font Stacks
+//Articles
+
+//Sections
+$section-spacing: 4rem;
+
+//Paragraphs
+
+//Forms
+
+//Other Spacing
+
+// =========================================
+// ** Typography  **
+// =========================================
+
+//********** Font Stacks **********
+
 @mixin heading-font-stack {
   font-family: "ff-dagny-web-pro", sans-serif;
   font-weight: 700;
@@ -77,6 +93,8 @@ $h2-size: 4.5rem;
 $small-line-height: 1.2;
 $line-height: 1.5;
 $large-line-height: 2;
+
+//********** Mixins **********
 
 //Fancy Link Underline
 @mixin link-underline($colour) {
@@ -169,22 +187,6 @@ $light-background-colour: #eff5f6;
 $transition-duration: 0.3s ease-in-out 0s;
 $transition-duration-fast: 0.2s ease-in-out 0s;
 $transition-duration-slow: 0.8s ease-in-out 0s;
-
-//********** Spacing & layout  **********
-
-//Headings
-$large-heading: 4rem;
-
-//Articles
-
-//Sections
-$section-spacing: 4rem;
-
-//Paragraphs
-
-//Forms
-
-//Other Spacing
 
 // =========================================
 // ** Browser Quirks  **

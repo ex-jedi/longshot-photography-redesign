@@ -57,6 +57,7 @@ h3 {
   text-transform: uppercase; }
 
 h2 {
+  margin: 10rem auto;
   font-size: 4.5rem;
   text-align: center;
   letter-spacing: 0.5rem; }
@@ -183,7 +184,6 @@ header {
   font-weight: 700;
   text-transform: uppercase;
   color: #293c38;
-  text-transform: uppercase;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;

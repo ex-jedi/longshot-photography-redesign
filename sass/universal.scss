@@ -72,6 +72,7 @@ h3 {
 }
 
 h2 {
+  margin: 10rem auto;
   font-size: $h2-size;
   text-align: center;
   letter-spacing: 0.5rem;
@@ -190,9 +191,8 @@ header {
 }
 
 .nav-pull-button {
-  @include heading_font-stack;
+  @include heading-font-stack;
   color: $dark-font-colour;
-  text-transform: uppercase;
   width: fit-content;
   margin: auto;
   display: block;
