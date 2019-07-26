@@ -59,18 +59,21 @@ $grid-gap: 0;
 @mixin heading-font-stack {
   font-family: "ff-dagny-web-pro", sans-serif;
   font-weight: 700;
-  font-style: normal;
+  text-transform: uppercase;
 }
 
 @mixin font-stack {
   font-family: "ff-dagny-web-pro", sans-serif;
   font-weight: 300;
-  font-style: normal;
   line-height: $line-height;
 }
 
 //********** Type Variables **********
 
+//Font Sizes
+$h2-size: 4.5rem;
+
+//Line Height
 $small-line-height: 1.2;
 $line-height: 1.5;
 $large-line-height: 2;
