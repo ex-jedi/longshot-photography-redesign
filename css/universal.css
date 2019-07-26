@@ -66,6 +66,10 @@ h2 {
 img {
   display: block; }
 
+a {
+  text-decoration: none;
+  color: #293c38; }
+
 header {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
