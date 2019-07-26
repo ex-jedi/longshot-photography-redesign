@@ -72,7 +72,8 @@ h3 {
 }
 
 h2 {
-  margin: 10rem auto;
+  padding: $h2-spacing-large 0;
+  margin: 0 auto;
   font-size: $h2-size;
   text-align: center;
   letter-spacing: 0.5rem;

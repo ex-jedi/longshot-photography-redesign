@@ -60,8 +60,6 @@ $grid-gap: 0;
 //Sections
 $section-spacing: 4rem;
 
-//Paragraphs
-
 //Forms
 
 //Other Spacing
@@ -84,10 +82,13 @@ $section-spacing: 4rem;
   line-height: $line-height;
 }
 
-//********** Type Variables **********
+//********** Type Variables & Spacing **********
 
 //Font Sizes
 $h2-size: 4.5rem;
+
+//Font Spacing
+$h2-spacing-large: 10rem;
 
 //Line Height
 $small-line-height: 1.2;
@@ -180,7 +181,7 @@ $main-blue: #486a8d;
 $link-colour: #486a8d;
 
 //Background Colours
-$light-background-colour: #eff5f6;
+$light-background-colour: #f3edeb;
 
 //********** Transition Timings**********
 
