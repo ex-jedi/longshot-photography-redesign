@@ -109,6 +109,13 @@
   background-color: #293c38;
   color: #eff5f6; }
 
+.homepage-testimonial-section-two {
+  background-color: #f3edeb;
+  color: #293c38;
+  background-image: url("/images/splodge.png");
+  background-position: 0 -500px;
+  background-repeat: no-repeat; }
+
 .homepage-collage-section {
   display: -webkit-box;
   display: -ms-flexbox;
