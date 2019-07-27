@@ -259,6 +259,44 @@ header {
 // =========================================
 
 footer {
+  @include flex(column);
   grid-area: f;
-  height: 100px;
+  justify-content: center;
+  align-items: center;
+  color: $dark-font-colour;
+  padding: $section-spacing;
+  font-size: .75rem;
+  letter-spacing: 1px;
+  background-color: $light-background-colour;
+  background-image: url("/images/splodge.png");
+  background-position: 100px -700px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+
+.footer-promo,
+.footer-legal {
+  @include flex(column);
+  justify-content: center;
+  align-items: center;
+
+  p {
+    margin: 0;
+  }
+}
+
+.footer-social-media {
+  @include flex(row);
+  width: 8rem;
+  margin-bottom: $section-spacing;
+  justify-content: space-between;
+}
+
+.footer-legal {
+  margin-bottom: $section-spacing;
+}
+
+.footer-social-media-icon {
+  width: 50px;
+}
+
