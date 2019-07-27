@@ -11,7 +11,7 @@ const app = new Vue({
 });
 
 // Allows menu to be closed with escape key
-document.addEventListener('keyup', evt => {
+// document.addEventListener('keyup', evt => {
   if(evt.keyCode === 27) {
     app.navPull = false;
   }

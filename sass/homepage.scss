@@ -2,7 +2,7 @@
 // ** Homepage Styles  **
 //==============================================================================
 
-//********** Imports**********
+//********** Imports **********
 
 @import "bits";
 
@@ -25,9 +25,9 @@
   width: 100%;
 }
 
-// =========================================
+// *=========================================
 // ** Featured Gallery  **
-// =========================================
+// *=========================================
 
 .homepage-featured-galleries-section {
   @include flex(row);
@@ -122,4 +122,26 @@
 
 .testimonial-source {
   margin-top: $section-spacing;
+}
+
+// =========================================
+// ** Homepage Collage  **
+// =========================================
+
+.homepage-collage-section {
+  @include flex(row);
+
+  flex-wrap: wrap;
+}
+
+.homepage-collage-image {
+  flex: 1 1 auto;
+}
+
+.half-width-collage {
+  width: 50%;
+}
+
+.full-width-collage {
+  width: 100%;
 }
