@@ -196,7 +196,7 @@ label {
 .name-input,
 .email-input,
 .text-area-input,
-input[type="submit"]  {
+.submit  {
   font: inherit;
   border-radius: 5px;
   border: 0;
@@ -212,11 +212,14 @@ input[type="submit"]  {
 .name-input,
 .email-input {
   margin-bottom: $section-spacing;
+}
 
+.text-area-input {
+  margin-bottom: $form-spacing;
 }
 
 
-input[type="submit"] {
+.submit {
   @include heading-font-stack;
   color: $dark-font-colour;
   letter-spacing: 0.1rem;
@@ -224,12 +227,20 @@ input[type="submit"] {
   padding: 0 $form-spacing;
   margin: 0 auto;
   border-radius: 5px;
-  border: none;
+  border: 1px solid $light-background-colour;
+  transition: .3s all ease;
+
+  &:hover {
+    background-color: $dark-background-colour;
+    color: $light-font-colour;
+
+  }
 }
 
 
 //********** Checkbox **********
 .checkbox-div {
+margin-bottom: $section-spacing;
 
   input {
     position: relative;
@@ -267,6 +278,7 @@ input[type="submit"] {
 
   label {
     @include font-stack;
+    font-size: 1rem;
     text-transform: none;
     display: inline;
   }
@@ -280,4 +292,3 @@ input[type="submit"] {
   z-index: -10;
   opacity: 0;
 }
-
