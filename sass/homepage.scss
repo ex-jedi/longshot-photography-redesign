@@ -161,3 +161,85 @@
 .full-width-collage {
   width: 100%;
 }
+
+//*=========================================
+//** Contact Form  **
+//*=========================================
+
+.homepage-contact-section {
+  background-color: $dark-background-colour;
+  color: $light-font-colour;
+  display: flow-root;
+}
+
+.homepage-contact-form-title {
+  padding-bottom: $section-spacing;
+}
+
+.homepage-form-container {
+  width: 40%;
+  margin: 0 auto $section-spacing;
+}
+
+.homepage-contact-form {
+  @include flex(column);
+}
+
+label {
+  @include heading-font-stack;
+  font-size: 1.2rem;
+  display: block;
+  letter-spacing: 0.1rem;
+  margin-bottom: $form-spacing;
+}
+
+input,
+textarea {
+  font: inherit;
+  border-radius: 5px;
+  border: 0;
+  width: 100%;
+  padding: $form-spacing $form-spacing-large;
+}
+
+input {
+  margin-bottom: $section-spacing;
+}
+
+input[type="submit"] {
+  @include heading-font-stack;
+  color: $dark-font-colour;
+  letter-spacing: 0.1rem;
+  width: fit-content;
+  padding: 0 $form-spacing;
+  margin: 0 auto;
+}
+
+
+//********** Checkbox **********
+.checkbox-div {
+  @include flex(row);
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  font-size: 1rem;
+
+  input {
+    width: fit-content;
+  }
+
+  label {
+    @include font-stack;
+    text-transform: none;
+  }
+  }
+
+//********** Honeypot **********
+
+.form-identification-number {
+  overflow: hidden;
+  position: absolute;
+  z-index: -10;
+  opacity: 0;
+}
+
