@@ -171,7 +171,7 @@ label {
 .name-input,
 .email-input,
 .text-area-input,
-input[type="submit"] {
+.submit {
   font: inherit;
   border-radius: 5px;
   border: 0;
@@ -186,7 +186,10 @@ input[type="submit"] {
 .email-input {
   margin-bottom: 4rem; }
 
-input[type="submit"] {
+.text-area-input {
+  margin-bottom: 0.7rem; }
+
+.submit {
   font-family: "ff-dagny-web-pro", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -198,46 +201,54 @@ input[type="submit"] {
   padding: 0 0.7rem;
   margin: 0 auto;
   border-radius: 5px;
-  border: none; }
+  border: 1px solid #f3edeb;
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease; }
+  .submit:hover {
+    background-color: #293c38;
+    color: #eff5f6; }
 
-.checkbox-div input {
-  position: relative;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  font-size: 0;
-  top: 1px; }
-  .checkbox-div input:before {
-    line-height: 1.5em;
-    content: '';
-    display: inline-block;
-    width: .9rem;
-    height: .9rem;
-    margin-top: -4px;
-    margin-left: -4px;
-    border: 1px solid #f3edeb;
-    border-radius: 0.25em;
-    background: #293c38; }
-  .checkbox-div input:checked:after {
-    content: "";
-    position: absolute;
-    height: 8px;
-    width: 20px;
-    color: #eff5f6;
-    border-left: 2px solid;
-    border-bottom: 2px solid;
-    top: -4px;
-    left: -1px;
-    -webkit-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg); }
-
-.checkbox-div label {
-  font-family: "ff-dagny-web-pro", sans-serif;
-  font-weight: 300;
-  line-height: 1.5;
-  text-transform: none;
-  display: inline; }
+.checkbox-div {
+  margin-bottom: 4rem; }
+  .checkbox-div input {
+    position: relative;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 0;
+    top: 1px; }
+    .checkbox-div input:before {
+      line-height: 1.5em;
+      content: '';
+      display: inline-block;
+      width: .9rem;
+      height: .9rem;
+      margin-top: -4px;
+      margin-left: -4px;
+      border: 1px solid #f3edeb;
+      border-radius: 0.25em;
+      background: #293c38; }
+    .checkbox-div input:checked:after {
+      content: "";
+      position: absolute;
+      height: 8px;
+      width: 20px;
+      color: #eff5f6;
+      border-left: 2px solid;
+      border-bottom: 2px solid;
+      top: -4px;
+      left: -1px;
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg); }
+  .checkbox-div label {
+    font-family: "ff-dagny-web-pro", sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+    font-size: 1rem;
+    text-transform: none;
+    display: inline; }
 
 .form-identification-number {
   overflow: hidden;

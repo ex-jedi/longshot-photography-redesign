@@ -1,12 +1,16 @@
 <footer class="main-footer">
-	<div class="footer-legal">
-		<p class="copyright" >&copy; <?php echo date("Y"); ?> Site Name</p>
-		<p class="terms"><a href="/terms.php">Terms of use</a></p>
-		<p class="privacy"><a href="/privacy-policy.php">Privacy policy</a></p>
+	<div class="footer-social-media">
+		<img class="footer-social-media-icon" src="/images/instagram-icon.svg">
+		<img class="footer-social-media-icon" src="/images/twitter-icon.svg">
 	</div>
-	<div class="promo">
+	<div class="footer-legal">
+		<p class="copyright" >&copy; <?php echo date("Y"); ?> KEN LONG</p>
+		<p class="privacy"><a href="/privacy-policy.php">PRIVACY &amp; COOKIE PRIVACY POLICY</a></p>
+		<p class="terms"><a href="/terms.php">TERMS OF USE</a></p>
+	</div>
+	<div class="footer-promo">
 		<p>
-			<a href="https://pixelsmiths.co.uk">Built by Pixelsmiths</a>
+			WEB DESIGN & DEVELOPMENT, BRAND DESIGN & ILLUSTRATION BY phoenix & phoenix
 		</p>
 	</div>
 </footer>
