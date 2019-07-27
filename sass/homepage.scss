@@ -195,17 +195,24 @@ label {
 
 .name-input,
 .email-input,
-.text-area-input {
+.text-area-input,
+input[type="submit"]  {
   font: inherit;
   border-radius: 5px;
   border: 0;
-  width: 100%;
   padding: $form-spacing $form-spacing-large;
+}
+
+.name-input,
+.email-input,
+.text-area-input {
+  width: 100%;
 }
 
 .name-input,
 .email-input {
   margin-bottom: $section-spacing;
+
 }
 
 
@@ -216,19 +223,26 @@ input[type="submit"] {
   width: fit-content;
   padding: 0 $form-spacing;
   margin: 0 auto;
+  border-radius: 5px;
+  border: none;
 }
 
 
 //********** Checkbox **********
 .checkbox-div {
+
   input {
     position: relative;
+    width: fit-content;
+    font-size: 0;
+    top: 1px;
+
     &:before {
       line-height: 1.5em;
       content: '';
       display: inline-block;
-      width: 18px;
-      height: 18px;
+      width: .9rem;
+      height: .9rem;
       margin-top: -4px;
       margin-left: -4px;
       border: 1px solid $light-background-colour;
