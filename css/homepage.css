@@ -191,31 +191,21 @@ input[type="submit"] {
   padding: 0 0.7rem;
   margin: 0 auto; }
 
-.checkbox-div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+.checkbox-div input {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  font-size: 2rem;
+  margin: 0;
   position: relative;
-  font-size: 1rem; }
-  .checkbox-div input {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content; }
-  .checkbox-div label {
-    font-family: "ff-dagny-web-pro", sans-serif;
-    font-weight: 300;
-    line-height: 1.5;
-    text-transform: none; }
+  top: 3px; }
+
+.checkbox-div label {
+  font-family: "ff-dagny-web-pro", sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  text-transform: none;
+  display: inline; }
 
 .form-identification-number {
   overflow: hidden;

@@ -218,19 +218,20 @@ input[type="submit"] {
 
 //********** Checkbox **********
 .checkbox-div {
-  @include flex(row);
-  justify-content: flex-start;
-  align-items: center;
-  position: relative;
-  font-size: 1rem;
-
   input {
-    width: fit-content;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    font-size: 2rem;
+    margin: 0;
+    position: relative;
+    top: 3px;
   }
 
   label {
     @include font-stack;
     text-transform: none;
+    display: inline;
   }
   }
 
