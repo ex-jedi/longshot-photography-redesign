@@ -168,15 +168,17 @@ label {
   letter-spacing: 0.1rem;
   margin-bottom: 0.7rem; }
 
-input,
-textarea {
+.name-input,
+.email-input,
+.text-area-input {
   font: inherit;
   border-radius: 5px;
   border: 0;
   width: 100%;
   padding: 0.7rem 1rem; }
 
-input {
+.name-input,
+.email-input {
   margin-bottom: 4rem; }
 
 input[type="submit"] {

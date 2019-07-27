@@ -193,8 +193,9 @@ label {
   margin-bottom: $form-spacing;
 }
 
-input,
-textarea {
+.name-input,
+.email-input,
+.text-area-input {
   font: inherit;
   border-radius: 5px;
   border: 0;
@@ -202,9 +203,11 @@ textarea {
   padding: $form-spacing $form-spacing-large;
 }
 
-input {
+.name-input,
+.email-input {
   margin-bottom: $section-spacing;
 }
+
 
 input[type="submit"] {
   @include heading-font-stack;
