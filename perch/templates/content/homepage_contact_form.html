@@ -6,12 +6,12 @@
       <perch:form class="homepage-contact-form" id="contact" method="post" app="perch_forms">
           <div>
               <perch:label for="name">Name</perch:label>
-              <perch:input class="name-input" type="text" id="name" required="true" label="Name" />
+              <perch:input class="name-input" type="text" id="name" label="Name" required >
               <perch:error class="form-error" for="name" type="required">Name</perch:error>
           </div>
           <div>
               <perch:label for="email">Email</perch:label>
-              <perch:input class="email-input"  type="email" id="email" required="true" label="Email" />
+              <perch:input class="email-input"  type="email" id="email" label="Email" required>
               <perch:error class="form-error" for="email" type="required">Please add your email address</perch:error>
               <perch:error class="form-error" for="email" type="format">Please check your email address</perch:error>
           </div>
@@ -21,7 +21,7 @@
           </div>
           <div>
               <perch:label for="message">Message</perch:label>
-              <perch:input class="text-area-input" type="textarea" id="message" required="true" label="Message" />
+              <perch:input class="text-area-input" type="textarea" id="message" label="Message" required>
               <perch:error class="form-error" for="message" type="required">Please add a message</perch:error>
           </div>
           <div class="checkbox-div">
