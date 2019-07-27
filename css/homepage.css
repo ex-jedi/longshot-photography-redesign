@@ -79,7 +79,7 @@
   text-align: center;
   margin: 2rem auto 0; }
 
-.homepage-testimonial-section-one {
+.homepage-testimonial-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -88,25 +88,26 @@
   -ms-flex-direction: column;
   flex-direction: column;
   position: relative;
-  background-color: #293c38;
-  color: #eff5f6;
   min-height: 100vh;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
-  padding: 4rem; }
+  align-items: center; }
 
-.testimonial-text-one {
+.testimonial-text {
   font-size: 2.5rem;
-  width: 80%;
+  width: 70%;
   text-align: center;
   line-height: 2; }
 
-.testimonial-source-one {
+.testimonial-source {
   margin-top: 4rem; }
+
+.homepage-testimonial-section-one {
+  background-color: #293c38;
+  color: #eff5f6; }
 
 .homepage-collage-section {
   display: -webkit-box;
