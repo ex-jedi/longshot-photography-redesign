@@ -2,7 +2,7 @@
 // ** Homepage Styles  **
 //==============================================================================
 
-//********** Imports**********
+//********** Imports **********
 
 @import "bits";
 
@@ -25,9 +25,9 @@
   width: 100%;
 }
 
-// =========================================
+// *=========================================
 // ** Featured Gallery  **
-// =========================================
+// *=========================================
 
 .homepage-featured-galleries-section {
   @include flex(row);
@@ -100,22 +100,20 @@
 }
 
 // =========================================
-// ** Testimonial  **
+// ** Testimonials  **
 // =========================================
+
 .homepage-testimonial-section {
   @include flex(column);
   position: relative;
-  background-color: $dark-background-colour;
-  color: $light-font-colour;
   min-height: 100vh;
   justify-content: center;
   align-items: center;
-  padding: $section-spacing;
 }
 
 .testimonial-text {
   font-size: 2.5rem;
-  width: 80%;
+  width: 70%;
   text-align: center;
   line-height: $large-line-height;
 }
@@ -123,3 +121,163 @@
 .testimonial-source {
   margin-top: $section-spacing;
 }
+
+//********** Testimonial One **********
+
+.homepage-testimonial-section-one {
+  background-color: $dark-background-colour;
+  color: $light-font-colour;
+}
+
+//********** Testimonial Two **********
+
+.homepage-testimonial-section-two {
+  background-color: $light-background-colour;
+  color: $dark-font-colour;
+  background-image: url("/images/splodge.png");
+  background-position: 0 -500px;
+  background-repeat: no-repeat;
+}
+
+
+// =========================================
+// ** Homepage Collage  **
+// =========================================
+
+.homepage-collage-section {
+  @include flex(row);
+
+  flex-wrap: wrap;
+}
+
+.homepage-collage-image {
+  flex: 1 1 auto;
+}
+
+.half-width-collage {
+  width: 50%;
+}
+
+.full-width-collage {
+  width: 100%;
+}
+
+//*=========================================
+//** Contact Form  **
+//*=========================================
+
+.homepage-contact-section {
+  background-color: $dark-background-colour;
+  color: $light-font-colour;
+  display: flow-root;
+}
+
+.homepage-contact-form-title {
+  padding-bottom: $section-spacing;
+}
+
+.homepage-form-container {
+  width: 40%;
+  margin: 0 auto $section-spacing;
+}
+
+.homepage-contact-form {
+  @include flex(column);
+}
+
+label {
+  @include heading-font-stack;
+  font-size: 1.2rem;
+  display: block;
+  letter-spacing: 0.1rem;
+  margin-bottom: $form-spacing;
+}
+
+.name-input,
+.email-input,
+.text-area-input,
+input[type="submit"]  {
+  font: inherit;
+  border-radius: 5px;
+  border: 0;
+  padding: $form-spacing $form-spacing-large;
+}
+
+.name-input,
+.email-input,
+.text-area-input {
+  width: 100%;
+}
+
+.name-input,
+.email-input {
+  margin-bottom: $section-spacing;
+
+}
+
+
+input[type="submit"] {
+  @include heading-font-stack;
+  color: $dark-font-colour;
+  letter-spacing: 0.1rem;
+  width: fit-content;
+  padding: 0 $form-spacing;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: none;
+}
+
+
+//********** Checkbox **********
+.checkbox-div {
+
+  input {
+    position: relative;
+    width: fit-content;
+    font-size: 0;
+    top: 1px;
+
+    &:before {
+      line-height: 1.5em;
+      content: '';
+      display: inline-block;
+      width: .9rem;
+      height: .9rem;
+      margin-top: -4px;
+      margin-left: -4px;
+      border: 1px solid $light-background-colour;
+      border-radius: 0.25em;
+      background: $dark-background-colour;
+    }
+
+    &:checked:after {
+      content: "";
+      position: absolute;
+      height: 8px;
+      width: 20px;
+      color: $light-font-colour;
+      border-left: 2px solid;
+      border-bottom: 2px solid;
+      top: -4px;
+      left: -1px;
+      transform: rotate(-45deg);
+    }
+
+  }
+
+  label {
+    @include font-stack;
+    text-transform: none;
+    display: inline;
+  }
+  }
+
+//********** Honeypot **********
+
+.form-identification-number {
+  overflow: hidden;
+  position: absolute;
+  z-index: -10;
+  opacity: 0;
+}
+
