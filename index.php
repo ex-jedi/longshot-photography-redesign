@@ -7,8 +7,9 @@
 	</div>
 </section>
 		<?php perch_layout('featured-galleries'); ?>
-		<?php perch_content("Homepage Testimonial"); ?>
+		<?php perch_content("Homepage Testimonial One"); ?>
 		<?php perch_content("Homepage Image collage"); ?>
+		<?php perch_content("Homepage Testimonial Two"); ?>
 </main>
 <?php perch_layout('main-footer'); ?>
 <!-- TODO: Remove debug -->

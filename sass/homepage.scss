@@ -100,9 +100,9 @@
 }
 
 // =========================================
-// ** Testimonial  **
+// ** Testimonial One **
 // =========================================
-.homepage-testimonial-section {
+.homepage-testimonial-section-one {
   @include flex(column);
   position: relative;
   background-color: $dark-background-colour;
@@ -113,14 +113,14 @@
   padding: $section-spacing;
 }
 
-.testimonial-text {
+.testimonial-text-one {
   font-size: 2.5rem;
   width: 80%;
   text-align: center;
   line-height: $large-line-height;
 }
 
-.testimonial-source {
+.testimonial-source-one {
   margin-top: $section-spacing;
 }
 

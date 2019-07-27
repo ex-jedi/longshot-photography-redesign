@@ -79,7 +79,7 @@
   text-align: center;
   margin: 2rem auto 0; }
 
-.homepage-testimonial-section {
+.homepage-testimonial-section-one {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -99,13 +99,13 @@
   align-items: center;
   padding: 4rem; }
 
-.testimonial-text {
+.testimonial-text-one {
   font-size: 2.5rem;
   width: 80%;
   text-align: center;
   line-height: 2; }
 
-.testimonial-source {
+.testimonial-source-one {
   margin-top: 4rem; }
 
 .homepage-collage-section {
