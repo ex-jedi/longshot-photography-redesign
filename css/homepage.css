@@ -126,6 +126,15 @@
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
+  .homepage-collage-section img {
+    -webkit-transition: 1s all ease-out;
+    -o-transition: 1s all ease-out;
+    transition: 1s all ease-out;
+    pointer-events: auto; }
+  .homepage-collage-section:hover img {
+    opacity: .5; }
+    .homepage-collage-section:hover img:hover {
+      opacity: 1; }
 
 .homepage-collage-image {
   -webkit-box-flex: 1;

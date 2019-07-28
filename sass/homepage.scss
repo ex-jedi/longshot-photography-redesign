@@ -148,10 +148,27 @@
   @include flex(row);
 
   flex-wrap: wrap;
+
+  img {
+    transition: 1s all ease-out;
+    pointer-events: auto;
+  }
+
+  &:hover {
+    img {
+      opacity: .5;
+
+      &:hover {
+        opacity: 1;
+        // transform: scale(1.01);
+      }
+    }
+  }
 }
 
 .homepage-collage-image {
   flex: 1 1 auto;
+
 }
 
 .half-width-collage {
