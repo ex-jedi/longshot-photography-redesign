@@ -225,11 +225,29 @@ label {
 .email-input,
 .text-area-input {
   width: 100%;
+  border: 2px solid $light-background-colour;
+
+  &:focus {
+    border: 2px solid #21acfc;
+    outline: none;
+  }
 }
 
 .name-input,
 .email-input {
   margin-bottom: $section-spacing;
+  position: relative;
+  background-image: url("/images/tick.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position:  right;
+
+  &:valid {
+    background-image: url("/images/tick.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:  right;
+  }
 }
 
 .text-area-input {

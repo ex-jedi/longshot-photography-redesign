@@ -194,11 +194,28 @@ label {
 .name-input,
 .email-input,
 .text-area-input {
-  width: 100%; }
+  width: 100%;
+  border: 2px solid #f3edeb; }
+  .name-input:focus,
+  .email-input:focus,
+  .text-area-input:focus {
+    border: 2px solid #21acfc;
+    outline: none; }
 
 .name-input,
 .email-input {
-  margin-bottom: 4rem; }
+  margin-bottom: 4rem;
+  position: relative;
+  background-image: url("/images/tick.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right; }
+  .name-input:valid,
+  .email-input:valid {
+    background-image: url("/images/tick.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right; }
 
 .text-area-input {
   margin-bottom: 0.7rem; }
