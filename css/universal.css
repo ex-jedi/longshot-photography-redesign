@@ -126,8 +126,8 @@ header {
   -ms-flex: 1 1 300px;
   flex: 1 1 300px;
   color: #eff5f6;
-  font-size: 4rem;
-  margin: 0 0 0 4rem;
+  font-size: calc(2rem + 2vw);
+  margin: 4rem 0 0 4rem;
   word-break: break-word;
   line-height: 1.2;
   width: -webkit-fit-content;
@@ -248,7 +248,7 @@ footer {
   align-items: center;
   color: #293c38;
   padding: 4rem;
-  font-size: .75rem;
+  font-size: 0.75rem;
   letter-spacing: 1px;
   background-color: #f3edeb;
   background-image: url("/images/splodge.png"), url("/images/splodge.png");

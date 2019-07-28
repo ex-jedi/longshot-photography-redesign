@@ -147,8 +147,8 @@ header {
   @include heading-font-stack;
   flex: 1 1 300px;
   color: $light-font-colour;
-  font-size: 4rem;
-  margin: 0 0 0 $section-spacing;
+  font-size: calc(2rem + 2vw);
+  margin: $section-spacing 0 0 $section-spacing;
   word-break: break-word;
   line-height: $small-line-height;
   width: fit-content;
@@ -266,7 +266,7 @@ footer {
   align-items: center;
   color: $dark-font-colour;
   padding: $section-spacing;
-  font-size: .75rem;
+  font-size: 0.75rem;
   letter-spacing: 1px;
   background-color: $light-background-colour;
   background-image: url("/images/splodge.png"), url("/images/splodge.png");
@@ -300,4 +300,3 @@ footer {
 .footer-social-media-icon {
   width: 90px;
 }
-
