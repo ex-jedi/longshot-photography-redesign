@@ -139,7 +139,6 @@
   background-repeat: no-repeat;
 }
 
-
 // =========================================
 // ** Homepage Collage  **
 // =========================================
@@ -157,7 +156,7 @@
 
   &:hover {
     img {
-      opacity: .5;
+      opacity: 0.5;
 
       &:hover {
         opacity: 1;
@@ -214,7 +213,7 @@ label {
 .name-input,
 .email-input,
 .text-area-input,
-.submit  {
+.submit {
   font: inherit;
   border-radius: 5px;
   border: 0;
@@ -225,10 +224,11 @@ label {
 .email-input,
 .text-area-input {
   width: 100%;
-  border: 2px solid $light-background-colour;
+  border: 3px solid $light-background-colour;
+  transition: border 0.2s ease;
 
   &:focus {
-    border: 2px solid #21acfc;
+    border: 3px solid #708780;
     outline: none;
   }
 }
@@ -236,24 +236,11 @@ label {
 .name-input,
 .email-input {
   margin-bottom: $section-spacing;
-  position: relative;
-  background-image: url("/images/tick.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position:  right;
-
-  &:valid {
-    background-image: url("/images/tick.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position:  right;
-  }
 }
 
 .text-area-input {
   margin-bottom: $form-spacing;
 }
-
 
 .submit {
   @include heading-font-stack;
@@ -264,19 +251,17 @@ label {
   margin: 0 auto;
   border-radius: 5px;
   border: 1px solid $light-background-colour;
-  transition: .3s all ease;
+  transition: 0.3s all ease;
 
   &:hover {
     background-color: $dark-background-colour;
     color: $light-font-colour;
-
   }
 }
 
-
 //********** Checkbox **********
 .checkbox-div {
-margin-bottom: $section-spacing;
+  margin-bottom: $section-spacing;
 
   input {
     position: relative;
@@ -286,10 +271,10 @@ margin-bottom: $section-spacing;
 
     &:before {
       line-height: 1.5em;
-      content: '';
+      content: "";
       display: inline-block;
-      width: .9rem;
-      height: .9rem;
+      width: 0.9rem;
+      height: 0.9rem;
       margin-top: -4px;
       margin-left: -4px;
       border: 1px solid $light-background-colour;
@@ -309,7 +294,6 @@ margin-bottom: $section-spacing;
       left: -1px;
       transform: rotate(-45deg);
     }
-
   }
 
   label {
@@ -318,7 +302,7 @@ margin-bottom: $section-spacing;
     text-transform: none;
     display: inline;
   }
-  }
+}
 
 //********** Honeypot **********
 
