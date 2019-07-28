@@ -126,8 +126,8 @@ header {
   -ms-flex: 1 1 300px;
   flex: 1 1 300px;
   color: #eff5f6;
-  font-size: 4rem;
-  margin: 0 0 0 4rem;
+  font-size: calc(2rem + 2vw);
+  margin: 4rem 0 0 4rem;
   word-break: break-word;
   line-height: 1.2;
   width: -webkit-fit-content;
@@ -242,17 +242,18 @@ footer {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  min-height: 100vh;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   color: #293c38;
   padding: 4rem;
-  font-size: .75rem;
+  font-size: 0.75rem;
   letter-spacing: 1px;
   background-color: #f3edeb;
-  background-image: url("/images/splodge.png");
-  background-position: 100px -700px;
-  background-size: cover;
+  background-image: url("/images/splodge.png"), url("/images/splodge.png");
+  background-position: 250px -1100px, -450px -250px;
+  background-size: cover, 130%;
   background-repeat: no-repeat; }
 
 .footer-promo,
@@ -282,7 +283,7 @@ footer {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  width: 8rem;
+  width: 250px;
   margin-bottom: 4rem;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -292,4 +293,4 @@ footer {
   margin-bottom: 4rem; }
 
 .footer-social-media-icon {
-  width: 50px; }
+  width: 90px; }

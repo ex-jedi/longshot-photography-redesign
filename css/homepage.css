@@ -126,16 +126,30 @@
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
+  .homepage-collage-section img {
+    -webkit-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+    pointer-events: auto;
+    width: 100%; }
+  .homepage-collage-section:hover img {
+    opacity: 0.5; }
+    .homepage-collage-section:hover img:hover {
+      opacity: 1;
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1); }
 
-.homepage-collage-image {
+.homepage-collage-image-wrapper {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
-  flex: 1 1 auto; }
+  flex: 1 1 auto;
+  overflow: hidden; }
 
-.half-width-collage {
+.half-width-collage-image-wrapper {
   width: 50%; }
 
-.full-width-collage {
+.full-width-collage-image-wrapper {
   width: 100%; }
 
 .homepage-contact-section {
@@ -180,7 +194,16 @@ label {
 .name-input,
 .email-input,
 .text-area-input {
-  width: 100%; }
+  width: 100%;
+  border: 3px solid #f3edeb;
+  -webkit-transition: border 0.2s ease;
+  -o-transition: border 0.2s ease;
+  transition: border 0.2s ease; }
+  .name-input:focus,
+  .email-input:focus,
+  .text-area-input:focus {
+    border: 3px solid #708780;
+    outline: none; }
 
 .name-input,
 .email-input {
@@ -202,9 +225,9 @@ label {
   margin: 0 auto;
   border-radius: 5px;
   border: 1px solid #f3edeb;
-  -webkit-transition: .3s all ease;
-  -o-transition: .3s all ease;
-  transition: .3s all ease; }
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease; }
   .submit:hover {
     background-color: #293c38;
     color: #eff5f6; }
@@ -220,10 +243,10 @@ label {
     top: 1px; }
     .checkbox-div input:before {
       line-height: 1.5em;
-      content: '';
+      content: "";
       display: inline-block;
-      width: .9rem;
-      height: .9rem;
+      width: 0.9rem;
+      height: 0.9rem;
       margin-top: -4px;
       margin-left: -4px;
       border: 1px solid #f3edeb;

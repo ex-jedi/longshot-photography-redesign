@@ -1,7 +1,11 @@
 <footer class="main-footer">
 	<div class="footer-social-media">
-		<img class="footer-social-media-icon" src="/images/instagram-icon.svg">
-		<img class="footer-social-media-icon" src="/images/twitter-icon.svg">
+		<a href="#" class="footer-social-media-link">
+			<img class="footer-social-media-icon" src="/images/instagram-icon.svg">
+		</a>
+		<a href="#" class="footer-social-media-link">
+			<img class="footer-social-media-icon" src="/images/twitter-icon.svg">
+		</a>
 	</div>
 	<div class="footer-legal">
 		<p class="copyright" >&copy; <?php echo date("Y"); ?> KEN LONG</p>
@@ -10,7 +14,7 @@
 	</div>
 	<div class="footer-promo">
 		<p>
-			WEB DESIGN & DEVELOPMENT, BRAND DESIGN & ILLUSTRATION BY phoenix & phoenix
+			WEB DESIGN & DEVELOPMENT, BRAND DESIGN & ILLUSTRATION BY <a href="" class="promo-link">phoenix & phoenix</a>
 		</p>
 	</div>
 </footer>
