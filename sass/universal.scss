@@ -262,15 +262,16 @@ footer {
   @include flex(column);
   grid-area: f;
   justify-content: center;
+  min-height: 100vh;
   align-items: center;
   color: $dark-font-colour;
   padding: $section-spacing;
   font-size: .75rem;
   letter-spacing: 1px;
   background-color: $light-background-colour;
-  background-image: url("/images/splodge.png");
-  background-position: 100px -700px;
-  background-size: cover;
+  background-image: url("/images/splodge.png"), url("/images/splodge.png");
+  background-position: 250px -1100px, -450px -250px;
+  background-size: cover, 130%;
   background-repeat: no-repeat;
 }
 
@@ -287,7 +288,7 @@ footer {
 
 .footer-social-media {
   @include flex(row);
-  width: 8rem;
+  width: 250px;
   margin-bottom: $section-spacing;
   justify-content: space-between;
 }
@@ -297,6 +298,6 @@ footer {
 }
 
 .footer-social-media-icon {
-  width: 50px;
+  width: 90px;
 }
 

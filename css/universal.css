@@ -242,6 +242,7 @@ footer {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  min-height: 100vh;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -250,9 +251,9 @@ footer {
   font-size: .75rem;
   letter-spacing: 1px;
   background-color: #f3edeb;
-  background-image: url("/images/splodge.png");
-  background-position: 100px -700px;
-  background-size: cover;
+  background-image: url("/images/splodge.png"), url("/images/splodge.png");
+  background-position: 250px -1100px, -450px -250px;
+  background-size: cover, 130%;
   background-repeat: no-repeat; }
 
 .footer-promo,
@@ -282,7 +283,7 @@ footer {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  width: 8rem;
+  width: 250px;
   margin-bottom: 4rem;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -292,4 +293,4 @@ footer {
   margin-bottom: 4rem; }
 
 .footer-social-media-icon {
-  width: 50px; }
+  width: 90px; }
