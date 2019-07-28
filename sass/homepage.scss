@@ -150,8 +150,9 @@
   flex-wrap: wrap;
 
   img {
-    transition: 1s all ease-out;
+    transition: all 1s ease-out;
     pointer-events: auto;
+    width: 100%;
   }
 
   &:hover {
@@ -160,22 +161,22 @@
 
       &:hover {
         opacity: 1;
-        // transform: scale(1.01);
+        transform: scale(1.1);
       }
     }
   }
 }
 
-.homepage-collage-image {
+.homepage-collage-image-wrapper {
   flex: 1 1 auto;
-
+  overflow: hidden;
 }
 
-.half-width-collage {
+.half-width-collage-image-wrapper {
   width: 50%;
 }
 
-.full-width-collage {
+.full-width-collage-image-wrapper {
   width: 100%;
 }
 
