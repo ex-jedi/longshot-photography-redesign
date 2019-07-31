@@ -6,16 +6,6 @@
 // ** Media Queries  **
 // =========================================
 
-// TODO: Choose one of below
-
-@mixin breakpoint($point) {
-  @if $point == 2000 {
-    @media (max-width: 2000px) {
-      @content;
-    }
-  }
-}
-
 //********** Alternative Media queries **********
 
 @mixin breakpoint($point) {
