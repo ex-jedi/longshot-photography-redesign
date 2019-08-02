@@ -27,9 +27,10 @@
   justify-content: space-around;
   padding: 0 4rem 4rem;
   background-image: url("/images/splodge.png");
-  background-position: center -500px;
+  background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  background-size: 100vmin; }
 
 .featured-galleries-section-heading {
   -webkit-box-flex: 1;
