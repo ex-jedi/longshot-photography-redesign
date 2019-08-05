@@ -277,9 +277,9 @@ footer {
   font-size: 0.75rem;
   letter-spacing: 1px;
   background-color: $light-background-colour;
-  background-image: url("/images/splodge.png"), url("/images/splodge.png");
-  background-position: 250px -1100px, -450px -250px;
-  background-size: cover, 130%;
+  background-image: url("/images/splodge.png");
+  background-size: cover;
+  background-position: center 20rem;
   background-repeat: no-repeat;
 }
 
