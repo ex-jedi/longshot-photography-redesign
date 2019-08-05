@@ -125,6 +125,7 @@ header {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
+  text-transform: none;
   -webkit-box-flex: 1;
   -ms-flex: 1 1 300px;
   flex: 1 1 300px;
@@ -132,7 +133,8 @@ header {
   font-size: calc(1rem + 1vw);
   margin: 15rem 0 0 4rem;
   word-break: break-word;
-  line-height: 1.2;
+  line-height: 1.7;
+  letter-spacing: 0.2rem;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content; }

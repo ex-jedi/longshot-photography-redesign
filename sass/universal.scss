@@ -146,12 +146,14 @@ header {
 
 .main-header-text {
   @include heading-font-stack;
+  text-transform: none;
   flex: 1 1 300px;
   color: $heading-colour;
   font-size: calc(1rem + 1vw);
   margin: $section-spacing-large 0 0 $section-spacing;
   word-break: break-word;
-  line-height: $line-height-small;
+  line-height: $line-height-medium;
+  letter-spacing: $letter-spacing;
   width: fit-content;
 }
 
