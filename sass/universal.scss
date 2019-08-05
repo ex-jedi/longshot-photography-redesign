@@ -45,10 +45,6 @@ body {
   position: relative;
 }
 
-main {
-  grid-area: m;
-}
-
 //Hiding font till Typekit loads
 //TODO: Check if this is still needed
 .wf-loading body {
@@ -72,7 +68,6 @@ h3 {
 }
 
 h2 {
-  padding: $h2-spacing-large 0;
   margin: 0 auto;
   font-size: $h2-size;
   text-align: center;
@@ -119,7 +114,7 @@ header {
   height: 100vh;
   background-color: #293c38;
   overflow: hidden;
-  padding: $section-spacing;
+  padding: 0 $section-spacing-extra-large;
   z-index: 1;
 }
 
@@ -132,6 +127,7 @@ header {
   img {
     margin: 0 auto;
     max-width: 100%;
+    width: 800px; //TODO: Change image size in template
   }
 }
 
@@ -145,12 +141,14 @@ header {
 
 .main-header-text {
   @include heading-font-stack;
+  text-transform: none;
   flex: 1 1 300px;
-  color: $light-font-colour;
-  font-size: calc(2rem + 2vw);
-  margin: $section-spacing 0 0 $section-spacing;
+  color: $heading-colour;
+  font-size: calc(1rem + 1vw);
+  margin: $section-spacing-extra-large 0 0 $section-spacing;
   word-break: break-word;
-  line-height: $small-line-height;
+  line-height: $line-height-medium;
+  letter-spacing: $letter-spacing;
   width: fit-content;
 }
 
@@ -163,10 +161,10 @@ header {
   position: fixed;
   top: -530px;
   right: -530px;
-  background-color: $dark-font-colour;
+  background-color: $dark-brown;
   width: 1300px;
   height: 1300px;
-  clip-path: circle(4%);
+  clip-path: circle(3.5%);
   transition: clip-path 1s cubic-bezier(0.45, -0.2, 0.45, 1.2);
   z-index: 1;
 
@@ -176,7 +174,7 @@ header {
     background-color: $light-background-colour;
     width: 1300px;
     height: 1300px;
-    clip-path: circle(3.8%);
+    clip-path: circle(3.4%);
     z-index: -1;
     transition: clip-path 1s cubic-bezier(0.45, -0.2, 0.45, 1.2);
   }
@@ -203,14 +201,15 @@ header {
 
 .nav-pull-button {
   @include heading-font-stack;
-  color: $dark-font-colour;
+  color: $heading-colour;
   width: fit-content;
+  font-weight: 900;
   margin: auto;
   display: block;
   background-color: $light-background-colour;
   border: 0;
   font-size: 0.9rem;
-  padding: 0.5rem;
+  padding: 0.3rem 0;
   z-index: 2;
   cursor: pointer;
 }
@@ -249,6 +248,15 @@ header {
 // =========================================
 // ** Body **
 // =========================================
+
+main {
+  grid-area: m;
+}
+
+.section-heading {
+  padding: $h2-spacing-large 0;
+  color: $heading-colour;
+}
 
 // =========================================
 // ** Forms  **
