@@ -37,7 +37,7 @@
   min-height: 100vh;
   justify-content: space-around;
   padding: 0 $section-spacing $section-spacing-extra-large;
-  background-image: url("/images/splodge-medium.png");
+  background-image: url("/images/splodge-rotated-medium.png");
   background-position: right -200px top -200px;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -123,8 +123,8 @@
 .homepage-testimonial-section-two {
   background-color: $light-background-colour;
   color: $dark-font-colour;
-  background-image: url("/images/splodge-medium.png");
-  // background-position: 0 -500px;
+  background-image: url("/images/splodge-rotated-medium.png");
+  background-position: right -200px top 50%;
   background-repeat: no-repeat;
 }
 
