@@ -5,7 +5,7 @@
 const app = new Vue({
   el: '#vue-wrapper',
   data: {
-    navPull: false,
+    navPull: true,
     outlineHide: true,
   },
 });
