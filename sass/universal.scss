@@ -106,16 +106,19 @@ a {
 
 header {
   @include flex(col);
+  grid-area: h;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background-color: $dark-background-colour;
+}
+
+.main-header {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  grid-area: h;
-  position: relative;
-  height: 100vh;
-  background-color: #293c38;
-  overflow: hidden;
+  min-height: 100vh;
   padding: 0 $section-spacing-extra-large;
-  z-index: 1;
 }
 
 .header-logo-wrapper {
