@@ -45,10 +45,6 @@ body {
   position: relative;
 }
 
-main {
-  grid-area: m;
-}
-
 //Hiding font till Typekit loads
 //TODO: Check if this is still needed
 .wf-loading body {
@@ -72,7 +68,6 @@ h3 {
 }
 
 h2 {
-  padding: $h2-spacing-large 0;
   margin: 0 auto;
   font-size: $h2-size;
   text-align: center;
@@ -119,7 +114,7 @@ header {
   height: 100vh;
   background-color: #293c38;
   overflow: hidden;
-  padding: 0 $section-spacing-large;
+  padding: 0 $section-spacing-extra-large;
   z-index: 1;
 }
 
@@ -150,7 +145,7 @@ header {
   flex: 1 1 300px;
   color: $heading-colour;
   font-size: calc(1rem + 1vw);
-  margin: $section-spacing-large 0 0 $section-spacing;
+  margin: $section-spacing-extra-large 0 0 $section-spacing;
   word-break: break-word;
   line-height: $line-height-medium;
   letter-spacing: $letter-spacing;
@@ -166,7 +161,7 @@ header {
   position: fixed;
   top: -530px;
   right: -530px;
-  background-color: $dark-font-colour;
+  background-color: $dark-brown;
   width: 1300px;
   height: 1300px;
   clip-path: circle(3.5%);
@@ -253,6 +248,15 @@ header {
 // =========================================
 // ** Body **
 // =========================================
+
+main {
+  grid-area: m;
+}
+
+.section-heading {
+  padding: $h2-spacing-large 0;
+  color: $heading-colour;
+}
 
 // =========================================
 // ** Forms  **
