@@ -169,7 +169,7 @@ header {
   background-color: $dark-font-colour;
   width: 1300px;
   height: 1300px;
-  clip-path: circle(3%);
+  clip-path: circle(3.5%);
   transition: clip-path 1s cubic-bezier(0.45, -0.2, 0.45, 1.2);
   z-index: 1;
 
@@ -179,7 +179,7 @@ header {
     background-color: $light-background-colour;
     width: 1300px;
     height: 1300px;
-    clip-path: circle(3.8%);
+    clip-path: circle(3.4%);
     z-index: -1;
     transition: clip-path 1s cubic-bezier(0.45, -0.2, 0.45, 1.2);
   }
@@ -214,7 +214,7 @@ header {
   background-color: $light-background-colour;
   border: 0;
   font-size: 0.9rem;
-  padding: 0.5rem;
+  padding: 0.3rem 0;
   z-index: 2;
   cursor: pointer;
 }

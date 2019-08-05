@@ -153,8 +153,8 @@ header {
   background-color: #293c38;
   width: 1300px;
   height: 1300px;
-  -webkit-clip-path: circle(3%);
-  clip-path: circle(3%);
+  -webkit-clip-path: circle(3.5%);
+  clip-path: circle(3.5%);
   -webkit-transition: -webkit-clip-path 1s cubic-bezier(0.45, -0.2, 0.45, 1.2);
   transition: -webkit-clip-path 1s cubic-bezier(0.45, -0.2, 0.45, 1.2);
   -o-transition: clip-path 1s cubic-bezier(0.45, -0.2, 0.45, 1.2);
@@ -167,8 +167,8 @@ header {
     background-color: #f3edeb;
     width: 1300px;
     height: 1300px;
-    -webkit-clip-path: circle(3.8%);
-    clip-path: circle(3.8%);
+    -webkit-clip-path: circle(3.4%);
+    clip-path: circle(3.4%);
     z-index: -1;
     -webkit-transition: -webkit-clip-path 1s cubic-bezier(0.45, -0.2, 0.45, 1.2);
     transition: -webkit-clip-path 1s cubic-bezier(0.45, -0.2, 0.45, 1.2);
@@ -208,7 +208,7 @@ header {
   background-color: #f3edeb;
   border: 0;
   font-size: 0.9rem;
-  padding: 0.5rem;
+  padding: 0.3rem 0;
   z-index: 2;
   cursor: pointer; }
 
