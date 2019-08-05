@@ -64,8 +64,9 @@ $form-spacing: 0.7rem;
 
 @mixin heading-font-stack {
   font-family: "ff-dagny-web-pro", sans-serif;
-  font-weight: 700;
+  font-weight: 800;
   text-transform: uppercase;
+  letter-spacing: $small-letter-spacing;
 }
 
 @mixin font-stack {
@@ -87,6 +88,10 @@ $h2-spacing-large: 10rem;
 $small-line-height: 1.2;
 $line-height: 1.5;
 $large-line-height: 2;
+
+//Letter Spacing
+$small-letter-spacing: 0.1rem;
+$letter-spacing: 0.2rem;
 
 //********** Mixins **********
 
@@ -174,10 +179,11 @@ $dark-grey: #707070;
 
 $light-font-colour: $light-two;
 $dark-font-colour: $dark-green;
-$dark-background-colour: $dark-green;
+$heading-colour: $dark-brown;
 
 //Background Colours
 $light-background-colour: $light-one;
+$dark-background-colour: $dark-green;
 
 //********** Transition Timings**********
 

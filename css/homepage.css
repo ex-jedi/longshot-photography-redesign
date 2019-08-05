@@ -176,8 +176,9 @@
 
 label {
   font-family: "ff-dagny-web-pro", sans-serif;
-  font-weight: 700;
+  font-weight: 800;
   text-transform: uppercase;
+  letter-spacing: 0.1rem;
   font-size: 1.2rem;
   display: block;
   letter-spacing: 0.1rem;
@@ -215,8 +216,9 @@ label {
 
 .submit {
   font-family: "ff-dagny-web-pro", sans-serif;
-  font-weight: 700;
+  font-weight: 800;
   text-transform: uppercase;
+  letter-spacing: 0.1rem;
   color: #293c38;
   letter-spacing: 0.1rem;
   width: -webkit-fit-content;

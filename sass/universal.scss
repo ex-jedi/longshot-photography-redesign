@@ -204,8 +204,9 @@ header {
 
 .nav-pull-button {
   @include heading-font-stack;
-  color: $dark-font-colour;
+  color: $heading-colour;
   width: fit-content;
+  font-weight: 900;
   margin: auto;
   display: block;
   background-color: $light-background-colour;
