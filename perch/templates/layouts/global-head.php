@@ -39,12 +39,12 @@
 	window.cookieconsent.initialise({
 		"palette": {
 			"popup": {
-				"background": "#000"
+				"background": "#875548"
 			},
 			"button": {
 				"background": "transparent",
-				"text": "#fff",
-				"border": "#fff"
+				"text": "#F3EDEB",
+				"border": "#F3EDEB"
 			}
 		},
 		"content": {
