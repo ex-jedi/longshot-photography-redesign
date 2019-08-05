@@ -399,7 +399,7 @@ footer {
 //** Contact Form  **
 //*=========================================
 
-.homepage-contact-section {
+.general-contact-section {
   background-color: $dark-background-colour;
   color: $light-font-colour;
   display: flow-root;
@@ -410,7 +410,7 @@ footer {
   margin: 0 auto $section-spacing;
 }
 
-.homepage-contact-form {
+.general-contact-form {
   @include flex(column);
 }
 
