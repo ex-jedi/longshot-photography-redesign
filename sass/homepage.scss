@@ -98,11 +98,11 @@
   min-height: 100vh;
   justify-content: center;
   align-items: center;
+  padding: $section-spacing-extra-large;
 }
 
 .testimonial-text {
   font-size: 2.5rem;
-  width: 70%;
   text-align: center;
   line-height: $line-height-large;
 }
