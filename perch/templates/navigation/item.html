@@ -1,11 +1,11 @@
 <perch:before>
-    <ul class="main-nav-ul">
+    <ul class="main-nav-ul" :class="{'main-nav-ul-reveal': navPull}">
 </perch:before>
-		<li class="main-nav-li <perch:if exists="current_page">selected"</perch:if><perch:if exists="ancestor_page">ancestor</perch:if>">
+		<li class="main-nav-li  <perch:if exists="ancestor_page"> ancestor</perch:if>" id="<perch:if exists="current_page">main-nav-selected</perch:if>">
             <a class="main-nav-link" href="<perch:pages id="pagePath" />"><perch:pages id="pageNavText" /></a>
-            <perch:pages id="subitems" encode="false" />
         </li>
 <perch:after>
     </ul>
-    <button class="nav-pull-button no-outline" id="pull" @click="navPull = !navPull">Menu</button>
+    <button class="nav-pull-button no-outline" id="pull" @click="navPull = !navPull" :class="{'button-hide': navPull}" >Menu</button>
+    <img class="menu-closer" src="/images/svg-cross.svg" @click="navPull = !navPull" :class="{'closer-reveal': navPull}">
 </perch:after>
