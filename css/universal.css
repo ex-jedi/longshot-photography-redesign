@@ -99,7 +99,7 @@ header {
   height: 100vh;
   background-color: #293c38;
   overflow: hidden;
-  padding: 4rem;
+  padding: 0 15rem;
   z-index: 1; }
 
 .header-logo-wrapper {
@@ -128,9 +128,9 @@ header {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 300px;
   flex: 1 1 300px;
-  color: #eff5f6;
-  font-size: calc(2rem + 2vw);
-  margin: 4rem 0 0 4rem;
+  color: #875548;
+  font-size: calc(1rem + 1vw);
+  margin: 15rem 0 0 4rem;
   word-break: break-word;
   line-height: 1.2;
   width: -webkit-fit-content;

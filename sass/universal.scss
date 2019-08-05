@@ -119,7 +119,7 @@ header {
   height: 100vh;
   background-color: #293c38;
   overflow: hidden;
-  padding: $section-spacing;
+  padding: 0 $section-spacing-large;
   z-index: 1;
 }
 
@@ -147,11 +147,11 @@ header {
 .main-header-text {
   @include heading-font-stack;
   flex: 1 1 300px;
-  color: $light-font-colour;
-  font-size: calc(2rem + 2vw);
-  margin: $section-spacing 0 0 $section-spacing;
+  color: $heading-colour;
+  font-size: calc(1rem + 1vw);
+  margin: $section-spacing-large 0 0 $section-spacing;
   word-break: break-word;
-  line-height: $small-line-height;
+  line-height: $height-large-small;
   width: fit-content;
 }
 
