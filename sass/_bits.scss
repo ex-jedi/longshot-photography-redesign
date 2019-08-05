@@ -3,58 +3,26 @@
 // =======================================================================================
 
 // =========================================
-// ** Media Queries  **
+// ** Colours  **
 // =========================================
 
-//********** Alternative Media queries **********
+//Branding Colours
+$white: #fff;
+$light-one: #f3edeb; //Light Background Colour
+$light-two: #eff5f6; //Light Font Colour
+$dark-green: #293c38;
+$dark-brown: #875548;
+$dark-grey: #707070;
 
-@mixin breakpoint($point) {
-  @if unitless($point) {
-    $point: 1px * $point;
-  }
-  @media (max-width: $point) {
-    @content;
-  }
-}
+//Main Font Colours
 
-// =========================================
-// ** Layout  **
-// =========================================
+$light-font-colour: $light-two;
+$dark-font-colour: $dark-green;
+$heading-colour: $dark-brown;
 
-//********** Grid $ Flexbox Mixins **********
-
-//Main Grid Mixin
-@mixin main-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-areas:
-    "h h h h"
-    "m m m m"
-    "f f f f";
-  gap: $grid-gap;
-}
-
-//Main Flex Mixin
-@mixin flex($direction) {
-  display: flex;
-  flex-direction: $direction;
-}
-
-//Mixin Variables
-$grid-gap: 0;
-
-//********** Spacing  **********
-
-//Articles
-
-//Sections
-$section-spacing: 4rem;
-
-//Forms
-$form-spacing-large: 1rem;
-$form-spacing: 0.7rem;
-
-//Other Spacing
+//Background Colours
+$light-background-colour: $light-one;
+$dark-background-colour: $dark-green;
 
 // =========================================
 // ** Typography  **
@@ -146,6 +114,64 @@ $letter-spacing: 0.2rem;
   }
 }
 
+// =========================================
+// ** Layout  **
+// =========================================
+
+//********** Grid $ Flexbox Mixins **********
+
+//Main Grid Mixin
+@mixin main-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "h h h h"
+    "m m m m"
+    "f f f f";
+  gap: $grid-gap;
+}
+
+//Main Flex Mixin
+@mixin flex($direction) {
+  display: flex;
+  flex-direction: $direction;
+}
+
+//Mixin Variables
+$grid-gap: 0;
+
+//********** Spacing  **********
+
+//Articles
+
+//Sections
+$section-spacing: 4rem;
+
+//Forms
+$form-spacing-large: 1rem;
+$form-spacing: 0.7rem;
+
+//Other Spacing
+
+// =========================================
+// ** Media Queries  **
+// =========================================
+
+//********** Alternative Media queries **********
+
+@mixin breakpoint($point) {
+  @if unitless($point) {
+    $point: 1px * $point;
+  }
+  @media (max-width: $point) {
+    @content;
+  }
+}
+
+// =========================================
+// ** Effects and Animation  **
+// =========================================
+
 //********** Animation Stagger **********
 
 @mixin stagger-anim-delay($elem, $initial-delay, $stagger-delay) {
@@ -156,34 +182,6 @@ $letter-spacing: 0.2rem;
     $i: $i - 1;
   }
 }
-
-// =========================================
-// ** Effects and Animation  **
-// =========================================
-
-// =========================================
-// ** Variables  **
-// =========================================
-
-//********** Colours **********
-
-//Branding Colours
-$white: #fff;
-$light-one: #f3edeb; //Light Background Colour
-$light-two: #eff5f6; //Light Font Colour
-$dark-green: #293c38;
-$dark-brown: #875548;
-$dark-grey: #707070;
-
-//Main Font Colours
-
-$light-font-colour: $light-two;
-$dark-font-colour: $dark-green;
-$heading-colour: $dark-brown;
-
-//Background Colours
-$light-background-colour: $light-one;
-$dark-background-colour: $dark-green;
 
 //********** Transition Timings**********
 
