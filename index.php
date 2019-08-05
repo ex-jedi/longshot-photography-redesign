@@ -14,4 +14,4 @@
 </main>
 <?php perch_layout('main-footer'); ?>
 <!-- TODO: Remove debug -->
-<!-- <?php PerchUtil::output_debug(); ?> -->
+<?php PerchUtil::output_debug(); ?>
