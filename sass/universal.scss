@@ -212,10 +212,13 @@ header {
   padding: 0.3rem 0;
   z-index: 2;
   cursor: pointer;
+  transition: opacity 0.9s ease 0.45s;
 }
 
 .button-hide {
-  display: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.9s ease;
 }
 
 .menu-closer {
@@ -227,11 +230,15 @@ header {
   color: #000;
   width: 50px;
   height: 50px;
-  display: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.9s ease;
 }
 
 .closer-reveal {
-  display: block;
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.9s ease 0.45s;
 }
 
 //********** Skip to content link **********
