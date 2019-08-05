@@ -162,8 +162,8 @@ header {
 .main-nav {
   @include flex(column);
   position: fixed;
-  top: -548px;
-  right: -548px;
+  top: -23.75rem;
+  right: -23.75rem;
   background-color: $dark-brown;
   width: 1300px;
   height: 1300px;
@@ -209,7 +209,7 @@ header {
   @include heading-font-stack;
   justify-content: flex-start;
   position: fixed;
-  top: $section-spacing;
+  top: $header-spacing-medium;
   right: calc(#{$section-spacing-extra-large} - 5rem);
   list-style-type: none;
   color: $heading-colour;
@@ -266,8 +266,8 @@ header {
 .menu-closer {
   position: fixed;
   margin: auto;
-  top: $section-spacing;
-  right: $section-spacing;
+  top: $header-spacing-medium;
+  right: $header-spacing-medium;
   z-index: 100;
   color: #000;
   width: 50px;
