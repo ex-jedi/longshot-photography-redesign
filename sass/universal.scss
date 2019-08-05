@@ -217,7 +217,8 @@ header {
   min-width: 10rem;
   margin: 0;
   padding: 0;
-  transition: all 0.7s cubic-bezier(0.45, -0.2, 0.45, 1.2) 0.1s;
+  transition: all $transition-duration-slow cubic-bezier(0.45, -0.2, 0.45, 1.2)
+    0.1s;
 }
 
 .main-nav-ul-reveal {
@@ -225,7 +226,8 @@ header {
   right: $section-spacing-extra-large;
   transform: scale(1);
   pointer-events: auto;
-  transition: all 0.7s cubic-bezier(0.45, -0.2, 0.45, 1.2) 0.3s;
+  transition: all $transition-duration-slow cubic-bezier(0.45, -0.2, 0.45, 1.2)
+    0.3s;
 }
 
 .main-nav-li {
