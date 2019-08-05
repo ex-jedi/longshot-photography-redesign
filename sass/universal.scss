@@ -377,3 +377,20 @@ footer {
 .footer-social-media-icon {
   width: 90px;
 }
+
+//*=========================================
+//** Pages  **
+//*=========================================
+//Styles that apply to enough other pages to be in here
+
+//********** Simple Header **********
+
+.simple-header {
+  justify-content: center;
+  align-items: center;
+  height: $simple-header-height;
+}
+
+.simple-header-submark {
+  width: 100px;
+}
