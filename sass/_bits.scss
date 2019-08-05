@@ -162,19 +162,22 @@ $large-line-height: 2;
 
 //********** Colours **********
 
+//Branding Colours
+$white: #fff;
+$light-one: #f3edeb; //Light Background Colour
+$light-two: #eff5f6; //Light Font Colour
+$dark-green: #293c38;
+$dark-brown: #875548;
+$dark-grey: #707070;
+
 //Main Font Colours
 
-$light-font-colour: #eff5f6;
-$dark-font-colour: #293c38;
-$dark-background-colour: $dark-font-colour;
-
-//Link Colours
-
-$main-blue: #486a8d;
-$link-colour: #486a8d;
+$light-font-colour: $light-two;
+$dark-font-colour: $dark-green;
+$dark-background-colour: $dark-green;
 
 //Background Colours
-$light-background-colour: #f3edeb;
+$light-background-colour: $light-one;
 
 //********** Transition Timings**********
 

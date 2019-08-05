@@ -149,8 +149,8 @@ header {
   background-color: #293c38;
   width: 1300px;
   height: 1300px;
-  -webkit-clip-path: circle(4%);
-  clip-path: circle(4%);
+  -webkit-clip-path: circle(3%);
+  clip-path: circle(3%);
   -webkit-transition: -webkit-clip-path 1s cubic-bezier(0.45, -0.2, 0.45, 1.2);
   transition: -webkit-clip-path 1s cubic-bezier(0.45, -0.2, 0.45, 1.2);
   -o-transition: clip-path 1s cubic-bezier(0.45, -0.2, 0.45, 1.2);
