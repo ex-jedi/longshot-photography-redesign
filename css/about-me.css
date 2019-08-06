@@ -1,7 +1,38 @@
 .about-me-section {
+  position: relative;
   background-image: url(/images/splodge-rotated-medium.png);
   background-repeat: no-repeat;
-  background-position: 580px -115px; }
+  background-position: 580px -115px;
+  width: 100%;
+  padding: 0 15rem 15rem; }
+
+.about-me-content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
+.about-me-main-image {
+  position: relative;
+  width: 400px;
+  margin-right: 10rem;
+  z-index: 3; }
 
 .about-me-text-wrapper {
   color: #293c38; }
+  .about-me-text-wrapper p:first-child {
+    margin-top: 0; }
+  .about-me-text-wrapper p:last-child {
+    margin-bottom: 0; }
+
+.about-me-sub-image {
+  position: absolute;
+  z-index: 1;
+  bottom: 10rem;
+  left: calc(15rem + 4rem);
+  width: 25%;
+  -webkit-clip-path: circle(49%);
+  clip-path: circle(49%); }
