@@ -28,10 +28,18 @@
   .about-me-text-wrapper p:last-child {
     margin-bottom: 0; }
 
+.about-me-sub-text {
+  font-family: "ff-dagny-web-pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+  font-weight: bold;
+  margin-top: 4rem; }
+
 .about-me-sub-image {
   position: absolute;
   z-index: 1;
-  bottom: 10rem;
+  bottom: calc(10rem * 1.5);
   left: calc(15rem + 4rem);
   width: 25%;
   -webkit-clip-path: circle(49%);

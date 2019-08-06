@@ -34,7 +34,6 @@
   color: $dark-font-colour;
 
   p {
-
     &:first-child {
       margin-top: 0;
     }
@@ -45,10 +44,16 @@
   }
 }
 
+.about-me-sub-text {
+  @include mid-font-stack;
+  font-weight: bold;
+  margin-top: $section-spacing;
+}
+
 .about-me-sub-image {
   position: absolute;
   z-index: 1;
-  bottom: $section-spacing-large;
+  bottom: calc(#{$section-spacing-large} * 1.5);
   left: calc(#{$section-spacing-extra-large} + #{$section-spacing});
   width: 25%;
   clip-path: circle(49%); //Removing slightly ragged photo outline
