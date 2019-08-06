@@ -1,7 +1,16 @@
 <?php include('perch/runtime.php'); ?>
 <?php perch_layout('simple-header'); ?>
 <main class="main-content about-me-main-content" id="main-content">
-  <?php perch_layout("about-me-section"); ?>
+  <section class="about-me-section">
+    <h2 class="section-heading">
+    About me
+    </h2>
+      <div class="about-me-content-wrapper">
+      <?php perch_content("About Me Main Image"); ?>
+      <?php perch_content("About Me Text"); ?>
+      <?php perch_content("About Me Sub Image"); ?>
+    </div>
+  </section>
   <?php perch_content("General Contact Form"); ?>
 </main>
 <?php perch_layout('main-footer'); ?>

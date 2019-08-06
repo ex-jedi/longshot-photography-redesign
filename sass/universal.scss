@@ -407,7 +407,7 @@ footer {
 
 .general-form-container {
   width: 40%;
-  margin: 0 auto $section-spacing;
+  margin: 0 auto $section-spacing-extra-large;
 }
 
 .general-contact-form {
@@ -437,7 +437,7 @@ label {
 .text-area-input {
   width: 100%;
   border: 3px solid $light-background-colour;
-  transition: border 0.2s ease;
+  transition: border $transition-duration ease;
 
   &:focus {
     border: 3px solid #708780;
