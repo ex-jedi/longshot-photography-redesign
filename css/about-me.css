@@ -1,8 +1,9 @@
 .about-me-section {
   position: relative;
-  background-image: url(/images/splodge-rotated-medium.png);
+  background-image: url("/images/splodge-rotated-medium.png"), url("/images/splodge-rotated-medium.png");
   background-repeat: no-repeat;
-  background-position: 580px -115px;
+  background-size: auto, cover;
+  background-position: 580px -115px, left -550px bottom -1230px;
   width: 100%;
   padding: 0 15rem 15rem; }
 
