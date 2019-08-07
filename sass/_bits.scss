@@ -43,6 +43,13 @@ $dark-background-colour: $dark-green;
   line-height: $line-height;
 }
 
+@mixin mid-font-stack {
+  font-family: "ff-dagny-web-pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: $line-height;
+}
+
 //********** Type Variables & Spacing **********
 
 //Font Sizes
@@ -150,6 +157,7 @@ $header-spacing-medium: 7.6rem;
 //Sections
 $section-spacing-small: 2rem;
 $section-spacing: 4rem;
+$section-spacing-large: 10rem;
 $section-spacing-extra-large: 15rem;
 
 //Forms

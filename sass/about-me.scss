@@ -9,3 +9,54 @@
 //*=========================================
 //** Header  **
 //*=========================================
+
+.about-me-section {
+  position: relative;
+  background-image: url("/images/splodge-rotated-medium.png"),
+    url("/images/splodge-rotated-medium.png");
+  background-repeat: no-repeat;
+  background-size: auto, cover;
+  background-position: 580px -115px, -550px 1150px;
+  width: 100%;
+  padding: 0 $section-spacing-extra-large $section-spacing-extra-large;
+}
+
+.about-me-content-wrapper {
+  @include flex(row);
+}
+
+.about-me-main-image {
+  position: relative;
+  width: 400px;
+  margin-right: $section-spacing-large;
+  z-index: 3;
+}
+
+.about-me-text-wrapper {
+  color: $dark-font-colour;
+
+  p {
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.about-me-sub-text {
+  @include mid-font-stack;
+  font-weight: bold;
+  margin-top: $section-spacing;
+}
+
+.about-me-sub-image {
+  position: absolute;
+  z-index: 1;
+  bottom: calc(#{$section-spacing-large} * 1.5);
+  left: calc(#{$section-spacing-extra-large} + #{$section-spacing});
+  width: 25%;
+  clip-path: circle(49%); //Removing slightly ragged photo outline
+}
