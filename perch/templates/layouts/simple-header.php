@@ -13,5 +13,5 @@
 							'hide-extensions' => true,
 					)); ?>
 				</nav>
-				<?php perch_content("Main Header Submark"); ?>
+				<?php perch_content("Simple Header Submark"); ?>
 			</header>
