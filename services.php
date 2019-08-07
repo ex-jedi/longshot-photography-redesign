@@ -5,7 +5,7 @@
     <h2 class="section-heading">
     Services
     </h2>
-
+    <?php perch_content("Services Content"); ?>
   </section>
   <?php perch_content("General Contact Form"); ?>
 </main>

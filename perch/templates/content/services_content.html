@@ -1,0 +1,21 @@
+<perch:repeater id="servicesContent" label="Services section" max="5">
+  <div class="service-wrapper">
+    <div class="service-image-wrapper">
+      <img class="service-image" src="<perch:content id="serviceImage" type="image" width="1000" label="Service Image">" alt="<perch:content id="alt" type="text" label="Image description">"
+      sizes="(max-width:1000) 100vw, 30vw"
+      srcset="<perch:content type="image" id="serviceImage" width="1000" > 1000w,
+      <perch:content type="image" id="serviceImage" width="750" > 750w,
+      <perch:content type="image" id="serviceImage" width="500" > 500w" >
+    </div>
+    <div class="service-text-wrapper">
+      <h3 class="service-title">
+        <perch:content id="serviceTitle" type="text" label="Service Title" required>
+      </h3>
+      <perch:content id="serviceDescriptionText" type="textarea" editor="redactor" label="Service Description"  required  html>
+    </div>
+  </div>
+</perch:repeater>
+<div class="services-details-wrapper">
+  <perch:content id="servicesDetailsTitle" type="text" label="Services Details Title"  required  html>
+  <perch:content id="servicesDetailsText" type="textarea" label="Services Details" editor="redactor"  required  html>
+</div>
