@@ -1,4 +1,4 @@
-<perch:repeater id="servicesContent" label="Services section">
+<perch:repeater id="servicesContent" label="Services section" max="5">
   <div class="service-wrapper">
     <div class="service-image-wrapper">
       <img class="service-image" src="<perch:content id="serviceImage" type="image" width="1000" label="Service Image">" alt="<perch:content id="alt" type="text" label="Image description">"
@@ -15,3 +15,7 @@
     </div>
   </div>
 </perch:repeater>
+<div class="services-details-wrapper">
+  <perch:content id="servicesDetailsTitle" type="text" label="Services Details Title"  required  html>
+  <perch:content id="servicesDetailsText" type="textarea" label="Services Details" editor="redactor"  required  html>
+</div>
