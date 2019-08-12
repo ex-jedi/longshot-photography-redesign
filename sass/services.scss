@@ -20,7 +20,7 @@
   position: relative;
   align-content: flex-start;
   justify-content: center;
-  margin-bottom: $section-spacing;
+  margin-bottom: $section-spacing-extra-large;
 
   &:nth-of-type(1) {
     .service-image-wrapper::after {
@@ -67,4 +67,17 @@
 .services-details-wrapper {
   width: 50%;
   margin: $section-spacing-extra-large auto 0;
+}
+
+.services-details-wrapper,
+.service-text-wrapper {
+  p {
+    &:first-of-type {
+      margin-top: 0;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
 }
