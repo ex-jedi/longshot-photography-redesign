@@ -18,6 +18,10 @@
   -ms-flex-pack: center;
   justify-content: center;
   margin-bottom: 4rem; }
+  .service-wrapper:nth-of-type(1) .service-image-wrapper::after {
+    background-color: #875548; }
+  .service-wrapper:nth-of-type(2) .service-image-wrapper::after {
+    background-color: #293c38; }
 
 .service-image-wrapper {
   position: relative;
@@ -29,7 +33,6 @@
     position: absolute;
     top: 2rem;
     left: 2rem;
-    background-color: #875548;
     z-index: -1; }
 
 .service-title {
