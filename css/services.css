@@ -1,2 +1,12 @@
 .services-section {
-  color: #293c38; }
+  color: #293c38;
+  padding: 0 15rem 15rem; }
+
+.service-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }

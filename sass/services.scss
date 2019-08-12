@@ -8,4 +8,9 @@
 
 .services-section {
   color: $dark-font-colour;
+  padding: 0 $section-spacing-extra-large $section-spacing-extra-large;
+}
+
+.service-wrapper {
+  @include flex(row);
 }
