@@ -45,3 +45,10 @@
 .service-title {
   margin-top: 0;
   line-height: 1; }
+
+.services-details-title {
+  text-align: center; }
+
+.services-details-wrapper {
+  width: 50%;
+  margin: 15rem auto 0; }
