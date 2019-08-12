@@ -28,12 +28,12 @@
 
 .service-image {
   position: relative;
-  z-index: 2; }
+  z-index: 1; }
 
 .service-companion-image {
   position: absolute;
-  top: 1rem;
-  left: 1rem;
+  top: 2rem;
+  left: 15rem;
   width: 100%; }
 
 .service-title {
@@ -46,6 +46,9 @@
 .services-details-wrapper {
   width: 50%;
   margin: 15rem auto 0; }
+
+.service-text-wrapper {
+  position: relative; }
 
 .services-details-wrapper p:first-of-type,
 .service-text-wrapper p:first-of-type {

@@ -52,14 +52,15 @@
 
 .service-image {
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 
 .service-companion-image {
   position: absolute;
-  top: 1rem;
-  left: 1rem;
+  top: 2rem;
+  left: $section-spacing-extra-large;
   width: 100%;
+  // z-index: 1;
 }
 
 .service-title {
@@ -74,6 +75,10 @@
 .services-details-wrapper {
   width: 50%;
   margin: $section-spacing-extra-large auto 0;
+}
+
+.service-text-wrapper {
+  position: relative;
 }
 
 .services-details-wrapper,
