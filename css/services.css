@@ -1,6 +1,7 @@
 .services-section {
   color: #293c38;
-  padding: 0 15rem 15rem; }
+  padding: 0 15rem 15rem;
+  position: relative; }
 
 .service-wrapper {
   display: -webkit-box;
@@ -9,4 +10,28 @@
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
-  flex-direction: row; }
+  flex-direction: row;
+  position: relative;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 4rem; }
+
+.service-image-wrapper {
+  position: relative;
+  margin-right: 4rem; }
+  .service-image-wrapper:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    background-color: #875548;
+    z-index: -1; }
+
+.service-title {
+  margin-top: 0;
+  line-height: 1; }
