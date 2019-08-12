@@ -21,14 +21,19 @@
   -ms-flex-pack: center;
   justify-content: center;
   margin-bottom: 15rem; }
+  .service-wrapper:nth-of-type(1) .service-image {
+    -webkit-box-shadow: 15rem 4rem 0px 0px #b9b5b5;
+    box-shadow: 15rem 4rem 0px 0px #b9b5b5; }
+  .service-wrapper:nth-of-type(2) .service-image {
+    -webkit-box-shadow: 15rem 4rem 0px 0px #b5b9b7;
+    box-shadow: 15rem 4rem 0px 0px #b5b9b7; }
 
 .service-image-wrapper {
   position: relative;
   margin-right: 4rem; }
 
 .service-image {
-  position: relative;
-  z-index: 1; }
+  position: relative; }
 
 .service-companion-image {
   position: absolute;
