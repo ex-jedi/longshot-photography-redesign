@@ -1,7 +1,10 @@
 .services-section {
   color: #293c38;
   padding: 0 15rem 15rem;
-  position: relative; }
+  position: relative;
+  background-image: url("/images/splodge-rotated-medium.png");
+  background-repeat: no-repeat;
+  background-position: top center; }
 
 .service-wrapper {
   display: -webkit-box;
@@ -33,7 +36,11 @@
     position: absolute;
     top: 2rem;
     left: 2rem;
-    z-index: -1; }
+    z-index: 1; }
+
+.service-image {
+  position: relative;
+  z-index: 2; }
 
 .service-title {
   margin-top: 0;
