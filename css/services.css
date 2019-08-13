@@ -42,8 +42,9 @@
   width: 100%; }
 
 .service-title {
-  margin-top: 0;
-  line-height: 1; }
+  margin: 0 auto 4rem;
+  line-height: 1;
+  font-size: 1rem; }
 
 .services-details-title {
   text-align: center; }
