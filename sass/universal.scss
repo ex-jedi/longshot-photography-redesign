@@ -190,7 +190,7 @@ header {
 }
 
 .nav-reveal {
-  clip-path: circle(45%);
+  clip-path: circle(40%);
   z-index: 1;
 
   &::before {
@@ -199,7 +199,7 @@ header {
     background-color: $light-background-colour;
     width: 1300px;
     height: 1300px;
-    clip-path: circle(44.8%);
+    clip-path: circle(39.8%);
     z-index: -1;
   }
 }
@@ -248,7 +248,7 @@ header {
   font-weight: 900;
   margin: auto;
   display: block;
-  background-color: $light-background-colour;
+  background-color: transparent;
   border: 0;
   font-size: 0.9rem;
   padding: 0.3rem 0;
