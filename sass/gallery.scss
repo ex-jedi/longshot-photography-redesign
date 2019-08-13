@@ -4,3 +4,61 @@
 
 //********** Import **********
 @import "bits";
+
+//*=========================================
+//** Galleries  **
+//*=========================================
+
+.homepage-featured-galleries-section {
+  @include flex(row);
+  flex-wrap: wrap;
+  color: $dark-font-colour;
+  background-color: $light-background-colour;
+  min-height: 100vh;
+  justify-content: space-around;
+  padding: 0 $section-spacing $section-spacing-extra-large;
+  background-image: url("/images/splodge-rotated-medium.png");
+  background-position: right -50px top -100px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.featured-galleries-section-heading {
+  flex: 1 1 100%;
+}
+
+.homepage-featured-gallery {
+  position: relative;
+  flex: 0 1 25%;
+  position: relative;
+  padding-bottom: 5px;
+
+  img {
+    width: 100%;
+  }
+
+  &:nth-of-type(1) {
+    img {
+      box-shadow: -2rem 2rem 0px 0px $image-shadow-one;
+    }
+  }
+
+  &:nth-of-type(2) {
+    img {
+      box-shadow: -2rem 2rem 0px 0px $image-shadow-two;
+    }
+  }
+
+  &:nth-of-type(3) {
+    img {
+      box-shadow: -2rem 2rem 0px 0px $image-shadow-three;
+    }
+  }
+}
+
+.homepage-featured-gallery-sub-heading {
+  text-align: center;
+  margin: 1.5rem auto 0;
+  font-size: 1rem;
+  background-color: transparent;
+}
