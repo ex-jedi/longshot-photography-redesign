@@ -2,9 +2,9 @@
   color: #293c38;
   padding: 0 15rem 15rem;
   position: relative;
-  background-image: url("/images/splodge-rotated-medium.png"), url("/images/blue-green-gouache-wash.png");
-  background-repeat: no-repeat, no-repeat;
-  background-position: top center, center; }
+  background-image: url("/images/splodge-rotated-medium.png"), url("/images/blue-green-gouache-wash.png"), url("/images/splodge-rotated-medium.png");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: top center, center, right -200px bottom; }
 
 .service-wrapper {
   display: -webkit-box;
@@ -47,7 +47,9 @@
   font-size: 1rem; }
 
 .services-details-title {
-  text-align: center; }
+  text-align: center;
+  font-size: 1rem;
+  margin: 0 auto 4rem; }
 
 .services-details-wrapper {
   width: 50%;
@@ -56,10 +58,14 @@
 .service-text-wrapper {
   position: relative; }
 
-.services-details-wrapper p:first-of-type,
-.service-text-wrapper p:first-of-type {
-  margin-top: 0; }
-
-.services-details-wrapper p:last-of-type,
-.service-text-wrapper p:last-of-type {
-  margin-bottom: 0; }
+.services-details-wrapper p,
+.service-text-wrapper p {
+  font-family: "ff-tisa-web-pro", serif;
+  font-weight: 300;
+  font-style: normal; }
+  .services-details-wrapper p:first-of-type,
+  .service-text-wrapper p:first-of-type {
+    margin-top: 0; }
+  .services-details-wrapper p:last-of-type,
+  .service-text-wrapper p:last-of-type {
+    margin-bottom: 0; }
