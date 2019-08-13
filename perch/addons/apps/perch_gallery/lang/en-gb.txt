@@ -125,5 +125,6 @@
     "Natural World": "Natural World",
     "Scotland": "Scotland",
     "Intereors": "Intereors",
-    "Interiors": "Interiors"
+    "Interiors": "Interiors",
+    "Motor Sport": "Motor Sport"
 }

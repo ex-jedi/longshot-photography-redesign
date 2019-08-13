@@ -1,0 +1,55 @@
+//*==============================================================================
+//** Gallery Index and Album Pages  **
+//*==============================================================================
+
+//********** Import **********
+@import "bits";
+
+//*=========================================
+//** Galleries  **
+//*=========================================
+
+.gallery-index-wrapper {
+  @include flex(row);
+  flex-wrap: nowrap;
+  color: $dark-font-colour;
+  min-height: 100vh;
+  justify-content: flex-start;
+  align-content: center;
+  overflow: auto;
+}
+
+.gallery-index-album {
+  flex: 1 0 auto;
+  position: relative;
+  width: 400px;
+  margin: 0 $section-spacing;
+  img {
+    width: 100%;
+  }
+
+  &:nth-of-type(3n + 1) {
+    img {
+      box-shadow: -2rem 2rem 0px 0px $image-shadow-one;
+    }
+  }
+
+  &:nth-of-type(3n + 2) {
+    img {
+      box-shadow: -2rem 2rem 0px 0px $image-shadow-two;
+    }
+  }
+
+  &:nth-of-type(3n + 3) {
+    img {
+      box-shadow: -2rem 2rem 0px 0px $image-shadow-three;
+    }
+  }
+}
+
+.homepage-featured-gallery-sub-heading {
+  text-align: center;
+  margin: 1.5rem auto 0;
+  font-size: 1rem;
+  background-color: transparent;
+}

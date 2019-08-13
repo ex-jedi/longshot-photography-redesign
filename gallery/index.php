@@ -1,15 +1,19 @@
 <?php include('../perch/runtime.php'); ?>
-<?php perch_layout('main-header'); ?>
+<?php perch_layout('simple-header'); ?>
 <main id="main-content" class="main-content gallery-main-content">
-		<article class="gallery-article">
-		<?php
-			perch_gallery_albums(array(
-					'template'=>'gallery_index_page.html',
-					'image'=>true,
-					'count'=>5,
-					'paginate'=>true
-			));
-		?>
-	</article>
+		<section class="gallery-index-section">
+			<h2 class="section-heading gallery-section-heading">
+				Galleries
+			</h2>
+		<div class="gallery-index-wrapper">
+			<?php
+				perch_gallery_albums(array(
+						'template'=>'gallery_index_page.html',
+						'image'=>true
+				));
+				?>
+		</div>
+	</section>
+	<?php perch_content("General Contact Form"); ?>
 </main>
 <?php perch_layout('main-footer'); ?>

@@ -6,3 +6,4 @@ scripts/js/**
 .scss-lint.yml
 package.json
 gulpfile.js
+.prettierrc.json
