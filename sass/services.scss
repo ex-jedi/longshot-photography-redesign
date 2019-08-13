@@ -10,9 +10,11 @@
   color: $dark-font-colour;
   padding: 0 $section-spacing-extra-large $section-spacing-extra-large;
   position: relative;
-  background-image: url("/images/splodge-rotated-medium.png");
-  background-repeat: no-repeat;
-  background-position: top center;
+  background-image: url("/images/splodge-rotated-medium.png"),
+    url("/images/blue-green-gouache-wash.png"),
+    url("/images/splodge-rotated-medium.png");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: top center, center, right -200px bottom;
 }
 
 .service-wrapper {
@@ -62,6 +64,8 @@
 
 .services-details-title {
   text-align: center;
+  font-size: 1rem;
+  margin: 0 auto $section-spacing;
 }
 
 .services-details-wrapper {
@@ -76,6 +80,10 @@
 .services-details-wrapper,
 .service-text-wrapper {
   p {
+    font-family: "ff-tisa-web-pro", serif;
+    font-weight: 300;
+    font-style: normal;
+
     &:first-of-type {
       margin-top: 0;
     }
