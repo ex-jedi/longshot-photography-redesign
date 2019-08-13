@@ -24,14 +24,14 @@
 
   &:nth-of-type(1) {
     .service-image {
-      box-shadow: $section-spacing-extra-large $section-spacing 0px 0px
+      box-shadow: $section-spacing-extra-large $section-spacing 0 0
         $image-shadow-one;
     }
   }
 
   &:nth-of-type(2) {
     .service-image {
-      box-shadow: $section-spacing-extra-large $section-spacing 0px 0px
+      box-shadow: $section-spacing-extra-large $section-spacing 0 0
         $image-shadow-two;
     }
   }

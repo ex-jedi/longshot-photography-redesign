@@ -22,11 +22,11 @@
   justify-content: center;
   margin-bottom: 15rem; }
   .service-wrapper:nth-of-type(1) .service-image {
-    -webkit-box-shadow: 15rem 4rem 0px 0px #87544880;
-    box-shadow: 15rem 4rem 0px 0px #87544880; }
+    -webkit-box-shadow: 15rem 4rem 0 0 #87544880;
+    box-shadow: 15rem 4rem 0 0 #87544880; }
   .service-wrapper:nth-of-type(2) .service-image {
-    -webkit-box-shadow: 15rem 4rem 0px 0px #70878080;
-    box-shadow: 15rem 4rem 0px 0px #70878080; }
+    -webkit-box-shadow: 15rem 4rem 0 0 #70878080;
+    box-shadow: 15rem 4rem 0 0 #70878080; }
 
 .service-image-wrapper {
   position: relative;
