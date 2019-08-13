@@ -2,9 +2,9 @@
   color: #293c38;
   padding: 0 15rem 15rem;
   position: relative;
-  background-image: url("/images/splodge-rotated-medium.png");
-  background-repeat: no-repeat;
-  background-position: top center; }
+  background-image: url("/images/splodge-rotated-medium.png"), url("/images/blue-green-gouache-wash.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: top center, center; }
 
 .service-wrapper {
   display: -webkit-box;
