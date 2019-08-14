@@ -1,5 +1,5 @@
 <?php include('../perch/runtime.php'); ?>
-<?php perch_layout('main-header'); ?>
+<?php perch_layout('gallery-header'); ?>
 <main id="main-content" class="main-content album-main-content">
     <?php
     if(perch_get('s')) {
