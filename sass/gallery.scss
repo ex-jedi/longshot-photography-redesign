@@ -9,20 +9,35 @@
 //** Galleries  **
 //*=========================================
 
+.gallery-index-section {
+  background-image: url("/images/splodge-rotated-medium.png");
+  background-repeat: no-repeat;
+  background-position: top -5rem center;
+}
+
 .gallery-index-wrapper {
   @include flex(row);
   flex-wrap: nowrap;
   color: $dark-font-colour;
-  min-height: 100vh;
   justify-content: flex-start;
-  align-content: center;
+  align-items: center;
   overflow: auto;
+
+  &:last-of-type::after,
+  &:first-of-type::before {
+    content: "";
+    width: 1px;
+    height: 1px;
+    padding: 1px;
+    margin: 1px;
+  }
 }
 
 .gallery-index-album {
   flex: 1 0 auto;
   position: relative;
-  width: 400px;
+  width: 25%;
+  min-width: 300px;
   margin: 0 $section-spacing;
   img {
     width: 100%;
