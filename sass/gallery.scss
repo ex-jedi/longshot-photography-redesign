@@ -6,7 +6,7 @@
 @import "bits";
 
 //*=========================================
-//** Galleries  **
+//** Galleries Index  **
 //*=========================================
 
 .gallery-index-section {
@@ -94,4 +94,18 @@
   margin: 1.5rem auto 0;
   font-size: 1rem;
   background-color: transparent;
+}
+
+//*=========================================
+//** Gallery Page  **
+//*=========================================
+
+.gallery-album-section {
+  padding: 0 $section-spacing-extra-large
+    calc(#{$section-spacing-extra-large} - #{$section-spacing});
+
+  img {
+    width: 100%;
+    margin-bottom: $section-spacing;
+  }
 }
