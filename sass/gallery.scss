@@ -10,9 +10,10 @@
 //*=========================================
 
 .gallery-index-section {
-  background-image: url("/images/splodge-rotated-medium.png");
+  background-image: url("/images/splodge-rotated-medium.png"),
+    url("/images/splodge-rotated-medium.png");
   background-repeat: no-repeat;
-  background-position: top -5rem center;
+  background-position: top -5rem center, bottom -25% right -25%;
   padding-bottom: $section-spacing-extra-large;
 }
 
