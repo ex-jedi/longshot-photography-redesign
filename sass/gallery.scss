@@ -13,6 +13,7 @@
   background-image: url("/images/splodge-rotated-medium.png");
   background-repeat: no-repeat;
   background-position: top -5rem center;
+  margin-bottom: $section-spacing-large;
 }
 
 .gallery-index-wrapper {
@@ -22,6 +23,7 @@
   justify-content: flex-start;
   align-items: center;
   overflow: auto;
+  padding-bottom: $section-spacing;
 
   &:last-of-type::after,
   &:first-of-type::before {
@@ -62,7 +64,7 @@
   }
 }
 
-.homepage-featured-gallery-sub-heading {
+.gallery-index-sub-heading {
   text-align: center;
   margin: 1.5rem auto 0;
   font-size: 1rem;
