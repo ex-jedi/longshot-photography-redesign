@@ -9,5 +9,6 @@
             ));
     } ?>
 </section>
+<?php perch_content("General Contact Form"); ?>
 </main>
 <?php perch_layout('main-footer'); ?>
