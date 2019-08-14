@@ -1,16 +1,14 @@
 <perch:before>
-	<section class="gallery-album-section">
+	<h2 class="section-heading">
+			<perch:gallery id="albumTitle">gallery-
+	</h2>
 </perch:before>
-<div class="album-image-div">
-	<img class="album-image" src="<perch:gallery id="imageOne" type="image"/>" alt="<perch:gallery id="image-alt" />"
-    sizes="(max-width: 750px) 100vw,
-		(max-width: 900px) 90vw,
-		(max-width: 2000px) 80vw, 100vw"
+<div class="gallery-album-image-div">
+	<img class="gallery-album-image" loading="lazy" src="<perch:gallery id="imageOne" type="image"/>" alt="<perch:gallery id="image-alt" />"
+    sizes="100vw"
 	  srcset="<perch:gallery type="image" id="imageOne" /> 2000w,
 						<perch:gallery type="image" id="imageTwo" /> 1600w,
 						<perch:gallery type="image" id="imageThree" /> 1100w,
 	          <perch:gallery type="image" id="imageFour" /> 600w" />
 </div>
-<perch:after>
-	</section>
-</perch:after>
+
