@@ -100,3 +100,12 @@
 //** Gallery Page  **
 //*=========================================
 
+.gallery-album-section {
+  padding: 0 $section-spacing-extra-large
+    calc(#{$section-spacing-extra-large} - #{$section-spacing});
+
+  img {
+    width: 100%;
+    margin-bottom: $section-spacing;
+  }
+}
