@@ -26,21 +26,19 @@
   overflow: auto;
   padding-bottom: $section-spacing-large;
   overflow-y: hidden;
-  border-bottom: 1px solid #000;
 
   &::-webkit-scrollbar {
     height: 0.5rem;
   }
 
   &::-webkit-scrollbar-track {
-    box-shadow: inset -4rem 0px 0 0px $light-background-colour,
-      inset 4rem 0px 0 0px $light-background-colour;
     background: linear-gradient(
       to bottom,
-      #ffffff 40%,
-      $dark-green 50%,
-      #ffffff 60%,
-      #ffffff 70%
+      #293c3800 45%,
+      #293c3866 47%,
+      #293c38 50%,
+      #293c389c 52%,
+      #293c3805 55%
     );
   }
 
