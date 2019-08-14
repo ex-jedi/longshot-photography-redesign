@@ -9,20 +9,62 @@
 //** Galleries  **
 //*=========================================
 
+.gallery-index-section {
+  background-image: url("/images/splodge-rotated-medium.png"),
+    url("/images/splodge-rotated-medium.png");
+  background-repeat: no-repeat;
+  background-position: top -5rem center, bottom -25% right -25%;
+  padding-bottom: $section-spacing-extra-large;
+}
+
 .gallery-index-wrapper {
   @include flex(row);
   flex-wrap: nowrap;
   color: $dark-font-colour;
-  min-height: 100vh;
   justify-content: flex-start;
-  align-content: center;
+  align-items: center;
   overflow: auto;
+  padding-bottom: $section-spacing-large;
+  overflow-y: hidden;
+
+  &::-webkit-scrollbar {
+    height: 0.5rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: linear-gradient(
+      to bottom,
+      #293c3800 45%,
+      #293c3866 47%,
+      #293c38 50%,
+      #293c389c 52%,
+      #293c3805 55%
+    );
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: scale-color($dark-green, $lightness: 10%);
+  }
+
+  &:hover::-webkit-scrollbar-thumb {
+    background-color: $dark-green;
+  }
+
+  &:last-of-type::after,
+  &:first-of-type::before {
+    content: "";
+    width: 1px;
+    height: 1px;
+    padding: 1px;
+    margin: 1px;
+  }
 }
 
 .gallery-index-album {
   flex: 1 0 auto;
   position: relative;
-  width: 400px;
+  width: 25%;
+  min-width: 300px;
   margin: 0 $section-spacing;
   img {
     width: 100%;
@@ -47,7 +89,7 @@
   }
 }
 
-.homepage-featured-gallery-sub-heading {
+.gallery-index-sub-heading {
   text-align: center;
   margin: 1.5rem auto 0;
   font-size: 1rem;
