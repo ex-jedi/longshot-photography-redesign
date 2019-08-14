@@ -13,7 +13,7 @@
   background-image: url("/images/splodge-rotated-medium.png");
   background-repeat: no-repeat;
   background-position: top -5rem center;
-  margin-bottom: $section-spacing-large;
+  padding-bottom: $section-spacing-extra-large;
 }
 
 .gallery-index-wrapper {
@@ -23,7 +23,7 @@
   justify-content: flex-start;
   align-items: center;
   overflow: auto;
-  padding-bottom: $section-spacing;
+  padding-bottom: $section-spacing-large;
   overflow-y: hidden;
   border-bottom: 1px solid #000;
 
@@ -32,6 +32,8 @@
   }
 
   &::-webkit-scrollbar-track {
+    box-shadow: inset -4rem 0px 0 0px $light-background-colour,
+      inset 4rem 0px 0 0px $light-background-colour;
     background: linear-gradient(
       to bottom,
       #ffffff 40%,
@@ -42,13 +44,11 @@
   }
 
   &::-webkit-scrollbar-thumb {
-    width: 20%;
     background-color: scale-color($dark-green, $lightness: 10%);
   }
 
   &:hover::-webkit-scrollbar-thumb {
     background-color: $dark-green;
-    width: 20%;
   }
 
   &:last-of-type::after,
