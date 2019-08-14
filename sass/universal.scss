@@ -55,19 +55,6 @@ body {
   visibility: visible;
 }
 
-//********** Scroll Bar **********
-body::-webkit-scrollbar {
-  width: 0.75rem;
-}
-
-body::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: $dark-brown;
-}
-
 // =========================================
 // ** Content container and block **
 // =========================================

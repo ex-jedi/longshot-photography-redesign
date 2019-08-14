@@ -24,6 +24,32 @@
   align-items: center;
   overflow: auto;
   padding-bottom: $section-spacing;
+  overflow-y: hidden;
+  border-bottom: 1px solid #000;
+
+  &::-webkit-scrollbar {
+    height: 0.5rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: linear-gradient(
+      to bottom,
+      #ffffff 40%,
+      $dark-green 50%,
+      #ffffff 60%,
+      #ffffff 70%
+    );
+  }
+
+  &::-webkit-scrollbar-thumb {
+    width: 20%;
+    background-color: scale-color($dark-green, $lightness: 10%);
+  }
+
+  &:hover::-webkit-scrollbar-thumb {
+    background-color: $dark-green;
+    width: 20%;
+  }
 
   &:last-of-type::after,
   &:first-of-type::before {
