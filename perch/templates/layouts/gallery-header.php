@@ -21,7 +21,7 @@ $slug = perch_gallery_album_field(perch_get('s'), 'albumSlug', true);
 $mainsitename  = "Longshot Photography";
 $pagetitlename = " - Longshot Photography";
 $sharing_image =  perch_gallery_album_images(perch_get('s'), array(
-																'template' =>'sharing-image.html',
+																'template' =>'sharing_image.html',
 																'count' => 1,
 															), true);
 $gallery_title = perch_gallery_album_field(perch_get('s'), 'albumTitle', true);
