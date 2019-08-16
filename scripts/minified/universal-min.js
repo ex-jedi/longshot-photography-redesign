@@ -1,2 +1,2 @@
-"use strict";var app=new Vue({el:"#vue-wrapper",data:{navPull:!1,outlineHide:!0}});document.addEventListener("keyup",function(e){27===e.keyCode&&(app.navPull=!1)}),document.addEventListener("keyup",function(e){9===e.keyCode&&(app.outlineHide=!1)});var rellax=new Rellax(".rellax");
+"use strict";var app=new Vue({el:"#vue-wrapper",data:{navPull:!1,outlineHide:!0}});document.addEventListener("keyup",function(e){27===e.keyCode&&(app.navPull=!1)}),document.addEventListener("keyup",function(e){9===e.keyCode&&(app.outlineHide=!1)});var rellax=new Rellax(".rellax"),lazyLoadInstance=new LazyLoad({elements_selector:".lazy"});
 //# sourceMappingURL=universal-min.js.map
