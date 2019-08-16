@@ -29,3 +29,11 @@ document.addEventListener('keyup', evt => {
 // =========================================
 
 let rellax = new Rellax('.rellax');
+
+// =========================================
+// ** Lazy load  **
+// =========================================
+var lazyLoadInstance = new LazyLoad({
+  elements_selector: '.lazy',
+  // ... more custom settings?
+});

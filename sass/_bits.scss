@@ -201,6 +201,14 @@ $form-spacing: 0.7rem;
   }
 }
 
+//********** Simple Fade-In **********
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+  }
+}
+
 //********** Transition Timings**********
 
 $transition-duration-fast: 0.2s;
