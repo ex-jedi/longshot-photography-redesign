@@ -23,6 +23,8 @@
 <script type="text/javascript" src="/scripts/minified/vue-min.js" ></script>
 <!-- Rellax -->
 <script type="text/javascript" src="/scripts/minified/rellax.min.js" ></script>
+<!-- Lazy Load -->
+<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"></script>
 <script type="text/javascript" src="/scripts/minified/universal-min.js"></script><!-- Local universal JS files -->
 </body>
 </html>
