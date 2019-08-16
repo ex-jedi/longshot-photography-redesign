@@ -107,10 +107,15 @@
 
 .gallery-album-image-div {
   width: 100%;
-  min-height: 30vh;
+  min-height: 40vh;
 }
 
 .gallery-album-image {
   width: 100%;
   margin-bottom: $section-spacing;
+
+  &:first-of-type {
+    opacity: 0;
+    animation: fade-in $transition-duration-slow ease-in forwards;
+  }
 }
