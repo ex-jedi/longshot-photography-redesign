@@ -52,6 +52,7 @@
   flex: 0 1 25%;
   position: relative;
   padding-bottom: 5px;
+  transform: translateY($section-spacing);
 
   img {
     width: 100%;
@@ -64,12 +65,16 @@
   }
 
   &:nth-of-type(2) {
+    animation-delay: 0.2s;
+
     img {
       box-shadow: -2rem 2rem 0px 0px $image-shadow-two;
     }
   }
 
   &:nth-of-type(3) {
+    animation-delay: 0.4s;
+
     img {
       box-shadow: -2rem 2rem 0px 0px $image-shadow-three;
     }

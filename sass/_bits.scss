@@ -203,17 +203,26 @@ $form-spacing: 0.7rem;
 
 //********** Simple Fade-In **********
 
-@keyframes fade-in {
+@keyframes fade-up-in {
   100% {
     opacity: 1;
+    transform: translateY(0);
   }
 }
 
-//********** Transition Timings**********
+//********** Animation Variables **********
 
+//* Timings
 $transition-duration-fast: 0.2s;
 $transition-duration: 0.3s;
 $transition-duration-slow: 0.7s;
+
+//* Transition Timings
+$cubic-one: cubic-bezier(0.45, -0.2, 0.45, 1.2);
+$cubic-two: cubic-bezier(0.13, 0.1, 0.12, 0.93);
+
+//* Transition Sizing
+$fade-up-distance: $section-spacing-small;
 
 // =========================================
 // ** Browser Quirks  **

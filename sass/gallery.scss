@@ -15,6 +15,7 @@
   background-repeat: no-repeat;
   background-position: top -5rem center, bottom -25% right -25%;
   padding-bottom: $section-spacing-extra-large;
+  background-color: $light-background-colour;
 }
 
 .gallery-index-wrapper {
@@ -46,8 +47,10 @@
     background-color: scale-color($dark-green, $lightness: 10%);
   }
 
-  &:hover::-webkit-scrollbar-thumb {
-    background-color: $dark-green;
+  &::-webkit-scrollbar-thumb {
+    &:hover {
+      background-color: $dark-green;
+    }
   }
 
   &:last-of-type::after,
@@ -66,25 +69,26 @@
   width: 25%;
   min-width: 300px;
   margin: 0 $section-spacing;
+
   img {
     width: 100%;
   }
 
   &:nth-of-type(3n + 1) {
     img {
-      box-shadow: -2rem 2rem 0px 0px $image-shadow-one;
+      box-shadow: -2rem 2rem 0 0 $image-shadow-one;
     }
   }
 
   &:nth-of-type(3n + 2) {
     img {
-      box-shadow: -2rem 2rem 0px 0px $image-shadow-two;
+      box-shadow: -2rem 2rem 0 0 $image-shadow-two;
     }
   }
 
   &:nth-of-type(3n + 3) {
     img {
-      box-shadow: -2rem 2rem 0px 0px $image-shadow-three;
+      box-shadow: -2rem 2rem 0 0 $image-shadow-three;
     }
   }
 }
@@ -103,6 +107,7 @@
 .gallery-album-section {
   padding: 0 $section-spacing-extra-large
     calc(#{$section-spacing-extra-large} - #{$section-spacing});
+  background-color: $light-background-colour;
 }
 
 .gallery-album-image-div {
@@ -114,8 +119,8 @@
   width: 100%;
   margin-bottom: $section-spacing;
 
-  &:first-of-type {
-    opacity: 0;
-    animation: fade-in $transition-duration-slow ease-in forwards;
-  }
+  // &:first-of-type {
+  //   opacity: 0;
+  //   transform: translateY(2rem);
+  // }
 }
