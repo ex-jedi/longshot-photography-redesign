@@ -117,9 +117,8 @@
   width: 100%;
   margin-bottom: $section-spacing;
 
-  &:first-of-type {
-    opacity: 0;
-    transform: translateY(2rem);
-    animation: fade-up-in 1s $cubic-two forwards;
-  }
+  // &:first-of-type {
+  //   opacity: 0;
+  //   transform: translateY(2rem);
+  // }
 }

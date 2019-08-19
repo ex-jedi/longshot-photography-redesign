@@ -325,6 +325,17 @@ main {
   color: $heading-colour;
 }
 
+//********** Fade Up In **********
+
+.fade-up-in {
+  opacity: 0;
+  transform: translateY($fade-up-distance);
+}
+
+.fade-up-in-reveal {
+  animation: fade-up-in 1s $cubic-two forwards;
+}
+
 // =========================================
 // ** Forms  **
 // =========================================
