@@ -15,6 +15,7 @@
   background-repeat: no-repeat;
   background-position: top -5rem center, bottom -25% right -25%;
   padding-bottom: $section-spacing-extra-large;
+  background-color: $light-background-colour;
 }
 
 .gallery-index-wrapper {
@@ -106,6 +107,7 @@
 .gallery-album-section {
   padding: 0 $section-spacing-extra-large
     calc(#{$section-spacing-extra-large} - #{$section-spacing});
+  background-color: $light-background-colour;
 }
 
 .gallery-album-image-div {
