@@ -532,6 +532,13 @@ label {
   }
 }
 
+.contact-form-consent {
+  a {
+    color: $light-font-colour;
+    text-decoration: underline;
+  }
+}
+
 //********** Honeypot **********
 
 .form-identification-number {
