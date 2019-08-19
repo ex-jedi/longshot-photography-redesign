@@ -168,7 +168,7 @@ header {
   width: 1300px;
   height: 1300px;
   clip-path: circle(3.5%);
-  transition: clip-path 1s cubic-bezier(0.45, -0.2, 0.45, 1.2);
+  transition: clip-path 1s $cubic-one;
   z-index: 1;
 
   &::before {
@@ -179,7 +179,7 @@ header {
     height: 1300px;
     clip-path: circle(3.4%);
     z-index: -1;
-    transition: clip-path 1s cubic-bezier(0.45, -0.2, 0.45, 1.2);
+    transition: clip-path 1s $cubic-one;
   }
 }
 
@@ -220,8 +220,7 @@ header {
   min-width: 10rem;
   margin: 0;
   padding: 0;
-  transition: all $transition-duration-slow cubic-bezier(0.45, -0.2, 0.45, 1.2)
-    0.1s;
+  transition: all $transition-duration-slow $cubic-one 0.1s;
 }
 
 .main-nav-ul-reveal {
@@ -229,8 +228,7 @@ header {
   right: $section-spacing-extra-large;
   transform: scale(1);
   pointer-events: auto;
-  transition: all $transition-duration-slow cubic-bezier(0.45, -0.2, 0.45, 1.2)
-    0.3s;
+  transition: all $transition-duration-slow $cubic-one 0.3s;
 }
 
 .main-nav-li {

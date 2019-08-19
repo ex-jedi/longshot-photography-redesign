@@ -119,6 +119,7 @@
 
   &:first-of-type {
     opacity: 0;
-    animation: fade-in $transition-duration-slow ease-in forwards;
+    transform: translateY(2rem);
+    animation: fade-up-in 1s $cubic-two forwards;
   }
 }
