@@ -482,7 +482,7 @@ label {
 
 //********** Checkbox **********
 .checkbox-div {
-  margin-bottom: $section-spacing;
+  margin-bottom: $section-spacing-small;
 
   input {
     position: relative;
@@ -530,6 +530,10 @@ label {
     text-transform: none;
     display: inline;
   }
+}
+
+.consent-checkbox-div {
+  margin-bottom: $section-spacing;
 }
 
 .contact-form-consent {
