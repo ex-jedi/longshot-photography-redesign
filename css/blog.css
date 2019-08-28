@@ -1,0 +1,14 @@
+@-webkit-keyframes fade-up-in {
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+
+@keyframes fade-up-in {
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+
+.blog-main-content {
+  color: #293c38; }
