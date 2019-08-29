@@ -16,15 +16,15 @@
 <perch:blocks>
 	<perch:block type="fullwidthimage" icon="photo" label="Full width image, with optional caption - (can be dragged up or down to reorder)."> <!-- Full width image -->
 		<figure class="blog-figure">
-      <img class="blog-post-full-width-image" src="<perch:blog id="fullwidthimage" type="image" width="1350">" alt="<perch:blog id="alt" type="text" label="Image alt description">"
-      sizes="(max-width: 750px) 90vw,
+      <img class="blog-post-full-width-image lazy" data-src="<perch:blog id="fullWidthBlogImage" type="image" width="1350">" alt="<perch:blog id="alt" type="text" label="Image alt description">"
+      data-sizes="(max-width: 750px) 90vw,
              (max-width: 1100px) 80vw,
              (max-width: 1500px) 70vw, 60vw"
-      srcset="<perch:blog type="image" id="fullwidthimage" width="1250"> 1250w,
-              <perch:blog type="image" id="fullwidthimage" width="950"> 950w,
-              <perch:blog type="image" id="fullwidthimage" width="750"> 750w,
-              <perch:blog type="image" id="fullwidthimage" width="550"> 550w,
-              <perch:blog type="image" id="fullwidthimage" width="400"> 400w">
+      data-srcset="<perch:blog type="image" id="fullWidthBlogImage" width="1250"> 1250w,
+              <perch:blog type="image" id="fullWidthBlogImage" width="950"> 950w,
+              <perch:blog type="image" id="fullWidthBlogImage" width="750"> 750w,
+              <perch:blog type="image" id="fullWidthBlogImage" width="550"> 550w,
+              <perch:blog type="image" id="fullWidthBlogImage" width="400"> 400w">
 			<perch:if exists="image-caption">
 				<figcaption class="blog-image-caption">
 					<perch:blog id="image-caption" type="textarea" editor="redactor" html="true" label="Image Caption" help="Add optional caption below image." size="small">
