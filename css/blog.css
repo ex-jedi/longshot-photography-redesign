@@ -12,3 +12,6 @@
 
 .blog-main-content {
   color: #293c38; }
+
+.blog-post-full-width-image {
+  min-height: 30vh; }

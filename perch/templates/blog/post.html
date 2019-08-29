@@ -12,11 +12,12 @@
 <!-- Excerpt Text -->
 <perch:blog id="blog-index-excerpt" type="textarea" divider-before="Blog Index Excerpt" help="This text will appear on the blog home page along with the cover image" editor="redactor" html="true" order="3" suppress="true" size="m" required="true" count="words" >
 
+
 <!-- Perch Blocks -->
 <perch:blocks>
 	<perch:block type="fullwidthimage" icon="photo" label="Full width image, with optional caption - (can be dragged up or down to reorder)."> <!-- Full width image -->
 		<figure class="blog-figure">
-      <img class="blog-post-full-width-image lazy" data-src="<perch:blog id="fullWidthBlogImage" type="image" width="1350">" alt="<perch:blog id="alt" type="text" label="Image alt description">"
+      <img class="blog-post-full-width-image fade-up-in lazy" data-src="<perch:blog id="fullWidthBlogImage" type="image" width="1350">" alt="<perch:blog id="alt" type="text" label="Image alt description">"
       data-sizes="(max-width: 750px) 90vw,
              (max-width: 1100px) 80vw,
              (max-width: 1500px) 70vw, 60vw"

@@ -9,4 +9,4 @@
 			</section>
 		</article>
 	</main>
-<?php perch_layout('blog-footer'); ?>
+<?php perch_layout('main-footer'); ?>
