@@ -93,11 +93,6 @@ function loop() {
 // Call the loop for the first time
 loop();
 
-// =========================================
-// ** Rellax  **
-// =========================================
-
-let rellax = new Rellax('.rellax');
 
 // =========================================
 // ** Lazy load  **
@@ -106,3 +101,9 @@ let lazyLoadInstance = new LazyLoad({
   elements_selector: '.lazy',
   // ... more custom settings?
 });
+
+// =========================================
+// ** Rellax  **
+// =========================================
+
+let rellax = new Rellax('.rellax');
