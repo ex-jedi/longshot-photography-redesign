@@ -190,7 +190,7 @@ $form-spacing: 0.7rem;
 // ** Effects and Animation  **
 // =========================================
 
-//********** Animation Stagger **********
+//********** Animation Stagger Mixin **********
 
 @mixin stagger-anim-delay($elem, $initial-delay, $stagger-delay) {
   @for $i from 1 through $elem {
