@@ -8,5 +8,8 @@
 				<?php perch_blog_post_tags(perch_get('s')); ?>
 			</section>
 		</article>
+		<section>
+			<?php perch_content("General Contact Form"); ?>
+		</section>
 	</main>
 <?php perch_layout('main-footer'); ?>
