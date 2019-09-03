@@ -9,9 +9,20 @@
 }
 
 //*=========================================
+//** General Styles  **
+//*=========================================
+
+
+
+//*=========================================
 //** Blog Post  **
 //*=========================================
 
+.blog-post-title {
+  font-size: $h2-size;
+  text-align: center;
+
+}
 
 // Prevents image pushing text down on image load
 .blog-post-full-width-image.lazy {

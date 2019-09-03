@@ -6,9 +6,13 @@
 <perch:blog id="blog-index-image" type="image" suppress="true" width="400" >
 
 <!-- Title -->
-<h1 class="blog-post-title biggest-title" itemprop="headline"> <!-- Post title -->
+<h1 class="blog-post-title section-heading" itemprop="headline"> <!-- Post title -->
   <perch:blog id="postTitle" type="text" label="Post Title" help="The title will appear at the top of the post and on the blog home page along with the excerpt and cover photo." required="true" size="l" order="1" >
 </h1>
+
+<!-- Edit Slug -->
+<perch:blog id="postSlug" type="slug" editable="true" label="Blog Post Slug" help="This is the text that goes after your web address, for example, longshot.photo/journal/this-bit-is-the-slug. You must use numbers, letters, and hyphens only, with no spaces, or the link won't work. If the slug is changed after the page has been published, links using the previous slug won't work anymore." for="postTitle" suppress="true" order="2" >
+
 <!-- Excerpt Text -->
 <perch:blog id="blog-index-excerpt" type="textarea" divider-before="Blog Index Excerpt" help="This text will appear on the blog home page along with the cover image" editor="redactor" html="true" order="3" suppress="true" size="m" required="true" count="words" >
 
