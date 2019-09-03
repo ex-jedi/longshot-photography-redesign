@@ -1,0 +1,82 @@
+//*==============================================================================
+//** Blog Index, Blog Post and Blog Archive Pages   **
+//*==============================================================================
+
+@import "bits";
+
+.blog-main-content {
+  color: $dark-font-colour;
+}
+
+//*=========================================
+//** General Styles  **
+//*=========================================
+.blog-post-article {
+  p {
+    font-family: "ff-tisa-web-pro", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  padding: 0 $section-spacing-super-size $section-spacing-large;
+
+}
+
+
+//*=========================================
+//** Blog Post  **
+//*=========================================
+
+.blog-post-title {
+  font-size: $h2-size;
+  text-align: center;
+
+}
+
+.blog-figure {
+  margin: 0;
+  width: 100%;
+  margin: $section-spacing 0;
+}
+
+// Prevents image pushing text down on image load
+.blog-post-full-width-image.lazy {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+
+  &.loaded {
+    height: auto;
+  }
+}
+
+.blog-text-block {
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+.blog-pull-quote {
+  margin: $section-spacing 0;
+}
+
+.pull-quote-text {
+
+  p {
+    font-size: 1.5rem;
+    margin: 0;
+    text-align: center;
+  }
+}
+
+.pull-quote-citation {
+  text-align: center;
+}
+
+.blog-post-date-author {
+  p {
+    text-align: center;
+    margin: 0;
+  }
+}
