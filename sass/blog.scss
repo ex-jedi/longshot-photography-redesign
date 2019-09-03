@@ -18,7 +18,7 @@
     font-style: normal;
   }
 
-  padding: 0 $section-spacing-super-size $section-spacing-super-size;
+  padding: 0 $section-spacing-super-size $section-spacing-large;
 
 }
 
@@ -36,13 +36,14 @@
 .blog-figure {
   margin: 0;
   width: 100%;
+  margin: $section-spacing 0;
 }
 
 // Prevents image pushing text down on image load
 .blog-post-full-width-image.lazy {
   width: 100%;
   height: 100vh;
-  margin: 0 auto;
+  margin: 0;
 
   &.loaded {
     height: auto;
@@ -71,4 +72,11 @@
 
 .pull-quote-citation {
   text-align: center;
+}
+
+.blog-post-date-author {
+  p {
+    text-align: center;
+    margin: 0;
+  }
 }
