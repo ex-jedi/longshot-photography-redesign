@@ -1,17 +1,2 @@
-@-webkit-keyframes fade-up-in {
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    transform: translateY(0); } }
-
-@keyframes fade-up-in {
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    transform: translateY(0); } }
-
-.blog-main-content {
-  color: #293c38; }
-
-.blog-post-full-width-image {
-  min-height: 30vh; }
+@-webkit-keyframes fade-up-in{to{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}}@keyframes fade-up-in{to{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}}.blog-main-content{color:#293c38}.blog-post-full-width-image.lazy{height:100vh}.blog-post-full-width-image.lazy.loaded{height:auto}
+/*# sourceMappingURL=blog.css.map */

@@ -12,6 +12,12 @@
 //** Blog Post  **
 //*=========================================
 
-.blog-post-full-width-image {
-  min-height: 30vh;
+
+// Prevents image pushing text down on image load
+.blog-post-full-width-image.lazy {
+  height: 100vh;
+
+  &.loaded {
+    height: auto;
+  }
 }
