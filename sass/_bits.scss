@@ -164,6 +164,7 @@ $section-spacing-small: 2rem;
 $section-spacing: 4rem;
 $section-spacing-large: 10rem;
 $section-spacing-extra-large: 15rem;
+$section-spacing-super-size: 20rem;
 
 //Forms
 $form-spacing-large: 1rem;
@@ -190,7 +191,7 @@ $form-spacing: 0.7rem;
 // ** Effects and Animation  **
 // =========================================
 
-//********** Animation Stagger **********
+//********** Animation Stagger Mixin **********
 
 @mixin stagger-anim-delay($elem, $initial-delay, $stagger-delay) {
   @for $i from 1 through $elem {
