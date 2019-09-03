@@ -22,9 +22,7 @@
 	<perch:block type="fullwidthimage" icon="photo" label="Full width image, with optional caption - (can be dragged up or down to reorder)."> <!-- Full width image -->
 		<figure class="blog-figure">
       <img class="blog-post-full-width-image fade-up-in lazy" data-src="<perch:blog id="fullWidthBlogImage" type="image" width="1350">" alt="<perch:blog id="alt" type="text" label="Image alt description">"
-      data-sizes="(max-width: 750px) 90vw,
-             (max-width: 1100px) 80vw,
-             (max-width: 1500px) 70vw, 60vw"
+      data-sizes="100vw"
       data-srcset="<perch:blog type="image" id="fullWidthBlogImage" width="1250"> 1250w,
               <perch:blog type="image" id="fullWidthBlogImage" width="950"> 950w,
               <perch:blog type="image" id="fullWidthBlogImage" width="750"> 750w,
@@ -38,6 +36,7 @@
 		</figure>
   </perch:block>
 
+  <!-- General text  -->
 	<perch:block type="textarea" icon="edit" label="Blog Post Text - (can be dragged up or down to reorder)."> <!-- Text block  -->
     <div class="blog-text-block">
       <perch:blog id="blog-post-text" type="textarea" editor="redactor" html="true"  help="Blog post text. Add formatting via the toolbar." count="words">
@@ -49,13 +48,15 @@
     <!-- With Citation -->
     <perch:if exists="citationLink">
       <!-- And Link -->
-      <blockquote class="pull-quote pull-quote-with-citation" cite="<perch:blog id="citationLink" type="text" label="Optional Citation Link" help="Paste in full URL">">
+      <blockquote class="blog-pull-quote blog-pull-quote-with-citation" cite="<perch:blog id="citationLink" type="text" label="Optional Citation Link" help="Paste in full URL">">
       <perch:else>
         <!-- Without Link or Without Citation  -->
-        <blockquote class="pull-quote">
+        <blockquote class="blog-pull-quote">
     </perch:if>
 
-    <perch:blog id="pullQuoteText" type="textarea" editor="redactor" html="true"  help="Pull quote text. Add formatting via the toolbar." count="words" order="1">
+    <div class="pull-quote-text">
+      <perch:blog id="pullQuoteText" type="textarea" editor="redactor" html="true"  help="Pull quote text. Add formatting via the toolbar." count="words" order="1">
+    </div>
 
     <perch:if exists="citationLink AND citationText">
         <p class="pull-quote-citation">
