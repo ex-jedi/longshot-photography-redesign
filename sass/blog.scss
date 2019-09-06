@@ -24,6 +24,7 @@
 //*=========================================
 
 .blog-post-section {
+  @include flex(column);
   background-color: $light-background-colour;
   background-image: url("/images/splodge-rotated-medium.png"),
     url("/images/splodge-inverted.png");
@@ -37,6 +38,18 @@
   font-size: $h2-size;
   text-align: center;
   margin: 0 auto;
+  order: 1;
+}
+
+.post-category-paragraph {
+  order: 2;
+  text-align: center;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+.post-wrapper {
+  order: 3;
 }
 
 .blog-figure {
