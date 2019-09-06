@@ -11,6 +11,4 @@
 			</section>
 		</article>
 	</main>
-<?php perch_layout('main-footer'); ?>
-
-<?php PerchUtil::output_debug(); ?>
+<?php perch_layout('blog-footer'); ?>
