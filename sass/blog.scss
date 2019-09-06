@@ -34,16 +34,15 @@
   background-size: auto, 100%;
 }
 
-.blog-video-embed {
+.embed {
   width: 100%;
+  margin: $section-spacing 0;
 }
 
 .blog-general-embed {
-  iframe {
-    margin: 0 auto;
-    @include flex(column);
-
-  }
+  @include flex(column);
+  justify-content: center;
+  align-items: center;
 }
 
 .blog-post-title {
