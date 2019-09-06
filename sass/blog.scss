@@ -25,10 +25,12 @@
 
 .blog-post-section {
   background-color: $light-background-colour;
-  background-image: url("/images/"), url("/images/splodge-rotated-medium.png");
+  background-image: url("/images/splodge-rotated-medium.png"),
+    url("/images/splodge-inverted.png");
   background-repeat: no-repeat, no-repeat;
-  background-position: center -10rem, left 50% bottom 0;
+  background-position: center -10rem, right -30rem bottom -35rem;
   padding: 0 $section-spacing-super-size $section-spacing-large;
+  background-size: auto, 100%;
 }
 
 .blog-post-title {
