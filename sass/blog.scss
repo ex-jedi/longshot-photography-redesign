@@ -24,14 +24,16 @@
 //** Blog Post  **
 //*=========================================
 
+
 .blog-post-section {
   padding: 0 $section-spacing-super-size $section-spacing-large;
-
+  background-color: $light-background-colour;
 }
 
 .blog-post-title {
   font-size: $h2-size;
   text-align: center;
+  margin: 0 auto;
 }
 
 .blog-figure {
