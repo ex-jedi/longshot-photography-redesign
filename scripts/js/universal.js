@@ -106,9 +106,3 @@ let lazyLoadInstance = new LazyLoad({
   elements_selector: '.lazy',
   // ... more custom settings?
 });
-
-
-fluidvids.init({
-  selector: ['iframe', 'object'], // runs querySelectorAll()
-  players: ['www.youtube.com', 'player.vimeo.com'] // players to support
-});

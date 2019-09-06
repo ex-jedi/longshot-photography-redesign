@@ -24,7 +24,7 @@
 <!-- Rellax -->
 <script type="text/javascript" src="/scripts/minified/rellax.min.js" ></script>
 <!-- Liquidvids -->
-<script src="/scripts/minified/blog-post.min.js"></script>
+<script src="/scripts/minified/fluidvids.js"></script>
 <!-- Lazy Load -->
 <script src="/scripts/minified/lazyload.min.js"></script>
 <!-- General JS file -->
