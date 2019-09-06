@@ -34,9 +34,16 @@
   background-size: auto, 100%;
 }
 
-.blog-post-video {
+.blog-video-embed {
   width: 100%;
+}
 
+.blog-general-embed {
+  iframe {
+    margin: 0 auto;
+    @include flex(column);
+
+  }
 }
 
 .blog-post-title {
