@@ -82,17 +82,21 @@
 .blog-index-container {
   @include flex(column);
   margin-bottom: 10px;
-  flex: 1 1 400px;
+  flex: 0 1 400px;
   justify-content: space-between;
   padding: 1rem;
 
   &:nth-of-type(-n + 2) {
-    flex: 1 1 650px;
+    flex: 0 1 650px;
     margin-bottom: $section-spacing-large;
 
     .blog-index-title {
       margin-bottom: $section-spacing;
     }
+  }
+
+  &:last-of-type {
+    flex: 0 0 400px;
   }
 }
 
