@@ -83,11 +83,21 @@
   @include flex(column);
   margin-bottom: 10px;
   flex: 0 1 500px;
+  justify-content: space-between;
 
   &:nth-of-type(-n + 2) {
     flex: 0 1 750px;
     margin-bottom: $section-spacing-large;
+
+    .blog-index-title {
+      margin-bottom: $section-spacing;
+    }
   }
+}
+
+.blog-index-title {
+  text-align: left;
+  width: 100%;
 }
 
 .blog-index-image {
