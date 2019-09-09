@@ -75,19 +75,19 @@
 .blog-index-wrapper {
   @include flex(row);
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: flex-start;
   margin: 0 $section-spacing $section-spacing;
 }
 
 .blog-index-container {
   @include flex(column);
   margin-bottom: 10px;
-  flex: 0 1 400px;
+  flex: 0 1 33%;
   justify-content: space-between;
   padding: 1rem;
 
   &:nth-of-type(-n + 2) {
-    flex: 0 1 650px;
+    flex: 0 1 50%;
     margin-bottom: $section-spacing-large;
 
     .blog-index-title {
@@ -96,7 +96,7 @@
   }
 
   &:last-of-type {
-    flex: 0 0 400px;
+    // flex: 0 0 400px;
   }
 }
 
