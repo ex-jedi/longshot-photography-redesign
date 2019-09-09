@@ -6,7 +6,7 @@
 				<?php perch_blog_post_categories(perch_get('s')); ?>
 				<?php perch_blog_post(perch_get('s')); ?>
 			</section>
-			<section>
+			<section class="contact-form section">
 				<?php perch_content("General Contact Form"); ?>
 			</section>
 		</article>
