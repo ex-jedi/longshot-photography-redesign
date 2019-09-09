@@ -38,6 +38,8 @@
 //** Blog Index  **
 //*=========================================
 
+//********** Before Posts **********
+
 .blog-index-section {
   background-image: url("/images/splodge-rotated-medium.png"),
     url("/images/splodge-rotated-medium.png");
@@ -62,14 +64,34 @@
   letter-spacing: 0.1rem;
 }
 
-.blog-index-container {
-  @include flex(column);
-}
-
 .blog-categories-li {
   text-transform: uppercase;
   font-weight: bold;
   list-style-type: none;
+}
+
+//********** Posts **********
+
+.blog-index-wrapper {
+  @include flex(row);
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 $section-spacing $section-spacing;
+}
+
+.blog-index-container {
+  @include flex(column);
+  margin-bottom: 10px;
+  flex: 0 1 500px;
+
+  &:nth-of-type(-n + 2) {
+    flex: 0 1 750px;
+    margin-bottom: $section-spacing-large;
+  }
+}
+
+.blog-index-image {
+  width: 100%;
 }
 
 //*=========================================
