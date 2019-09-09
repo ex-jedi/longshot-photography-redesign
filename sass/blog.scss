@@ -11,6 +11,7 @@
 //*=========================================
 //** General Styles  **
 //*=========================================
+
 .blog-post-article {
   p {
     font-family: "ff-tisa-web-pro", serif;
@@ -27,6 +28,12 @@
   order: 1;
 }
 
+.blog-index-page-subtitle,
+.blog-categories-li,
+.blog-index-title {
+  font-size: 1rem;
+}
+
 //*=========================================
 //** Blog Index  **
 //*=========================================
@@ -38,8 +45,29 @@
   background-position: left 0 top -14rem, center center;
 }
 
+.blog-categories-li {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.blog-category-link {
+  color: $heading-colour;
+  letter-spacing: 0.1rem;
+}
+
 .blog-index-container {
   @include flex(column);
+}
+
+.blog-categories-li {
+  list-style-type: none;
+}
+
+.blog-categories-ul {
+  @include flex(row);
+  justify-content: space-around;
+  margin: 0 $section-spacing-large;
+  padding: 0;
 }
 
 //*=========================================
@@ -66,7 +94,6 @@
   @include flex(column);
   justify-content: center;
   align-items: center;
-  // max-height: 100vh;
 }
 
 .post-category-paragraph {
