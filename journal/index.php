@@ -10,7 +10,7 @@
       ));
       ?>
     </div>
-    <?php perch_blog_recent_posts(5); ?>
+    <?php perch_blog_recent_posts(); ?>
   </section>
   <section class="contact-form section">
     <?php perch_content("General Contact Form"); ?>
