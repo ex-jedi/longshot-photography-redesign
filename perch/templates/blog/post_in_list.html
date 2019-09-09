@@ -1,5 +1,12 @@
 <div class="blog-index-container">
   <h3 class="blog-index-title">
-     <perch:blog id="postTitle" >
+    <perch:blog id="postTitle">
   </h3>
+  <img class="blog-index-image" src="<perch:blog id="blogIndexImage" type="image" width="1350" label="Blog Index image">" alt="<perch:blog id="alt" type="text" label="Image description">"
+  sizes="(max-width:1300) 50vw, 100vw"
+  srcset="<perch:blog type="image" id="blogIndexImage" width="1350" > 1350w,
+  <perch:blog type="image" id="blogIndexImage" width="1100" > 1100w,
+  <perch:blog type="image" id="blogIndexImage" width="800" > 800w,
+  <perch:blog type="image" id="blogIndexImage" width="600" > 600w,
+  <perch:blog type="image" id="blogIndexImage" width="400" > 400w" >
 </div>
