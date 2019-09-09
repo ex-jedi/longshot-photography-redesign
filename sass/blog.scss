@@ -45,9 +45,15 @@
   background-position: left 0 top -14rem, center center;
 }
 
-.blog-categories-li {
-  text-transform: uppercase;
-  font-weight: bold;
+.blog-index-page-subtitle {
+  margin-bottom: $section-spacing;
+}
+
+.blog-categories-ul {
+  @include flex(row);
+  justify-content: space-around;
+  margin: 0 $section-spacing-large $section-spacing-large;
+  padding: 0;
 }
 
 .blog-category-link {
@@ -60,14 +66,9 @@
 }
 
 .blog-categories-li {
+  text-transform: uppercase;
+  font-weight: bold;
   list-style-type: none;
-}
-
-.blog-categories-ul {
-  @include flex(row);
-  justify-content: space-around;
-  margin: 0 $section-spacing-large;
-  padding: 0;
 }
 
 //*=========================================
