@@ -1,15 +1,14 @@
   <!-- Cover Image -->
-  <perch:blog id="blog-index-image" type="image" label="Blog Listing Image" help="This image will appear on the blog homepage with the title and excerpt text." suppress="true" order="2" required="true" width="1350" >
-  <perch:blog id="blog-index-image" type="image" suppress="true" width="1100" >
-  <perch:blog id="blog-index-image" type="image" suppress="true" width="800" >
-  <perch:blog id="blog-index-image" type="image" suppress="true" width="600" >
-  <perch:blog id="blog-index-image" type="image" suppress="true" width="400" >
+  <perch:blog id="blogIndexImage" type="image" label="Blog Listing Image" help="This image will appear on the blog homepage with the title." suppress="true" order="2" required="true" width="1350" height="900" crop="true">
+  <perch:blog id="blogIndexImage" type="image" suppress="true" width="1100" height="733" crop="true">
+  <perch:blog id="blogIndexImage" type="image" suppress="true" width="800"  height="533" crop="true">
+  <perch:blog id="blogIndexImage" type="image" suppress="true" width="600"  height="400" crop="true">
+  <perch:blog id="blogIndexImage" type="image" suppress="true" width="400"  height="267" crop="true">
 
   <!-- Title -->
   <h1 class="blog-post-title section-heading" itemprop="headline"> <!-- Post title -->
     <perch:blog id="postTitle" type="text" label="Post Title" help="The title will appear at the top of the post and on the blog home page along with the excerpt and cover photo." required="true" size="l" order="1" >
   </h1>
-
 <div class="post-wrapper">
 
 
@@ -84,9 +83,9 @@
         </div>
     </perch:block>
 
-    <perch:block type="socialMediaEmbed" icon="code" label="Embed social media posts - (can be dragged up or down to reorder)."> <!-- Video Embed  -->
+    <perch:block type="socialMediaEmbed" icon="code" label="General Embeds - (can be dragged up or down to reorder)."> <!-- Video Embed  -->
     <div class="embed blog-general-embed">
-      <perch:blog id="socialEmbedBlock" type="textarea" editor="markitup" html="true" help="Paste embed code into the box." size="m">
+      <perch:blog id="socialEmbedBlock" type="textarea" editor="markitup" html="true" help="For social media type embeds. Paste code into the box." size="m">
       </div>
   </perch:block>
 

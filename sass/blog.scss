@@ -11,12 +11,99 @@
 //*=========================================
 //** General Styles  **
 //*=========================================
+
 .blog-post-article {
   p {
     font-family: "ff-tisa-web-pro", serif;
     font-weight: 300;
     font-style: normal;
   }
+}
+
+.blog-post-title,
+.blog-index-page-title {
+  font-size: $h2-size;
+  text-align: center;
+  margin: 0 auto;
+  order: 1;
+}
+
+.blog-index-page-subtitle,
+.blog-categories-li,
+.blog-index-title {
+  font-size: 1rem;
+}
+
+//*=========================================
+//** Blog Index  **
+//*=========================================
+
+//********** Before Posts **********
+
+.blog-index-section {
+  background-color: $light-background-colour;
+  background-image: url("/images/splodge-rotated-medium.png"),
+    url("/images/splodge-rotated-medium.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left 0 top -14rem, right 40% top;
+  background-size: auto, 35rem;
+}
+
+.blog-index-page-subtitle {
+  margin-bottom: $section-spacing;
+}
+
+.blog-categories-ul {
+  @include flex(row);
+  justify-content: space-around;
+  margin: 0 $section-spacing-large $section-spacing-large;
+  padding: 0;
+}
+
+.blog-category-link {
+  color: $heading-colour;
+  letter-spacing: 0.1rem;
+}
+
+.blog-categories-li {
+  text-transform: uppercase;
+  font-weight: bold;
+  list-style-type: none;
+}
+
+//********** Posts **********
+
+.blog-index-wrapper {
+  @include flex(row);
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0 $section-spacing $section-spacing;
+}
+
+.blog-index-container {
+  @include flex(column);
+  margin-bottom: 10px;
+  flex: 0 1 33%;
+  justify-content: space-between;
+  padding: 1rem;
+
+  &:nth-of-type(-n + 2) {
+    flex: 0 1 50%;
+    margin-bottom: $section-spacing-large;
+
+    .blog-index-title {
+      margin-bottom: $section-spacing;
+    }
+  }
+}
+
+.blog-index-title {
+  text-align: left;
+  width: 100%;
+}
+
+.blog-index-image {
+  width: 100%;
 }
 
 //*=========================================
@@ -43,13 +130,6 @@
   @include flex(column);
   justify-content: center;
   align-items: center;
-}
-
-.blog-post-title {
-  font-size: $h2-size;
-  text-align: center;
-  margin: 0 auto;
-  order: 1;
 }
 
 .post-category-paragraph {
