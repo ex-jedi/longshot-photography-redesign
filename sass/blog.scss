@@ -19,6 +19,22 @@
   }
 }
 
+.blog-post-title,
+.blog-index-page-title {
+  font-size: $h2-size;
+  text-align: center;
+  margin: 0 auto;
+  order: 1;
+}
+
+//*=========================================
+//** Blog Index  **
+//*=========================================
+
+.blog-index-container {
+  @include flex(column);
+}
+
 //*=========================================
 //** Blog Post  **
 //*=========================================
@@ -44,13 +60,6 @@
   justify-content: center;
   align-items: center;
   // max-height: 100vh;
-}
-
-.blog-post-title {
-  font-size: $h2-size;
-  text-align: center;
-  margin: 0 auto;
-  order: 1;
 }
 
 .post-category-paragraph {
