@@ -93,6 +93,11 @@
 
     .blog-index-title {
       margin-bottom: $section-spacing;
+      order: 1;
+    }
+
+    .blog-index-image {
+      order: 2;
     }
   }
 }
@@ -100,10 +105,12 @@
 .blog-index-title {
   text-align: left;
   width: 100%;
+  order: 2;
 }
 
 .blog-index-image {
   width: 100%;
+  order: 1;
 }
 
 //*=========================================
