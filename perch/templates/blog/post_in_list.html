@@ -10,10 +10,17 @@
   <img class="blog-index-image fade-up-in lazy" data-src="<perch:blog id="blogIndexImage" type="image" width="1350" height="900" label="Blog Index image">" alt="<perch:blog id="alt" type="text" label="Image description">"
   data-sizes="(max-width:1300) 50vw, 100vw"
   data-srcset="<perch:blog type="image" id="blogIndexImage" width="1350" height="900" > 1350w,
-  <perch:blog type="image" id="blogIndexImage" width="1100" height="733 > 1100w,
+  <perch:blog type="image" id="blogIndexImage" width="1100" height="733" > 1100w,
   <perch:blog type="image" id="blogIndexImage" width="800" height="533" > 800w,
   <perch:blog type="image" id="blogIndexImage" width="600" height="400" > 600w,
   <perch:blog type="image" id="blogIndexImage" width="400" height="267" > 400w" >
+
+  <perch:every nth-child="-n+2">
+    <div class="blog-excerpt-div">
+      <perch:blog id="blog-index-excerpt" html="true">
+    </div>
+  </perch:every>
+
 </div>
 <perch:after>
   </div>

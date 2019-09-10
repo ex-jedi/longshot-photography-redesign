@@ -77,22 +77,22 @@
   @include flex(row);
   flex-wrap: wrap;
   justify-content: flex-start;
-  margin: 0 $section-spacing $section-spacing;
+  padding: 0 $section-spacing $section-spacing;
 }
 
 .blog-index-container {
   @include flex(column);
   margin-bottom: 10px;
   flex: 0 1 33%;
-  justify-content: space-between;
-  padding: 1rem;
+  justify-content: flex-start;
+  padding: $section-spacing-small;
 
   &:nth-of-type(-n + 2) {
     flex: 0 1 50%;
     margin-bottom: $section-spacing-large;
 
     .blog-index-title {
-      margin-bottom: $section-spacing;
+      margin-bottom: $section-spacing-small;
       order: 1;
     }
 
@@ -106,11 +106,24 @@
   text-align: left;
   width: 100%;
   order: 2;
+  margin-top: $section-spacing-small;
+}
+
+.blog-excerpt-div {
+  width: 100%;
+  flex: 0 1 auto;
+  order: 3;
+  font-size: 0.9rem;
 }
 
 .blog-index-image {
   width: 100%;
   order: 1;
+  height: 30vh;
+
+  &.loaded {
+    height: auto;
+  }
 }
 
 //*=========================================
