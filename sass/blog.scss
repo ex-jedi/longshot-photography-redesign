@@ -82,7 +82,6 @@
 
 .blog-index-container {
   @include flex(column);
-  margin-bottom: 10px;
   flex: 0 1 33%;
   justify-content: flex-start;
   padding: $section-spacing-small;

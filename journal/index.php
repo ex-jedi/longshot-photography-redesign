@@ -23,10 +23,10 @@
     <div class="index-non-featured-posts">
       <?php
         perch_blog_custom(array(
-          'start' => 3,
           'template'   => 'non_featured_posts.html',
           'sort'       => 'postDateTime',
           'sort-order' => 'DESC',
+          'start' => 3,
           'count' => 20,
           'paginate' => false,
         ));
