@@ -47,6 +47,7 @@
   background-repeat: no-repeat, no-repeat;
   background-position: left 0 top -14rem, right 40% top;
   background-size: auto, 35rem;
+  padding: 0 $section-spacing;
 }
 
 .blog-index-page-subtitle {
@@ -75,11 +76,22 @@
 
 .index-featured-posts {
   @include flex(row);
+  justify-content: space-between;
+  margin-bottom: $section-spacing-large;
   .blog-index-container {
     justify-content: space-between;
     flex: 1 1 auto;
     width: 50%;
+    &:first-of-type {
+      margin-right: $section-spacing;
+    }
   }
+}
+
+.index-non-featured-posts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: $section-spacing;
 }
 
 .blog-index-wrapper {
@@ -93,7 +105,6 @@
   @include flex(column);
   flex: 0 1 33%;
   justify-content: flex-start;
-  padding: $section-spacing-small;
 }
 
 .blog-index-title {
