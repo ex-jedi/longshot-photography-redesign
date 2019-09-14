@@ -73,6 +73,15 @@
 
 //********** Posts **********
 
+.index-featured-posts {
+  @include flex(row);
+  .blog-index-container {
+    justify-content: space-between;
+    flex: 1 1 auto;
+    width: 50%;
+  }
+}
+
 .blog-index-wrapper {
   @include flex(row);
   flex-wrap: wrap;
