@@ -10,7 +10,28 @@
       ));
       ?>
     </div>
-    <?php perch_blog_recent_posts(); ?>
+    <div class="index-featured-posts">
+      <?php
+        perch_blog_custom(array(
+          'count'      => 2,
+          'template'   => 'featured_posts.html',
+          'sort'       => 'postDateTime',
+          'sort-order' => 'DESC',
+        ));
+      ?>
+    </div>
+    <div class="index-non-featured-posts">
+      <?php
+        perch_blog_custom(array(
+          'template'   => 'non_featured_posts.html',
+          'sort'       => 'postDateTime',
+          'sort-order' => 'DESC',
+          'start' => 3,
+          'count' => 20,
+          'paginate' => false,
+        ));
+      ?>
+    </div>
   </section>
   <section class="contact-form section">
     <?php perch_content("General Contact Form"); ?>
