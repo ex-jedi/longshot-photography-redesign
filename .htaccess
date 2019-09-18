@@ -36,8 +36,8 @@ RewriteRule ^(.+)$ $1.php [L,QSA]
 RewriteRule ^journal/([a-zA-Z0-9-/]+)/preview$ /journal/post.php?s=$1&preview=all [L]
 
 #Blog Categories
-RewriteRule ^journal/category/([a-zA-Z0-9-/]+)/page/([0-9]+)/{0,1}$ /journal/archive.php?cat=$1&page=$2 [L]
-RewriteRule ^journal/category/([a-zA-Z0-9-/]+)$ /journal/archive.php?cat=$1 [L]
+RewriteRule ^journal/([a-zA-Z0-9-/]+)/page/([0-9]+)/{0,1}$ /journal/archive.php?cat=$1&page=$2 [L]
+RewriteRule ^journal/([a-zA-Z0-9-/]+)$ /journal/archive.php?cat=$1 [L]
 
 #Blog Archive
 RewriteRule ^journal/date/([a-zA-Z0-9-/]+)/page/([0-9]+)/{0,1}$ /journal/archive.php?year=$1&page=$2 [L]
