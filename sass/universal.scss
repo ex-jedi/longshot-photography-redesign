@@ -119,6 +119,11 @@ header {
   flex-wrap: wrap;
   min-height: 100vh;
   padding: 0 $section-spacing-extra-large;
+
+  @include breakpoint(1600) {
+    padding: 0 $section-spacing;
+  }
+
 }
 
 .header-logo-wrapper {
@@ -126,6 +131,11 @@ header {
   top: $section-spacing;
   right: 0;
   left: 0;
+
+  @include breakpoint(1300) {
+    top: $form-spacing;
+  }
+
 
   img {
     margin: 0 auto;
@@ -136,6 +146,13 @@ header {
 
 .main-header-image-wrapper {
   flex: 0 0 500px;
+
+@include breakpoint(1300) {
+  position: relative;
+  top: $section-spacing;
+  flex: 0 1 450px;
+}
+
 }
 
 .main-header-image {
