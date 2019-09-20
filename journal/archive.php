@@ -8,37 +8,39 @@
 		        $template 		= 'non_featured_posts.html';
 		        $sort_order		= 'DESC';
 		        $sort_by		= 'postDateTime';
-
-		        // Have we displayed any posts yet?
 		        $posts_displayed = false;
 
-		        /*
-		        	perch_get() is used to get options from the URL.
-
-					e.g. for the URL
-						/blog/archive.php?cat=news
-
-					perch_get('cat') would return 'news' because cat=news.
-
-
-					The code below looks for different options in the URL, and then displays different types of listings based on it.
-		        */
 
 
 		        /* --------------------------- POSTS BY CATEGORY --------------------------- */
 		        if (perch_get('cat')) {
 		            echo '<h1 class="archive-section-heading section-heading">'.perch_blog_category(perch_get('cat'), true).'</h1>';
 
-		            perch_blog_custom(array(
-							'category'   => perch_get('cat'),
-							'template'   => $template,
-							'count'      => $posts_per_page,
-							'sort'       => $sort_by,
-							'sort-order' => $sort_order,
-		                    ));
+
+
+							echo '<div class="index-featured-posts">';
+								perch_blog_custom(array(
+									'count'      => 2,
+									'template'   => $template,
+									'sort'       => $sort_by,
+									'sort-order' => $sort_order,
+								));
+						echo '</div>';
+						echo '<div class="index-non-featured-posts">';
+						perch_blog_custom(array(
+									'template' => $template,
+									'sort'       => $sort_by,
+									'sort-order' => $sort_order,
+									'start' => 3,
+									'count' => 20,
+									'paginate' => false,
+								));
+
+						echo '</div>';
 
 		            $posts_displayed = true;
-		        }
+						}
+
 
 
 		      	/* --------------------------- DEFAULT: ALL POSTS --------------------------- */
