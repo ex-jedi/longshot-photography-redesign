@@ -118,14 +118,24 @@ header {
   align-items: center;
   flex-wrap: wrap;
   min-height: 100vh;
-  padding: 0 $section-spacing-extra-large;
+  padding: $section-spacing-large $section-spacing-extra-large 0;
+
+  @include breakpoint(1600) {
+    padding: $section-spacing-large $section-spacing 0;
+  }
+
 }
 
 .header-logo-wrapper {
   position: absolute;
-  top: $section-spacing;
+  top: $section-spacing-small;
   right: 0;
   left: 0;
+
+  @include breakpoint(1300) {
+    top: $form-spacing;
+  }
+
 
   img {
     margin: 0 auto;
@@ -136,6 +146,12 @@ header {
 
 .main-header-image-wrapper {
   flex: 0 0 500px;
+
+@include breakpoint(1300) {
+  position: relative;
+  flex: 0 1 450px;
+}
+
 }
 
 .main-header-image {
@@ -147,7 +163,7 @@ header {
   text-transform: none;
   flex: 1 1 300px;
   color: $heading-colour;
-  font-size: calc(1rem + 1vw);
+  font-size: calc(1rem + 2vw);
   margin: $section-spacing-extra-large 0 0 $section-spacing;
   word-break: break-word;
   line-height: $line-height-medium;
@@ -170,6 +186,10 @@ header {
   clip-path: circle(3.5%);
   transition: clip-path 1s $cubic-one;
   z-index: 1;
+
+  @include breakpoint(1300) {
+    top: -23rem;
+  }
 
   &::before {
     content: "";

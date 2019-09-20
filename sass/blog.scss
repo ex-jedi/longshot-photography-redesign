@@ -47,6 +47,7 @@
   background-repeat: no-repeat, no-repeat;
   background-position: left 0 top -14rem, right 40% top;
   background-size: auto, 35rem;
+  padding: 0 $section-spacing;
 }
 
 .blog-index-page-subtitle {
@@ -73,6 +74,26 @@
 
 //********** Posts **********
 
+.index-featured-posts {
+  @include flex(row);
+  justify-content: space-between;
+  margin-bottom: $section-spacing-large;
+  .blog-index-container {
+    justify-content: space-between;
+    flex: 1 1 auto;
+    width: 50%;
+    &:first-of-type {
+      margin-right: $section-spacing;
+    }
+  }
+}
+
+.index-non-featured-posts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: $section-spacing;
+}
+
 .blog-index-wrapper {
   @include flex(row);
   flex-wrap: wrap;
@@ -82,43 +103,24 @@
 
 .blog-index-container {
   @include flex(column);
-  margin-bottom: 10px;
   flex: 0 1 33%;
   justify-content: flex-start;
-  padding: $section-spacing-small;
-
-  &:nth-of-type(-n + 2) {
-    flex: 0 1 50%;
-    margin-bottom: $section-spacing-large;
-
-    .blog-index-title {
-      margin-bottom: $section-spacing-small;
-      order: 1;
-    }
-
-    .blog-index-image {
-      order: 2;
-    }
-  }
 }
 
 .blog-index-title {
   text-align: left;
   width: 100%;
-  order: 2;
   margin-top: $section-spacing-small;
 }
 
 .blog-excerpt-div {
   width: 100%;
   flex: 0 1 auto;
-  order: 3;
   font-size: 0.9rem;
 }
 
 .blog-index-image {
   width: 100%;
-  order: 1;
   height: 30vh;
 
   &.loaded {
@@ -207,4 +209,12 @@
     text-align: center;
     margin: 0;
   }
+}
+
+//*=========================================
+//** Blog Archive  **
+//*=========================================
+
+.archive-section-heading {
+  font-size: $h2-size;
 }
