@@ -48,6 +48,14 @@
   background-position: left 0 top -14rem, right 40% top;
   background-size: auto, 35rem;
   padding: 0 $section-spacing;
+
+  @include breakpoint(1100) {
+    padding: 0 $section-spacing-small;
+  }
+
+  @include breakpoint(500) {
+    padding: 0 $section-spacing-tiny;
+  }
 }
 
 .blog-index-page-subtitle {
@@ -73,7 +81,8 @@
 .blog-category-link {
   color: $heading-colour;
   letter-spacing: 0.1rem;
-  margin: 0 10px;
+  display: inline-block;
+  padding: 1rem;
 }
 
 .blog-categories-li {
