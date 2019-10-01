@@ -59,10 +59,10 @@
   justify-content: space-around;
   margin: 0 $section-spacing-large $section-spacing-large;
   padding: 0;
+  flex-wrap: wrap;
 
   @include breakpoint(1500) {
     margin: 0 $section-spacing $section-spacing-large;
-
   }
 
   @include breakpoint(1300) {
@@ -123,6 +123,10 @@
 
   @include breakpoint(1300) {
     gap: $section-spacing-small;
+  }
+
+  @include breakpoint(1100) {
+    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
   }
 }
 
