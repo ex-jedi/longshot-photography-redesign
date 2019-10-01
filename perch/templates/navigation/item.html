@@ -6,6 +6,6 @@
         </li>
 <perch:after>
     </ul>
-    <button class="nav-pull-button no-outline" id="pull" @click="navPull = !navPull" :class="{'button-hide': navPull}" >Menu</button>
+    <button class="nav-pull-button no-outline" id="pull" @click="navPull = !navPull" :class="{'button-hide': navPull}" @click="navPull = !navPull" >Menu</button>
     <img class="menu-closer" src="/images/svg-cross.svg" @click="navPull = !navPull" :class="{'closer-reveal': navPull}">
 </perch:after>

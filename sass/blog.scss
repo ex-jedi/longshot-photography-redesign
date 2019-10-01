@@ -59,6 +59,11 @@
   justify-content: space-around;
   margin: 0 $section-spacing-large $section-spacing-large;
   padding: 0;
+
+  @include breakpoint(1500) {
+    margin: 0 $section-spacing $section-spacing-large;
+
+  }
 }
 
 .blog-category-link {
@@ -78,12 +83,18 @@
   @include flex(row);
   justify-content: space-between;
   margin-bottom: $section-spacing-large;
+
   .blog-index-container {
-    justify-content: space-between;
+    justify-content: flex-start;
     flex: 1 1 auto;
     width: 50%;
+
     &:first-of-type {
       margin-right: $section-spacing;
+
+      @include breakpoint(1300) {
+        margin-right: $section-spacing-small;
+      }
     }
   }
 }
@@ -92,6 +103,10 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: $section-spacing;
+
+  @include breakpoint(1300) {
+    gap: $section-spacing-small;
+  }
 }
 
 .blog-index-wrapper {
