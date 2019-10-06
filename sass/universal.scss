@@ -159,9 +159,10 @@ header {
   @include heading-font-stack;
   text-transform: none;
   flex: 1 1 300px;
+  align-content: center;
   color: $heading-colour;
   font-size: calc(1rem + 2vw);
-  margin: $section-spacing-extra-large 0 0 $section-spacing;
+  margin: 0 0 0 $section-spacing;
   word-break: break-word;
   line-height: $line-height-medium;
   letter-spacing: $letter-spacing;
