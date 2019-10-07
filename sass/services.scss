@@ -80,9 +80,8 @@
 .services-details-wrapper,
 .service-text-wrapper {
   p {
-    font-family: "ff-tisa-web-pro", serif;
-    font-weight: 300;
-    font-style: normal;
+    @include alt-font-stack;
+
 
     &:first-of-type {
       margin-top: 0;
