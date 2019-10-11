@@ -72,6 +72,10 @@ h2 {
   margin: 0 auto;
   font-size: $h2-size;
   letter-spacing: 0.5rem;
+
+  @include breakpoint(900) {
+    font-size: $h2-size-medium;
+  }
 }
 
 h3 {

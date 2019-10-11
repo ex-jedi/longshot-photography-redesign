@@ -107,12 +107,25 @@
   @include breakpoint(1300) {
     padding: $section-spacing;
   }
+
+  @include breakpoint(600) {
+    padding: $section-spacing-large $section-spacing-small;
+    min-height: auto;
+  }
 }
 
 .testimonial-text {
   font-size: $extra-large-font-size;
   text-align: center;
   line-height: $line-height-large;
+
+  @include breakpoint(800) {
+    font-size: $large-font-size;
+  }
+
+  @include breakpoint(600) {
+    font-size: $medium-font-size;
+  }
 }
 
 .testimonial-source {
