@@ -68,19 +68,9 @@ h3 {
   text-align: center;
 }
 
-h2 {
-  margin: 0 auto;
-  font-size: $h2-size;
-  letter-spacing: 0.5rem;
-
-  @include breakpoint(900) {
-    font-size: $h2-size-medium;
-  }
-}
-
 h3 {
   letter-spacing: 0.1rem;
-  font-size: $h3-size;
+  font-size: $heading-size-small;
 }
 
 //********** Containers **********
@@ -343,8 +333,20 @@ main {
 }
 
 .section-heading {
+  margin: 0 auto;
+  font-size: $heading-size-extra-large;
+  letter-spacing: 0.5rem;
   padding: $h2-spacing-large 0;
   color: $heading-colour;
+
+  @include breakpoint(900) {
+    font-size: $heading-size-large;
+    padding: $h2-spacing-medium 0;
+  }
+
+  @include breakpoint(500) {
+    font-size: $heading-size-medium;
+  }
 }
 
 //********** Fade Up In **********
