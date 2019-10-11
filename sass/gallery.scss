@@ -28,39 +28,7 @@
   padding-bottom: $section-spacing-large;
   overflow-y: hidden;
 
-  &::-webkit-scrollbar {
-    height: 0.5rem;
-  }
-
-  &::-webkit-scrollbar-track {
-    background: linear-gradient(
-      to bottom,
-      #293c3800 45%,
-      #293c3866 47%,
-      #293c38 50%,
-      #293c389c 52%,
-      #293c3805 55%
-    );
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background-color: scale-color($dark-green, $lightness: 10%);
-  }
-
-  &::-webkit-scrollbar-thumb {
-    &:hover {
-      background-color: $dark-green;
-    }
-  }
-
-  &:last-of-type::after,
-  &:first-of-type::before {
-    content: "";
-    width: 1px;
-    height: 1px;
-    padding: 1px;
-    margin: 1px;
-  }
+  @include horizontal-scrollbar;
 }
 
 .gallery-index-album {

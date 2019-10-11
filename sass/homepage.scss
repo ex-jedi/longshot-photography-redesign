@@ -43,6 +43,7 @@
   color: $dark-font-colour;
   justify-content: flex-start;
   @include horizontal-scrollbar;
+  padding-bottom: $section-spacing;
 }
 
 .homepage-featured-gallery {
