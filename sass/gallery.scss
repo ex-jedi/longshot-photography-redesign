@@ -37,6 +37,7 @@
   width: 25%;
   min-width: 300px;
   margin: 0 $section-spacing;
+  transform: translateY($section-spacing);
 
   img {
     width: 100%;
@@ -49,13 +50,15 @@
     }
   }
 
-  &:nth-of-type(3n + 2) {
+  &:nth-of-type(3n + 3) {
+    animation-delay: 0.2s;
     img {
       box-shadow: -2rem 2rem 0 0 $image-shadow-two;
     }
   }
 
-  &:nth-of-type(3n + 3) {
+  &:nth-of-type(3n + 2) {
+    animation-delay: 0.4s;
     img {
       box-shadow: -2rem 2rem 0 0 $image-shadow-three;
     }
