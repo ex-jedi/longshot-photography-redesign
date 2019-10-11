@@ -103,7 +103,6 @@ header {
   grid-area: h;
   position: relative;
   overflow: hidden;
-  z-index: 1;
   background-color: $dark-background-colour;
 }
 
@@ -503,6 +502,7 @@ label {
 .submit {
   @include heading-font-stack;
   color: $dark-font-colour;
+  background-color: $light-background-colour;
   letter-spacing: 0.1rem;
   width: fit-content;
   padding: 0 $form-spacing;
@@ -510,6 +510,7 @@ label {
   border-radius: 5px;
   border: 1px solid $light-background-colour;
   transition: 0.3s all ease;
+  -webkit-appearance: none;
 
   &:hover {
     background-color: $dark-background-colour;
