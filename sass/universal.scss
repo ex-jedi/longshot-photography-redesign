@@ -435,6 +435,10 @@ footer {
 .general-form-container {
   width: 40%;
   margin: 0 auto $section-spacing-extra-large;
+
+  @include breakpoint(1600) {
+    width: 50%;
+  }
 }
 
 .general-contact-form {
