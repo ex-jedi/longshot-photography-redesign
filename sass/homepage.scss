@@ -84,7 +84,7 @@
 .homepage-featured-gallery-sub-heading {
   text-align: center;
   margin: 1.5rem auto 0;
-  font-size: 1rem;
+  font-size: $base-font-size;
   background-color: transparent;
 }
 
@@ -110,7 +110,7 @@
 }
 
 .testimonial-text {
-  font-size: 2.5rem;
+  font-size: $extra-large-font-size;
   text-align: center;
   line-height: $line-height-large;
 }
