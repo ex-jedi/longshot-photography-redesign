@@ -398,7 +398,7 @@ footer {
 
 .footer-social-media {
   @include flex(row);
-  width: 250px;
+  width: 275px;
   margin-bottom: $section-spacing;
   justify-content: space-between;
 }
@@ -408,7 +408,7 @@ footer {
 }
 
 .footer-social-media-icon {
-  width: 90px;
+  height: 90px;
 }
 
 //*=========================================
