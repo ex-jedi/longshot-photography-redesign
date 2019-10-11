@@ -266,7 +266,7 @@ header {
   display: block;
   background-color: transparent;
   border: 0;
-  font-size: 0.9rem;
+  font-size: $small-font-size;
   padding: 0.3rem 0;
   z-index: 2;
   cursor: pointer;
@@ -305,7 +305,7 @@ header {
   color: $dark-font-colour;
   background-color: $light-background-colour;
   padding: 10px;
-  font-size: 1.2rem;
+  font-size: $smaller-font-size;
   top: 0;
   left: 0;
   width: 1px;
@@ -370,7 +370,7 @@ footer {
   align-items: center;
   color: $dark-font-colour;
   padding: $section-spacing;
-  font-size: 0.75rem;
+  font-size: $tiny-font-size;
   letter-spacing: 1px;
   background-color: $light-background-colour;
   background-image: url("/images/splodge-rotated-medium.png");
@@ -447,7 +447,7 @@ footer {
 
 label {
   @include heading-font-stack;
-  font-size: 1.2rem;
+  font-size: $smaller-font-size;
   display: block;
   letter-spacing: 0.1rem;
   margin-bottom: $form-spacing;
@@ -548,7 +548,7 @@ label {
 
   label {
     @include font-stack;
-    font-size: 1rem;
+    font-size: $base-font-size;
     text-transform: none;
     display: inline;
   }
