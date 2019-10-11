@@ -445,6 +445,15 @@ footer {
   @include breakpoint(1600) {
     width: 55%;
   }
+
+  @include breakpoint(900) {
+    width: 100%;
+    padding: 0 $section-spacing;
+  }
+
+  @include breakpoint(500) {
+    padding: 0 $section-spacing-tiny;
+  }
 }
 
 .general-contact-form {
