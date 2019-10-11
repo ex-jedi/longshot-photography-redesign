@@ -30,59 +30,19 @@
 // *=========================================
 
 .homepage-featured-galleries-section {
-  padding: 0 0 $section-spacing-extra-large;
+  padding: 0 0 $section-spacing-large;
   background-image: url("/images/splodge-rotated-medium.png");
   background-position: right -50px top -100px;
   background-repeat: no-repeat;
   background-attachment: fixed;
   min-height: 100vh;
-  overflow: auto;
-
-  &::-webkit-scrollbar {
-    height: 0.5rem;
-  }
-
-  &::-webkit-scrollbar-track {
-    background: linear-gradient(
-      to bottom,
-      #293c3800 45%,
-      #293c3866 47%,
-      #293c38 50%,
-      #293c389c 52%,
-      #293c3805 55%
-    );
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background-color: scale-color($dark-green, $lightness: 10%);
-    position: relative;
-    bottom: 10rem;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    &:hover {
-      background-color: $dark-green;
-    }
-  }
-
-  @include breakpoint(1300) {
-    margin-bottom: $section-spacing-small;
-  }
 }
 
 .homepage-featured-gallery-wrapper {
   @include flex(row);
   color: $dark-font-colour;
   justify-content: flex-start;
-
-  &:last-of-type::after,
-  &:first-of-type::before {
-    content: "";
-    width: 1px;
-    height: 1px;
-    padding: 1px;
-    margin: 1px;
-  }
+  @include horizontal-scrollbar;
 }
 
 .homepage-featured-gallery {
