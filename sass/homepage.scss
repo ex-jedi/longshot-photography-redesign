@@ -103,6 +103,10 @@
   @include breakpoint(1600) {
     padding: $section-spacing-large;
   }
+
+  @include breakpoint(1300) {
+    padding: $section-spacing;
+  }
 }
 
 .testimonial-text {
