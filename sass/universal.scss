@@ -123,15 +123,15 @@ header {
   top: $section-spacing-small;
   right: 0;
   left: 0;
+}
+
+.main-logo {
+  margin: 0 auto;
+  max-width: 100%;
+  width: 800px; //TODO: Change image size in template
 
   @include breakpoint(1300) {
-    top: $form-spacing;
-  }
-
-  img {
-    margin: 0 auto;
-    max-width: 100%;
-    width: 800px; //TODO: Change image size in template
+    width: 600px;
   }
 }
 
@@ -141,7 +141,6 @@ header {
 
   @include breakpoint(1300) {
     position: relative;
-    flex: 0 1 450px;
   }
 }
 
@@ -155,12 +154,16 @@ header {
   flex: 1 1 300px;
   align-content: center;
   color: $light-font-colour;
-  font-size: calc(1.5rem + 2vw);
+  font-size: calc(1rem + 2.5vw);
   margin: 0 0 0 $section-spacing;
   word-break: break-word;
   line-height: $line-height;
   letter-spacing: $letter-spacing;
   width: fit-content;
+
+  @include breakpoint(1100) {
+    font-size: calc(1rem + 2vw);
+  }
 }
 
 // =========================================
@@ -170,18 +173,14 @@ header {
 .main-nav {
   @include flex(column);
   position: fixed;
-  top: -23.75rem;
-  right: -23.75rem;
+  top: -28.2rem;
+  right: -28.2rem;
   background-color: $dark-brown;
   width: 1300px;
   height: 1300px;
   clip-path: circle(3.5%);
   transition: clip-path 1s $cubic-one;
   z-index: 1;
-
-  @include breakpoint(1300) {
-    top: -23rem;
-  }
 
   &::before {
     content: "";
