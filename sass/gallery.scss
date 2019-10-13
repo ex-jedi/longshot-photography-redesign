@@ -84,14 +84,10 @@
 .gallery-album-image-div {
   width: 100%;
   min-height: 40vh;
+  animation-delay: .2s;
 }
 
 .gallery-album-image {
   width: 100%;
   margin-bottom: $section-spacing;
-
-  // &:first-of-type {
-  //   opacity: 0;
-  //   transform: translateY(2rem);
-  // }
 }
