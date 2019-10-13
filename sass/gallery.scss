@@ -26,7 +26,6 @@
   align-items: center;
   overflow: auto;
   padding-bottom: $section-spacing-large;
-  overflow-y: hidden;
 
   @include horizontal-scrollbar;
 }
