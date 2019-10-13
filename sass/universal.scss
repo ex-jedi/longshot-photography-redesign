@@ -137,6 +137,7 @@ header {
 
 .main-header-image-wrapper {
   flex: 0 0 500px;
+  animation-delay: 0.3s;
 
   @include breakpoint(1300) {
     position: relative;
@@ -356,12 +357,12 @@ main {
 }
 
 .fade-up-in-reveal {
-  animation: fade-up-in 1s $cubic-two forwards;
+  // Longhand to allow animation delay in other classes
+  animation-name: fade-up-in;
+  animation-duration: 1s;
+  animation-timing-function: $cubic-two;
+  animation-fill-mode: forwards;
 }
-
-// =========================================
-// ** Forms  **
-// =========================================
 
 // =========================================
 // ** Footer  **
@@ -392,6 +393,7 @@ footer {
 
   p {
     margin: 0;
+    text-align: center;
   }
 }
 

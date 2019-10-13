@@ -71,13 +71,14 @@
   }
 
   &:nth-of-type(1) {
+    animation-delay: 0.3s;
     img {
       box-shadow: -2rem 2rem 0px 0px $image-shadow-one;
     }
   }
 
   &:nth-of-type(2) {
-    animation-delay: 0.2s;
+    animation-delay: 0.6s;
 
     img {
       box-shadow: -2rem 2rem 0px 0px $image-shadow-two;
@@ -85,7 +86,7 @@
   }
 
   &:nth-of-type(3) {
-    animation-delay: 0.4s;
+    animation-delay: 0.9s;
 
     img {
       box-shadow: -2rem 2rem 0px 0px $image-shadow-three;
@@ -142,6 +143,7 @@
 
 .testimonial-source {
   margin-top: $section-spacing;
+  text-align: center;
 }
 
 //********** Testimonial One **********
