@@ -110,11 +110,16 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  min-height: 100vh;
+  height: 100vh;
   padding: $section-spacing-large $section-spacing-extra-large 0;
 
   @include breakpoint(1600) {
     padding: $section-spacing-large $section-spacing 0;
+  }
+
+  @include breakpoint(1300) {
+    height: auto;
+    padding-bottom: $section-spacing;
   }
 }
 
@@ -136,11 +141,12 @@ header {
 }
 
 .main-header-image-wrapper {
+  position: relative;
   flex: 0 0 400px;
   animation-delay: 0.3s;
 
-  @include breakpoint(1300) {
-    position: relative;
+  @include breakpoint(1100) {
+    flex: 0 0 350px;
   }
 }
 
@@ -162,7 +168,7 @@ header {
   width: fit-content;
 
   @include breakpoint(1100) {
-    font-size: calc(1rem + 2vw);
+    font-size: calc(1rem + 1.75vw);
   }
 }
 
