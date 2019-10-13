@@ -146,7 +146,11 @@ header {
   animation-delay: 0.3s;
 
   @include breakpoint(1100) {
-    flex: 0 0 350px;
+    flex: 0 0 300px;
+  }
+
+  @include breakpoint(900) {
+    flex: 0 0 225px;
   }
 }
 
@@ -168,7 +172,7 @@ header {
   width: fit-content;
 
   @include breakpoint(1100) {
-    font-size: calc(1rem + 1.75vw);
+    font-size: calc(1rem + 1.25vw);
   }
 }
 
