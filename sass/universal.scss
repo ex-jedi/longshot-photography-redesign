@@ -221,7 +221,7 @@ header {
   justify-content: flex-start;
   position: fixed;
   top: $header-spacing-medium;
-  right: calc(#{$section-spacing-extra-large} - 5rem);
+  right: calc(#{$section-spacing-large} - 5rem);
   list-style-type: none;
   color: $heading-colour;
   opacity: 0;
@@ -236,7 +236,7 @@ header {
 
 .main-nav-ul-reveal {
   opacity: 1;
-  right: $section-spacing-extra-large;
+  right: $section-spacing-large;
   transform: scale(1);
   pointer-events: auto;
   transition: all $transition-duration-slow $cubic-one 0.3s;
