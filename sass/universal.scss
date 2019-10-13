@@ -136,7 +136,7 @@ header {
 }
 
 .main-header-image-wrapper {
-  flex: 0 0 500px;
+  flex: 0 0 400px;
   animation-delay: 0.3s;
 
   @include breakpoint(1300) {
@@ -154,11 +154,11 @@ header {
   text-transform: none;
   flex: 1 1 300px;
   align-content: center;
-  color: $heading-colour;
-  font-size: calc(1rem + 2vw);
+  color: $light-font-colour;
+  font-size: calc(1.5rem + 2vw);
   margin: 0 0 0 $section-spacing;
   word-break: break-word;
-  line-height: $line-height-medium;
+  line-height: $line-height;
   letter-spacing: $letter-spacing;
   width: fit-content;
 }
