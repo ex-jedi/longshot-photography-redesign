@@ -129,6 +129,11 @@ header {
   @include breakpoint(800) {
     padding: $section-spacing-large $section-spacing-small $section-spacing;
   }
+
+  @include breakpoint(700) {
+    justify-content: flex-end;
+    height: auto;
+  }
 }
 
 .header-logo-wrapper {
@@ -158,6 +163,10 @@ header {
   @include breakpoint(800) {
     width: 375px;
   }
+
+  @include breakpoint(700) {
+    width: 80%;
+  }
 }
 
 .main-header-image-wrapper {
@@ -171,6 +180,13 @@ header {
 
   @include breakpoint(900) {
     flex: 0 0 225px;
+  }
+
+  @include breakpoint(700) {
+    flex: 0 0 75%;
+    top: -150px;
+    order: 2;
+    margin-bottom: -150px;
   }
 }
 
@@ -197,6 +213,17 @@ header {
 
   @include breakpoint(900) {
     font-size: calc(1rem + 1vw);
+  }
+
+  @include breakpoint(700) {
+    // position: absolute;
+    top: $section-spacing-medium;
+    left: $section-spacing-tiny;
+    padding-right: $section-spacing-tiny;
+    flex: 1 1 100%;
+    font-size: calc(1rem + 4vw);
+    margin: 0;
+    order: 1;
   }
 }
 
