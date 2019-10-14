@@ -79,12 +79,17 @@
   padding: 0 $section-spacing-extra-large
     calc(#{$section-spacing-extra-large} - #{$section-spacing});
   background-color: $light-background-colour;
+
+  @include breakpoint(1600) {
+    padding: 0 $section-spacing-large
+      calc(#{$section-spacing-extra-large} - #{$section-spacing});
+  }
 }
 
 .gallery-album-image-div {
   width: 100%;
   min-height: 40vh;
-  animation-delay: .2s;
+  animation-delay: 0.2s;
 }
 
 .gallery-album-image {
