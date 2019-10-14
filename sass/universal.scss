@@ -153,6 +153,10 @@ header {
   @include breakpoint(900) {
     width: 450px;
   }
+
+  @include breakpoint(800) {
+    width: 375px;
+  }
 }
 
 .main-header-image-wrapper {
