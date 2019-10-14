@@ -89,15 +89,33 @@
     padding: 0 $section-spacing
       calc(#{$section-spacing-extra-large} - #{$section-spacing});
   }
+
+  @include breakpoint(1100) {
+    padding: 0 $section-spacing-small
+      calc(#{$section-spacing-extra-large} - #{$section-spacing});
+  }
+
+  @include breakpoint(700) {
+    padding: 0 $section-spacing-tiny
+      calc(#{$section-spacing-extra-large} - #{$section-spacing});
+  }
 }
 
 .gallery-album-image-div {
   width: 100%;
   min-height: 40vh;
   animation-delay: 0.2s;
+
+  @include breakpoint(800) {
+    min-height: 20vh;
+  }
 }
 
 .gallery-album-image {
   width: 100%;
   margin-bottom: $section-spacing;
+
+  @include breakpoint(700) {
+    margin-bottom: $section-spacing-small;
+  }
 }
