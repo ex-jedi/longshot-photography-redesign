@@ -68,15 +68,9 @@ h3 {
   text-align: center;
 }
 
-h2 {
-  margin: 0 auto;
-  font-size: $h2-size;
-  letter-spacing: 0.5rem;
-}
-
 h3 {
   letter-spacing: 0.1rem;
-  font-size: $h3-size;
+  font-size: $heading-size-small;
 }
 
 //********** Containers **********
@@ -109,8 +103,8 @@ header {
   grid-area: h;
   position: relative;
   overflow: hidden;
-  z-index: 1;
   background-color: $dark-background-colour;
+  justify-content: center;
 }
 
 .main-header {
@@ -120,8 +114,29 @@ header {
   min-height: 100vh;
   padding: $section-spacing-large $section-spacing-extra-large 0;
 
+  @include breakpoint(1700) {
+    padding: $section-spacing-large $section-spacing-large 0;
+  }
+
   @include breakpoint(1600) {
-    padding: $section-spacing-large $section-spacing 0;
+    padding: $section-spacing-large $section-spacing $section-spacing;
+  }
+
+  @include breakpoint(1300) {
+    min-height: auto;
+  }
+
+  @include breakpoint(800) {
+    padding: $section-spacing-large $section-spacing-small $section-spacing;
+  }
+
+  @include breakpoint(700) {
+    justify-content: flex-end;
+    height: auto;
+  }
+
+  @include breakpoint(600) {
+    padding-top: $section-spacing-medium;
   }
 }
 
@@ -130,24 +145,58 @@ header {
   top: $section-spacing-small;
   right: 0;
   left: 0;
+}
+
+.main-logo {
+  margin: 0 auto;
+  max-width: 100%;
+  width: 800px; //TODO: Change image size in template
 
   @include breakpoint(1300) {
-    top: $form-spacing;
+    width: 600px;
   }
 
-  img {
-    margin: 0 auto;
-    max-width: 100%;
-    width: 800px; //TODO: Change image size in template
+  @include breakpoint(1100) {
+    width: 500px;
+  }
+
+  @include breakpoint(900) {
+    width: 450px;
+  }
+
+  @include breakpoint(800) {
+    width: 375px;
+  }
+
+  @include breakpoint(700) {
+    width: 100%;
+    padding: 0 $section-spacing-tiny;
   }
 }
 
 .main-header-image-wrapper {
-  flex: 0 0 500px;
+  position: relative;
+  flex: 0 0 400px;
+  animation-delay: 0.3s;
 
-  @include breakpoint(1300) {
-    position: relative;
-    flex: 0 1 450px;
+  @include breakpoint(1100) {
+    flex: 0 0 300px;
+  }
+
+  @include breakpoint(900) {
+    flex: 0 0 225px;
+  }
+
+  @include breakpoint(700) {
+    flex: 0 0 75%;
+    top: -150px;
+    order: 2;
+    margin-bottom: -150px;
+  }
+
+  @include breakpoint(500) {
+    top: -40px;
+    margin-bottom: -40px;
   }
 }
 
@@ -159,13 +208,38 @@ header {
   @include heading-font-stack;
   text-transform: none;
   flex: 1 1 300px;
-  color: $heading-colour;
-  font-size: calc(1rem + 2vw);
-  margin: $section-spacing-extra-large 0 0 $section-spacing;
+  align-content: center;
+  color: $light-font-colour;
+  font-size: calc(1rem + 2.5vw);
+  margin: 0 0 0 $section-spacing-small;
   word-break: break-word;
-  line-height: $line-height-medium;
+  line-height: $line-height;
   letter-spacing: $letter-spacing;
   width: fit-content;
+
+  @include breakpoint(1100) {
+    font-size: calc(1rem + 1.25vw);
+  }
+
+  @include breakpoint(900) {
+    font-size: calc(1rem + 1vw);
+  }
+
+  @include breakpoint(700) {
+    left: $section-spacing-tiny;
+    flex: 1 1 100%;
+    font-size: calc(1rem + 4vw);
+    margin: 0;
+    order: 1;
+  }
+
+  @include breakpoint(500) {
+    font-size: calc(1rem + 1.5vw);
+  }
+
+  @include breakpoint(400) {
+    font-size: calc(1rem + 0.5vw);
+  }
 }
 
 // =========================================
@@ -175,8 +249,8 @@ header {
 .main-nav {
   @include flex(column);
   position: fixed;
-  top: -23.75rem;
-  right: -23.75rem;
+  top: -28.2rem;
+  right: -28.2rem;
   background-color: $dark-brown;
   width: 1300px;
   height: 1300px;
@@ -184,8 +258,14 @@ header {
   transition: clip-path 1s $cubic-one;
   z-index: 1;
 
-  @include breakpoint(1300) {
-    top: -23rem;
+  @include breakpoint(700) {
+    width: 100%;
+    height: 50rem;
+    top: auto;
+    bottom: -22rem;
+    left: 0;
+    right: 0;
+    clip-path: circle(5.2%);
   }
 
   &::before {
@@ -197,6 +277,12 @@ header {
     clip-path: circle(3.4%);
     z-index: -1;
     transition: clip-path 1s $cubic-one;
+
+    @include breakpoint(700) {
+      width: 100%;
+      height: 50rem;
+      clip-path: circle(5%);
+    }
   }
 }
 
@@ -210,6 +296,10 @@ header {
   clip-path: circle(40%);
   z-index: 1;
 
+  @include breakpoint(700) {
+    clip-path: circle(60%);
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -218,6 +308,12 @@ header {
     height: 1300px;
     clip-path: circle(39.8%);
     z-index: -1;
+
+    @include breakpoint(700) {
+      clip-path: circle(59.8%);
+      width: 100%;
+      height: 50rem;
+    }
   }
 }
 
@@ -227,7 +323,7 @@ header {
   justify-content: flex-start;
   position: fixed;
   top: $header-spacing-medium;
-  right: calc(#{$section-spacing-extra-large} - 5rem);
+  right: calc(#{$section-spacing-large} - 5rem);
   list-style-type: none;
   color: $heading-colour;
   opacity: 0;
@@ -238,18 +334,38 @@ header {
   margin: 0;
   padding: 0;
   transition: all $transition-duration-slow $cubic-one 0.1s;
+
+  @include breakpoint(700) {
+    justify-content: center;
+    right: 0;
+    left: 0;
+    top: auto;
+    bottom: 0;
+  }
 }
 
 .main-nav-ul-reveal {
   opacity: 1;
-  right: $section-spacing-extra-large;
+  right: $section-spacing-large;
   transform: scale(1);
   pointer-events: auto;
   transition: all $transition-duration-slow $cubic-one 0.3s;
+
+  @include breakpoint(700) {
+    justify-content: center;
+    right: 0;
+    left: 0;
+    top: auto;
+    bottom: $section-spacing;
+  }
 }
 
 .main-nav-li {
   margin-bottom: $section-spacing-small;
+
+  @include breakpoint(700) {
+    text-align: center;
+  }
 }
 
 .main-nav-link {
@@ -265,7 +381,7 @@ header {
   display: block;
   background-color: transparent;
   border: 0;
-  font-size: 0.9rem;
+  font-size: $small-font-size;
   padding: 0.3rem 0;
   z-index: 2;
   cursor: pointer;
@@ -290,6 +406,13 @@ header {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.9s ease;
+
+  @include breakpoint(700) {
+    top: auto;
+    right: 5px;
+    left: 0;
+    bottom: 1.6rem;
+  }
 }
 
 .closer-reveal {
@@ -304,7 +427,7 @@ header {
   color: $dark-font-colour;
   background-color: $light-background-colour;
   padding: 10px;
-  font-size: 1.2rem;
+  font-size: $smaller-font-size;
   top: 0;
   left: 0;
   width: 1px;
@@ -338,8 +461,20 @@ main {
 }
 
 .section-heading {
+  margin: 0 auto;
+  font-size: $heading-size-extra-large;
+  letter-spacing: 0.5rem;
   padding: $h2-spacing-large 0;
   color: $heading-colour;
+
+  @include breakpoint(900) {
+    font-size: $heading-size-large;
+    padding: $h2-spacing-medium 0;
+  }
+
+  @include breakpoint(500) {
+    font-size: $heading-size-medium;
+  }
 }
 
 //********** Fade Up In **********
@@ -350,12 +485,12 @@ main {
 }
 
 .fade-up-in-reveal {
-  animation: fade-up-in 1s $cubic-two forwards;
+  // Longhand to allow animation delay in other classes
+  animation-name: fade-up-in;
+  animation-duration: 1s;
+  animation-timing-function: $cubic-two;
+  animation-fill-mode: forwards;
 }
-
-// =========================================
-// ** Forms  **
-// =========================================
 
 // =========================================
 // ** Footer  **
@@ -369,7 +504,7 @@ footer {
   align-items: center;
   color: $dark-font-colour;
   padding: $section-spacing;
-  font-size: 0.75rem;
+  font-size: $tiny-font-size;
   letter-spacing: 1px;
   background-color: $light-background-colour;
   background-image: url("/images/splodge-rotated-medium.png");
@@ -386,12 +521,13 @@ footer {
 
   p {
     margin: 0;
+    text-align: center;
   }
 }
 
 .footer-social-media {
   @include flex(row);
-  width: 250px;
+  width: 275px;
   margin-bottom: $section-spacing;
   justify-content: space-between;
 }
@@ -401,7 +537,7 @@ footer {
 }
 
 .footer-social-media-icon {
-  width: 90px;
+  height: 90px;
 }
 
 //*=========================================
@@ -433,7 +569,21 @@ footer {
 
 .general-form-container {
   width: 40%;
-  margin: 0 auto $section-spacing-extra-large;
+  margin: 0 auto;
+  padding-bottom: $section-spacing-extra-large;
+
+  @include breakpoint(1600) {
+    width: 55%;
+  }
+
+  @include breakpoint(900) {
+    width: 100%;
+    padding: 0 $section-spacing $section-spacing-extra-large;
+  }
+
+  @include breakpoint(700) {
+    padding: 0 $section-spacing-tiny $section-spacing-large;
+  }
 }
 
 .general-contact-form {
@@ -442,7 +592,7 @@ footer {
 
 label {
   @include heading-font-stack;
-  font-size: 1.2rem;
+  font-size: $smaller-font-size;
   display: block;
   letter-spacing: 0.1rem;
   margin-bottom: $form-spacing;
@@ -482,14 +632,21 @@ label {
 
 .submit {
   @include heading-font-stack;
+  font-size: $smaller-font-size;
   color: $dark-font-colour;
+  background-color: $light-background-colour;
   letter-spacing: 0.1rem;
   width: fit-content;
-  padding: 0 $form-spacing;
+  padding: $form-spacing $medium-font-size;
   margin: 0 auto;
   border-radius: 5px;
   border: 1px solid $light-background-colour;
   transition: 0.3s all ease;
+  -webkit-appearance: none;
+
+  @include breakpoint(800) {
+    padding: 0 $base-font-size;
+  }
 
   &:hover {
     background-color: $dark-background-colour;
@@ -543,7 +700,7 @@ label {
 
   label {
     @include font-stack;
-    font-size: 1rem;
+    font-size: $base-font-size;
     text-transform: none;
     display: inline;
   }

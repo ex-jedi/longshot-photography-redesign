@@ -23,13 +23,14 @@
 
 .about-me-content-wrapper {
   @include flex(row);
+  position: relative;
 }
 
 .about-me-main-image {
   position: relative;
   width: 400px;
   margin-right: $section-spacing-large;
-  z-index: 3;
+  z-index: 1;
 }
 
 .about-me-text-wrapper {
@@ -47,16 +48,16 @@
 }
 
 .about-me-sub-text {
-  @include mid-font-stack;
+  @include alt-font-stack;
   font-weight: bold;
   margin-top: $section-spacing;
 }
 
 .about-me-sub-image {
   position: absolute;
-  z-index: 1;
-  bottom: calc(#{$section-spacing-large} * 1.5);
-  left: calc(#{$section-spacing-extra-large} + #{$section-spacing});
-  width: 25%;
+  z-index: 2;
+  top: 30rem;
+  left: 4rem;
+  width: 450px;
   clip-path: circle(49%); //Removing slightly ragged photo outline
 }

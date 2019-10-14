@@ -10,12 +10,12 @@
 //*=========================================
 
 .gallery-index-section {
+  background-color: $light-background-colour;
   background-image: url("/images/splodge-rotated-medium.png"),
     url("/images/splodge-rotated-medium.png");
   background-repeat: no-repeat;
   background-position: top -5rem center, bottom -25% right -25%;
   padding-bottom: $section-spacing-extra-large;
-  background-color: $light-background-colour;
 }
 
 .gallery-index-wrapper {
@@ -26,41 +26,8 @@
   align-items: center;
   overflow: auto;
   padding-bottom: $section-spacing-large;
-  overflow-y: hidden;
 
-  &::-webkit-scrollbar {
-    height: 0.5rem;
-  }
-
-  &::-webkit-scrollbar-track {
-    background: linear-gradient(
-      to bottom,
-      #293c3800 45%,
-      #293c3866 47%,
-      #293c38 50%,
-      #293c389c 52%,
-      #293c3805 55%
-    );
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background-color: scale-color($dark-green, $lightness: 10%);
-  }
-
-  &::-webkit-scrollbar-thumb {
-    &:hover {
-      background-color: $dark-green;
-    }
-  }
-
-  &:last-of-type::after,
-  &:first-of-type::before {
-    content: "";
-    width: 1px;
-    height: 1px;
-    padding: 1px;
-    margin: 1px;
-  }
+  @include horizontal-scrollbar;
 }
 
 .gallery-index-album {
@@ -69,9 +36,11 @@
   width: 25%;
   min-width: 300px;
   margin: 0 $section-spacing;
+  transform: translateY($section-spacing);
 
   img {
     width: 100%;
+    min-height: 30vh;
   }
 
   &:nth-of-type(3n + 1) {
@@ -80,13 +49,15 @@
     }
   }
 
-  &:nth-of-type(3n + 2) {
+  &:nth-of-type(3n + 3) {
+    animation-delay: 0.2s;
     img {
       box-shadow: -2rem 2rem 0 0 $image-shadow-two;
     }
   }
 
-  &:nth-of-type(3n + 3) {
+  &:nth-of-type(3n + 2) {
+    animation-delay: 0.4s;
     img {
       box-shadow: -2rem 2rem 0 0 $image-shadow-three;
     }
@@ -113,14 +84,10 @@
 .gallery-album-image-div {
   width: 100%;
   min-height: 40vh;
+  animation-delay: .2s;
 }
 
 .gallery-album-image {
   width: 100%;
   margin-bottom: $section-spacing;
-
-  // &:first-of-type {
-  //   opacity: 0;
-  //   transform: translateY(2rem);
-  // }
 }

@@ -22,7 +22,7 @@
 
 .blog-post-title,
 .blog-index-page-title {
-  font-size: $h2-size;
+  font-size: $heading-size-extra-large;
   text-align: center;
   margin: 0 auto;
   order: 1;
@@ -31,7 +31,7 @@
 .blog-index-page-subtitle,
 .blog-categories-li,
 .blog-index-title {
-  font-size: 1rem;
+  font-size: $base-font-size;
 }
 
 //*=========================================
@@ -156,12 +156,17 @@
   text-align: left;
   width: 100%;
   margin-top: $section-spacing-small;
+  min-height: 4rem;
+
+  @include breakpoint(1300) {
+    min-height: 5rem;
+  }
 }
 
 .blog-excerpt-div {
   width: 100%;
   flex: 0 1 auto;
-  font-size: 0.9rem;
+  font-size: $base-font-size;
 }
 
 .blog-index-image {
@@ -203,7 +208,7 @@
   order: 2;
   text-align: center;
   width: 100%;
-  font-size: 1.5rem;
+  font-size: $medium-font-size;
 }
 
 .post-wrapper {
@@ -229,7 +234,7 @@
 
 .blog-text-block {
   p {
-    font-size: 1rem;
+    font-size: $base-font-size;
   }
 }
 
@@ -239,7 +244,7 @@
 
 .pull-quote-text {
   p {
-    font-size: 1.5rem;
+    font-size: $medium-font-size;
     margin: 0;
     text-align: center;
   }
@@ -261,5 +266,5 @@
 //*=========================================
 
 .archive-section-heading {
-  font-size: $h2-size;
+  font-size: $heading-size-extra-large;
 }

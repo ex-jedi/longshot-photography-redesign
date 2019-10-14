@@ -55,14 +55,32 @@ $image-shadow-three: #3b2e2b80;
   line-height: $line-height;
 }
 
+@mixin alt-font-stack {
+  font-family: "ff-tisa-web-pro", serif;
+  font-weight: 300;
+  line-height: $line-height;
+}
+
 //********** Type Variables & Spacing **********
 
-//Font Sizes
-$h2-size: 4.5rem;
-$h3-size: 1.5rem;
+//Heading Sizes
+$heading-size-extra-large: 4.5rem;
+$heading-size-large: 3.5rem;
+$heading-size-medium: 2rem;
+$heading-size-small: 1.5rem;
+
+//Font Sizing
+$extra-large-font-size: 2.5rem;
+$large-font-size: 2rem;
+$medium-font-size: 1.5rem;
+$smaller-font-size: 1.2rem;
+$base-font-size: 1rem;
+$small-font-size: 0.9rem;
+$tiny-font-size: 0.75rem;
 
 //Font Spacing
 $h2-spacing-large: 12rem;
+$h2-spacing-medium: 8rem;
 
 //Line Height
 $line-height-small: 1.2;
@@ -157,12 +175,13 @@ $grid-gap: 0;
 
 //Header
 $simple-header-height: 175px;
-$header-spacing-medium: 7.6rem;
+$header-spacing-medium: 3.2rem;
 
 //Sections
 $section-spacing-tiny: 1rem;
 $section-spacing-small: 2rem;
 $section-spacing: 4rem;
+$section-spacing-medium: 8rem;
 $section-spacing-large: 10rem;
 $section-spacing-extra-large: 15rem;
 $section-spacing-super-size: 20rem;
@@ -172,6 +191,49 @@ $form-spacing-large: 1rem;
 $form-spacing: 0.7rem;
 
 //Other Spacing
+
+//********** Scrollbar Mixin **********
+
+@mixin horizontal-scrollbar {
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  &::-webkit-scrollbar {
+    height: 0.5rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: linear-gradient(
+      to bottom,
+      #293c3800 45%,
+      #293c3866 47%,
+      #293c38 50%,
+      #293c389c 52%,
+      #293c3805 55%
+    );
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: scale-color($dark-green, $lightness: 10%);
+    position: relative;
+    bottom: 10rem;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    &:hover {
+      background-color: $dark-green;
+    }
+  }
+
+  &::after,
+  &::before {
+    content: "";
+    width: 1px;
+    height: 1px;
+    padding: 1px;
+    margin: 1px;
+  }
+}
 
 // =========================================
 // ** Media Queries  **

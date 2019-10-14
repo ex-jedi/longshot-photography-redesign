@@ -5,7 +5,7 @@
     <h2 class="section-heading">
     About me
     </h2>
-      <div class="about-me-content-wrapper">
+    <div class="about-me-content-wrapper">
       <?php perch_content("About Me Main Image"); ?>
       <?php perch_content("About Me Text"); ?>
       <?php perch_content("About Me Sub Image"); ?>
