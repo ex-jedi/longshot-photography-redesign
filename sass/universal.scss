@@ -104,6 +104,7 @@ header {
   position: relative;
   overflow: hidden;
   background-color: $dark-background-colour;
+  justify-content: center;
 }
 
 .main-header {
@@ -215,6 +216,14 @@ header {
   transition: clip-path 1s $cubic-one;
   z-index: 1;
 
+  @include breakpoint(700) {
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    clip-path: circle(4.1%);
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -224,6 +233,11 @@ header {
     clip-path: circle(3.4%);
     z-index: -1;
     transition: clip-path 1s $cubic-one;
+
+    @include breakpoint(700) {
+      width: 100%;
+      clip-path: circle(4%);
+    }
   }
 }
 
@@ -245,6 +259,10 @@ header {
     height: 1300px;
     clip-path: circle(39.8%);
     z-index: -1;
+
+    @include breakpoint(700) {
+      width: 100%;
+    }
   }
 }
 
