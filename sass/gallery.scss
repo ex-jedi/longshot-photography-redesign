@@ -84,6 +84,11 @@
     padding: 0 $section-spacing-large
       calc(#{$section-spacing-extra-large} - #{$section-spacing});
   }
+
+  @include breakpoint(1300) {
+    padding: 0 $section-spacing
+      calc(#{$section-spacing-extra-large} - #{$section-spacing});
+  }
 }
 
 .gallery-album-image-div {
