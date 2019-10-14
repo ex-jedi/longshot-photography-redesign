@@ -251,7 +251,7 @@ header {
 }
 
 .nav-reveal {
-  clip-path: circle(40%);
+  clip-path: circle(60%);
   z-index: 1;
 
   &::before {
@@ -260,7 +260,7 @@ header {
     background-color: $light-background-colour;
     width: 1300px;
     height: 1300px;
-    clip-path: circle(39.8%);
+    clip-path: circle(59.8%);
     z-index: -1;
 
     @include breakpoint(700) {
@@ -287,6 +287,14 @@ header {
   margin: 0;
   padding: 0;
   transition: all $transition-duration-slow $cubic-one 0.1s;
+
+  @include breakpoint(700) {
+    justify-content: center;
+    right: 0;
+    left: 0;
+    top: auto;
+    bottom: 0;
+  }
 }
 
 .main-nav-ul-reveal {
@@ -295,10 +303,22 @@ header {
   transform: scale(1);
   pointer-events: auto;
   transition: all $transition-duration-slow $cubic-one 0.3s;
+
+  @include breakpoint(700) {
+    justify-content: center;
+    right: 0;
+    left: 0;
+    top: auto;
+    bottom: $section-spacing;
+  }
 }
 
 .main-nav-li {
   margin-bottom: $section-spacing-small;
+
+  @include breakpoint(700) {
+    text-align: center;
+  }
 }
 
 .main-nav-link {
