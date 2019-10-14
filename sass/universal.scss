@@ -339,6 +339,13 @@ header {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.9s ease;
+
+  @include breakpoint(700) {
+    top: auto;
+    right: 5px;
+    left: 0;
+    bottom: 1.6rem;
+  }
 }
 
 .closer-reveal {
