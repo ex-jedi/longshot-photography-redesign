@@ -207,8 +207,8 @@ header {
 .main-nav {
   @include flex(column);
   position: fixed;
-  top: -28.2rem;
-  right: -28.2rem;
+  // top: -28.2rem;
+  // right: -28.2rem;
   background-color: $dark-brown;
   width: 1300px;
   height: 1300px;
@@ -218,10 +218,11 @@ header {
 
   @include breakpoint(700) {
     width: 100%;
-    top: 0;
+    height: 50rem;
+    bottom: -22rem;
     left: 0;
     right: 0;
-    clip-path: circle(4.1%);
+    clip-path: circle(5.2%);
   }
 
   &::before {
@@ -236,7 +237,8 @@ header {
 
     @include breakpoint(700) {
       width: 100%;
-      clip-path: circle(4%);
+      height: 50rem;
+      clip-path: circle(5%);
     }
   }
 }
@@ -262,6 +264,7 @@ header {
 
     @include breakpoint(700) {
       width: 100%;
+      height: 50rem;
     }
   }
 }
