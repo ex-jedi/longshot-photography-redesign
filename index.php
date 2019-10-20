@@ -2,7 +2,7 @@
 <?php perch_layout('main-header'); ?>
 <main class="main-content homepage-main-content" id="main-content">
 <section class="homepage-hero-image-section" >
-	<div class="background-image-wrapper rellax" data-rellax-speed="-5" data-rellax-percentage=".5">
+	<div class="background-image-wrapper rellax" data-rellax-speed="-5" data-rellax-percentage=".7">
 	</div>
 </section>
 		<?php perch_layout('featured-galleries'); ?>
