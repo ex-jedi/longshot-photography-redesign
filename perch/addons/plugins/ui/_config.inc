@@ -1,5 +1,5 @@
 <!-- GROUP INSTRUCTIONS -->
-=================================================== -->
+<!-- =================================================== -->
 <!-- 1. Add login CSS through this config rather than the Admin Style app, so it can be available before the admin is loaded. -->
 <link rel="stylesheet" href="/perch/addons/apps/jaygeorge_perch_admin_style/variables.css">
 <link rel="stylesheet" href="/perch/addons/apps/jaygeorge_perch_admin_style/login.css">
