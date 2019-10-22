@@ -70,6 +70,27 @@ function loop() {
 
 // Call the loop for the first time
 loop();
+// =========================================
+// ** Menu Scroll Hide  **
+// =========================================
+let scrollPos = 0;
+const mainNav = document.querySelector('.main-nav');
+// adding scroll event
+// eslint-disable-next-line func-names
+window.addEventListener('scroll', function() {
+  // detects new state and compares it with the new one
+  // eslint-disable-next-line prettier/prettier
+  if (
+    document.body.getBoundingClientRect().top < scrollPos &&
+    !mainNav.classList.contains('nav-reveal')
+  ) {
+    mainNav.classList.add('menu-scroll-hide');
+  } else {
+    mainNav.classList.remove('menu-scroll-hide');
+  }
+  // saves the new position for iteration.
+  scrollPos = document.body.getBoundingClientRect().top;
+});
 
 // =========================================
 // ** Rellax  **
