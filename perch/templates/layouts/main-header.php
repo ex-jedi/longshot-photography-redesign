@@ -11,7 +11,7 @@
 		<div id="vue-wrapper" class="site-wrapper" :class="{'hide-outline': outlineHide}" @keydown.9="outlineHide = !outlineHide" itemscope itemtype="http://schema.org/LocalBusiness" >
 			<header class="main-header">
 			<a class="show-on-focus"  href="#main-content">Skip to main content</a>
-				<nav class="main-nav" :class="{'nav-reveal': navPull}">
+				<nav class="main-nav" :class="{'nav-reveal': navPull}" v-on:scroll.passive="scrollHide" >
 					<?php perch_pages_navigation(array(
 							'hide-extensions' => true,
 					)); ?>
