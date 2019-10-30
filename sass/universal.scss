@@ -256,7 +256,7 @@ header {
   height: 1300px;
   clip-path: circle(3.5%);
   transition: clip-path 1s $cubic-one, bottom 0.3s $cubic-one;
-  z-index: 1;
+  z-index: 2;
 
   @include breakpoint(700) {
     width: 100%;

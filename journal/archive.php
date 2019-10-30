@@ -24,6 +24,7 @@
 
 							echo '<div class="index-featured-posts">';
 								perch_blog_custom(array(
+									'category'   => perch_get('cat'),
 									'count'      => 2,
 									'template'   => $template,
 									'sort'       => $sort_by,
@@ -32,6 +33,7 @@
 						echo '</div>';
 						echo '<div class="index-non-featured-posts">';
 						perch_blog_custom(array(
+									'category'   => perch_get('cat'),
 									'template' => $template,
 									'sort'       => $sort_by,
 									'sort-order' => $sort_order,

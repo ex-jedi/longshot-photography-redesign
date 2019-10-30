@@ -20,14 +20,6 @@
   }
 }
 
-.blog-post-title,
-.blog-index-page-title {
-  font-size: $heading-size-extra-large;
-  text-align: center;
-  margin: 0 auto;
-  order: 1;
-}
-
 .blog-index-page-subtitle,
 .blog-categories-li,
 .blog-index-title {
@@ -75,6 +67,18 @@
 
   @include breakpoint(1300) {
     margin: 0 0 $section-spacing-large;
+  }
+
+  @include breakpoint(1100) {
+    @include flex(column);
+    position: relative;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    // clip-path: inset(0 0 100% 0);
+    // margin-bottom: -23rem;
+    background-color: $light-background-colour;
   }
 }
 
