@@ -7,6 +7,7 @@ const app = new Vue({
   data: {
     navPull: false,
     outlineHide: true,
+    categoryReveal: false,
   },
 });
 
