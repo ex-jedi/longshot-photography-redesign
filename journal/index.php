@@ -10,7 +10,7 @@
       ));
       ?>
     </div>
-    <div class="index-featured-posts">
+    <div class="index-featured-posts" :class="{'index-featured-posts-push-down': categoryReveal}">
       <?php
         perch_blog_custom(array(
           'count'      => 2,

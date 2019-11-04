@@ -52,6 +52,10 @@
 
 .blog-index-page-subtitle {
   margin-bottom: $section-spacing;
+
+  @include breakpoint(1100) {
+    cursor: pointer;
+  }
 }
 
 .blog-categories-ul {
@@ -60,7 +64,7 @@
   margin: 0 $section-spacing-large $section-spacing-large;
   padding: 0;
   flex-wrap: wrap;
-  transition: all $transition-duration-slow $cubic-one 0.1s;
+  transition: all $transition-duration-slow $cubic-two;
 
   @include breakpoint(1500) {
     margin: 0 $section-spacing $section-spacing-large;
@@ -80,13 +84,13 @@
     overflow: hidden;
     clip-path: inset(0 0 100% 0);
     margin-bottom: -18rem;
-    background-color: $light-background-colour;
-    border: 1px solid $dark-background-colour;
+    opacity: 0;
   }
 }
 
 .blog-categories-ul-reveal {
   clip-path: inset(0 0 0 0);
+  opacity: 1;
 }
 
 .blog-category-link {
@@ -122,6 +126,7 @@
   @include flex(row);
   justify-content: space-between;
   margin-bottom: $section-spacing-large;
+  transition: all $transition-duration-slow $cubic-two;
 
   @include breakpoint(1100) {
     @include flex(column);
@@ -148,6 +153,10 @@
       }
     }
   }
+}
+
+.index-featured-posts-push-down {
+  transform: translateY(350px);
 }
 
 .index-non-featured-posts {
