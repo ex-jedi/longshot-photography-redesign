@@ -96,6 +96,20 @@
   list-style-type: none;
 }
 
+.category-down-arrow {
+  display: none;
+  margin-left: 1rem;
+  transition: all $transition-duration-slow $cubic-one;
+
+  @include breakpoint(1100) {
+    display: inline;
+  }
+}
+
+.category-down-arrow-rotated {
+  transform: rotate(180deg);
+}
+
 //********** Posts **********
 
 .index-featured-posts {
