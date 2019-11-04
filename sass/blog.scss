@@ -60,6 +60,7 @@
   margin: 0 $section-spacing-large $section-spacing-large;
   padding: 0;
   flex-wrap: wrap;
+  transition: all $transition-duration-slow $cubic-one 0.1s;
 
   @include breakpoint(1500) {
     margin: 0 $section-spacing $section-spacing-large;
@@ -80,7 +81,12 @@
     clip-path: inset(0 0 100% 0);
     margin-bottom: -18rem;
     background-color: $light-background-colour;
+    border: 1px solid $dark-background-colour;
   }
+}
+
+.blog-categories-ul-reveal {
+  clip-path: inset(0 0 0 0);
 }
 
 .blog-category-link {
