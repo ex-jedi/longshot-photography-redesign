@@ -15,6 +15,10 @@
     url("/images/splodge-rotated-medium.png");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: top center, center, right -200px bottom;
+
+  @include breakpoint(1600) {
+    padding: 0 $section-spacing $section-spacing-extra-large;
+  }
 }
 
 .service-wrapper {
@@ -24,10 +28,19 @@
   justify-content: center;
   margin-bottom: $section-spacing-extra-large;
 
+  @include breakpoint(1300) {
+    margin-bottom: $section-spacing-large;
+  }
+
   &:nth-of-type(1) {
     .service-image {
       box-shadow: $section-spacing-extra-large $section-spacing 0 0
         $image-shadow-one;
+
+      @include breakpoint(1600) {
+        box-shadow: $section-spacing-large $section-spacing 0 0
+          $image-shadow-one;
+      }
     }
   }
 
@@ -35,6 +48,11 @@
     .service-image {
       box-shadow: $section-spacing-extra-large $section-spacing 0 0
         $image-shadow-two;
+
+      @include breakpoint(1600) {
+        box-shadow: $section-spacing-large $section-spacing 0 0
+          $image-shadow-two;
+      }
     }
   }
 }
@@ -42,18 +60,13 @@
 .service-image-wrapper {
   position: relative;
   margin-right: $section-spacing;
+  flex: 1 1 auto;
+  // width: 50%;
 }
 
 .service-image {
   position: relative;
-}
-
-.service-companion-image {
-  position: absolute;
-  top: 2rem;
-  left: $section-spacing-extra-large;
   width: 100%;
-  // z-index: 1;
 }
 
 .service-title {
@@ -75,13 +88,14 @@
 
 .service-text-wrapper {
   position: relative;
+  flex: 1 1 auto;
+  width: 50%;
 }
 
 .services-details-wrapper,
 .service-text-wrapper {
   p {
     @include alt-font-stack;
-
 
     &:first-of-type {
       margin-top: 0;
