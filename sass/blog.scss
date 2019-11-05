@@ -250,10 +250,23 @@
   }
 
   @include breakpoint(900) {
+    padding: $h2-spacing-small 0;
     font-size: $heading-size-medium;
   }
   @include breakpoint(500) {
+    padding: $h2-spacing-tiny 0;
     font-size: $heading-size-small;
+  }
+}
+
+.post-category-paragraph {
+  order: 2;
+  text-align: center;
+  width: 100%;
+  font-size: $medium-font-size;
+
+  @include breakpoint(900) {
+    margin: 0;
   }
 }
 
@@ -268,21 +281,17 @@
   align-items: center;
 }
 
-.post-category-paragraph {
-  order: 2;
-  text-align: center;
-  width: 100%;
-  font-size: $medium-font-size;
-}
-
 .post-wrapper {
   order: 3;
 }
 
 .blog-figure {
-  margin: 0;
   width: 100%;
   margin: $section-spacing 0;
+
+  @include breakpoint(700) {
+    margin: $section-spacing-small 0;
+  }
 }
 
 // Prevents image pushing text down on image load
