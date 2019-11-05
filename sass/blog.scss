@@ -225,6 +225,22 @@
   background-position: center -10rem, right -30rem bottom -35rem;
   padding: 0 $section-spacing-super-size $section-spacing-large;
   background-size: auto, 100%;
+
+  @include breakpoint(1700) {
+    padding: 0 $section-spacing-extra-large $section-spacing-large;
+  }
+
+  @include breakpoint(1500) {
+    padding: 0 $section-spacing-large $section-spacing-large;
+  }
+
+  @include breakpoint(1100) {
+    padding: 0 $section-spacing $section-spacing-large;
+  }
+
+  @include breakpoint(700) {
+    padding: 0 $section-spacing-tiny $section-spacing-large;
+  }
 }
 
 .embed {
