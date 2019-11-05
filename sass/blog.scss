@@ -243,6 +243,20 @@
   }
 }
 
+.blog-post-title {
+  @include breakpoint(1300) {
+    font-size: $heading-size-large;
+    padding: $h2-spacing-medium 0;
+  }
+
+  @include breakpoint(900) {
+    font-size: $heading-size-medium;
+  }
+  @include breakpoint(500) {
+    font-size: $heading-size-small;
+  }
+}
+
 .embed {
   width: 100%;
   margin: $section-spacing 0;
