@@ -29,6 +29,16 @@
   }
 }
 
+.services-page-heading {
+  @include breakpoint(1100) {
+    padding: $h2-spacing-medium 0;
+  }
+
+  @include breakpoint(700) {
+    padding: $h2-spacing-small 0;
+  }
+}
+
 .service-wrapper {
   @include flex(row);
   position: relative;
@@ -45,7 +55,7 @@
   }
 
   @include breakpoint(700) {
-    margin-bottom: $section-spacing;
+    margin-bottom: $h2-spacing-small;
   }
 
   &:nth-of-type(1) {
