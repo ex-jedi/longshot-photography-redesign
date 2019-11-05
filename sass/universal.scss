@@ -674,11 +674,17 @@ label {
       display: inline-block;
       width: 0.9rem;
       height: 0.9rem;
-      margin-top: -4px;
+      margin-top: -3px;
       margin-left: -4px;
       border: 1px solid $light-background-colour;
       border-radius: 0.25em;
       background: $dark-background-colour;
+
+      @include breakpoint(500) {
+        width: 1rem;
+        height: 1rem;
+        margin-top: -1px;
+      }
     }
 
     &:after {
