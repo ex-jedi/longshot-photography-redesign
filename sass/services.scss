@@ -19,6 +19,10 @@
   @include breakpoint(1600) {
     padding: 0 $section-spacing $section-spacing-extra-large;
   }
+
+  @include breakpoint(1100) {
+    padding: 0 $section-spacing $section-spacing-large;
+  }
 }
 
 .service-wrapper {
@@ -32,6 +36,10 @@
     margin-bottom: $section-spacing-large;
   }
 
+  @include breakpoint(1100) {
+    @include flex(column);
+  }
+
   &:nth-of-type(1) {
     .service-image {
       box-shadow: $section-spacing-extra-large $section-spacing 0 0
@@ -39,6 +47,11 @@
 
       @include breakpoint(1600) {
         box-shadow: $section-spacing-large $section-spacing 0 0
+          $image-shadow-one;
+      }
+
+      @include breakpoint(1100) {
+        box-shadow: $section-spacing-small $section-spacing-small 0 0
           $image-shadow-one;
       }
     }
@@ -53,6 +66,11 @@
         box-shadow: $section-spacing-large $section-spacing 0 0
           $image-shadow-two;
       }
+
+      @include breakpoint(1100) {
+        box-shadow: $section-spacing-small $section-spacing-small 0 0
+          $image-shadow-two;
+      }
     }
   }
 }
@@ -61,7 +79,10 @@
   position: relative;
   margin-right: $section-spacing;
   flex: 1 1 auto;
-  // width: 50%;
+
+  @include breakpoint(1100) {
+    margin-right: 0;
+  }
 }
 
 .service-image {
@@ -79,17 +100,31 @@
   text-align: center;
   font-size: 1rem;
   margin: 0 auto $section-spacing;
+
+  @include breakpoint(1100) {
+    margin-bottom: $h2-spacing-tiny;
+  }
 }
 
 .services-details-wrapper {
   width: 50%;
   margin: $section-spacing-extra-large auto 0;
+
+  @include breakpoint(1100) {
+    width: 100%;
+    margin-top: $section-spacing;
+  }
 }
 
 .service-text-wrapper {
   position: relative;
   flex: 1 1 auto;
   width: 50%;
+
+  @include breakpoint(1100) {
+    width: 100%;
+    margin-top: $h2-spacing-tiny;
+  }
 }
 
 .services-details-wrapper,
