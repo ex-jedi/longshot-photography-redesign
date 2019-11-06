@@ -2,7 +2,7 @@
 <?php perch_layout('simple-header'); ?>
 <main class="main-content services-main-content" id="main-content">
   <section class="services-section">
-    <h2 class="section-heading">
+    <h2 class="section-heading services-page-heading">
     Services
     </h2>
     <?php perch_content("Services Content"); ?>
