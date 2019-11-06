@@ -15,6 +15,5 @@
 		</div>
 	</section>
 	<?php perch_content("General Contact Form"); ?>
-	<?php perch_content("Test"); ?>
 </main>
 <?php perch_layout('main-footer'); ?>
