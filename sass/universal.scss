@@ -762,7 +762,6 @@ label {
   background-image: url(/images/splodge-inverted.png);
   background-repeat: no-repeat;
   background-position: left 0 top $section-spacing;
-
   width: 100vw;
   height: 100vh;
   clip-path: none;
@@ -776,6 +775,8 @@ label {
 
   &::before {
     content: "";
+    clip-path: circle(0);
+
   }
 }
 
@@ -902,6 +903,7 @@ label {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.9s ease;
+  clip-path: none;
 }
 
 .menu-closer {
