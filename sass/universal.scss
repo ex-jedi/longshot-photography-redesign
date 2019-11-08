@@ -735,3 +735,197 @@ label {
   z-index: -10;
   opacity: 0;
 }
+
+
+//*==============================================================================
+//** Browser and OS Specific styles  **
+//*==============================================================================
+
+//*=========================================
+//** IOS Styles  **
+//*=========================================
+
+@supports (-webkit-overflow-scrolling: touch) {
+
+ //********** Nav Styles **********
+
+ .main-nav {
+  @include flex(column);
+  position: fixed;
+  top: -28.2rem;
+  right: -28.2rem;
+  background-color: $dark-brown;
+  width: 1300px;
+  height: 1300px;
+  clip-path: circle(3.5%);
+  transition: clip-path 1s $cubic-one, bottom 0.3s $cubic-one;
+  z-index: 2;
+
+  @include breakpoint(700) {
+    width: 100%;
+    height: 50rem;
+    top: auto;
+    bottom: -22.5rem;
+    left: 0;
+    right: 0;
+    clip-path: circle(5.2%);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: $light-background-colour;
+    width: 1300px;
+    height: 1300px;
+    clip-path: circle(3.4%);
+    z-index: -1;
+    transition: clip-path 1s $cubic-one;
+
+    @include breakpoint(700) {
+      width: 100%;
+      height: 50rem;
+      clip-path: circle(5%);
+    }
+  }
+}
+
+.menu-scroll-hide {
+  bottom: -28rem;
+}
+
+#main-nav-selected {
+  a {
+    color: $dark-font-colour;
+  }
+}
+
+.nav-reveal {
+  clip-path: circle(40%);
+  z-index: 1;
+
+  @include breakpoint(700) {
+    clip-path: circle(60%);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: $light-background-colour;
+    width: 1300px;
+    height: 1300px;
+    clip-path: circle(39.8%);
+    z-index: -1;
+
+    @include breakpoint(700) {
+      clip-path: circle(59.8%);
+      width: 100%;
+      height: 50rem;
+    }
+  }
+}
+
+.main-nav-ul {
+  @include flex(column);
+  @include heading-font-stack;
+  justify-content: flex-start;
+  position: fixed;
+  top: $header-spacing-medium;
+  right: calc(#{$section-spacing-large} - 5rem);
+  list-style-type: none;
+  color: $heading-colour;
+  opacity: 0;
+  transform: scale(0.75);
+  pointer-events: none;
+  width: auto;
+  min-width: 10rem;
+  margin: 0;
+  padding: 0;
+  transition: all $transition-duration-slow $cubic-one 0.1s;
+
+  @include breakpoint(700) {
+    justify-content: center;
+    right: 0;
+    left: 0;
+    top: auto;
+    bottom: 0;
+  }
+}
+
+.main-nav-ul-reveal {
+  opacity: 1;
+  right: $section-spacing-large;
+  transform: scale(1);
+  pointer-events: auto;
+  transition: all $transition-duration-slow $cubic-one 0.3s;
+
+  @include breakpoint(700) {
+    justify-content: center;
+    right: 0;
+    left: 0;
+    top: auto;
+    bottom: $section-spacing;
+  }
+}
+
+.main-nav-li {
+  margin-bottom: $section-spacing-small;
+
+  @include breakpoint(700) {
+    text-align: center;
+  }
+}
+
+.main-nav-link {
+  color: $heading-colour;
+}
+
+.nav-pull-button {
+  @include heading-font-stack;
+  color: $heading-colour;
+  width: fit-content;
+  font-weight: 900;
+  margin: auto;
+  display: block;
+  background-color: transparent;
+  border: 0;
+  font-size: $small-font-size;
+  padding: 0.3rem 0;
+  z-index: 2;
+  cursor: pointer;
+  transition: opacity 0.9s ease 0.45s;
+}
+
+.button-hide {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.9s ease;
+}
+
+.menu-closer {
+  position: fixed;
+  margin: auto;
+  top: $header-spacing-medium;
+  right: $header-spacing-medium;
+  z-index: 100;
+  color: #000;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.9s ease;
+
+  @include breakpoint(700) {
+    top: auto;
+    right: 5px;
+    left: 0;
+    bottom: 1.6rem;
+  }
+}
+
+.closer-reveal {
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.9s ease 0.45s;
+}
+
+} // IOS Styles End
