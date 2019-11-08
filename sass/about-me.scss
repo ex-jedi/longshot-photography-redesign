@@ -18,23 +18,30 @@
   background-size: auto, cover;
   background-position: 580px -115px, -550px 1150px;
   width: 100%;
-  padding: 0 $section-spacing-extra-large $section-spacing-extra-large;
+  padding: 0 $section-spacing $section-spacing-extra-large;
 }
 
 .about-me-content-wrapper {
   @include flex(row);
   position: relative;
+  justify-content: space-between;
+}
+
+.about-me-image-wrapper,
+.about-me-text-wrapper {
+  width: 45%;
 }
 
 .about-me-main-image {
   position: relative;
-  width: 400px;
-  margin-right: $section-spacing-large;
   z-index: 1;
+  display: block;
+  width: 100%;
 }
 
 .about-me-text-wrapper {
   color: $dark-font-colour;
+  font-weight: bold;
 
   p {
     &:first-child {
@@ -45,10 +52,4 @@
       margin-bottom: 0;
     }
   }
-}
-
-.about-me-sub-text {
-  @include alt-font-stack;
-  font-weight: bold;
-  margin-top: $section-spacing;
 }
