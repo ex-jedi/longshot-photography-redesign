@@ -794,6 +794,8 @@ label {
   clip-path: none;
   z-index: 1;
   opacity: 1;
+  clip-path: none;
+
 
   @include breakpoint(700) {
     clip-path: none;
@@ -903,7 +905,6 @@ label {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.9s ease;
-  clip-path: none;
 }
 
 .menu-closer {
