@@ -759,6 +759,10 @@ label {
   top: 0;
   right: 0;
   background-color: $light-background-colour;
+  background-image: url(/images/splodge-inverted.png);
+  background-repeat: no-repeat;
+  background-position: left 0 top $section-spacing;
+
   width: 100vw;
   height: 100vh;
   clip-path: none;
@@ -796,6 +800,7 @@ label {
 
   &::before {
     content: "";
+    clip-path: circle(0);
   }
 }
 
@@ -846,6 +851,7 @@ label {
 
 .main-nav-li {
   margin-bottom: $section-spacing-small;
+  font-size: $medium-font-size ;
 
   @include breakpoint(700) {
     text-align: center;
