@@ -8,7 +8,6 @@
     <div class="about-me-content-wrapper">
       <?php perch_content("About Me Main Image"); ?>
       <?php perch_content("About Me Text"); ?>
-      <?php perch_content("About Me Sub Image"); ?>
     </div>
   </section>
   <?php perch_content("General Contact Form"); ?>

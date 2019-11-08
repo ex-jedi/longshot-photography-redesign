@@ -52,12 +52,3 @@
   font-weight: bold;
   margin-top: $section-spacing;
 }
-
-.about-me-sub-image {
-  position: absolute;
-  z-index: 2;
-  top: 30rem;
-  left: 4rem;
-  width: 450px;
-  clip-path: circle(49%); //Removing slightly ragged photo outline
-}
