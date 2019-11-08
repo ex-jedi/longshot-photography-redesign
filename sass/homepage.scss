@@ -44,6 +44,15 @@
   justify-content: flex-start;
   @include horizontal-scrollbar;
   padding-bottom: $section-spacing;
+
+  &::before,
+  &::after {
+    content: "";
+    width: 1px;
+    height: 1px;
+    padding: 10px;
+    margin: 10px;
+  }
 }
 
 .homepage-featured-gallery {
