@@ -740,7 +740,6 @@ label {
   opacity: 0;
 }
 
-
 //*==============================================================================
 //** Browser and OS Specific styles  **
 //*==============================================================================
@@ -751,9 +750,9 @@ label {
 
 // @supports (-webkit-overflow-scrolling: touch) {
 
- //********** Nav Styles **********
+//********** Nav Styles **********
 
- .main-nav {
+.main-nav {
   @include flex(column);
   position: fixed;
   top: 0;
@@ -762,6 +761,7 @@ label {
   background-image: url(/images/splodge-inverted.png);
   background-repeat: no-repeat;
   background-position: left 0 top $section-spacing;
+  pointer-events: none;
   width: 100vw;
   height: 100vh;
   clip-path: none;
@@ -776,11 +776,10 @@ label {
   &::before {
     content: "";
     clip-path: circle(0);
-
   }
 }
 
-.menu-scroll-hide {
+.button-scroll-hide {
   bottom: -28rem;
 }
 
@@ -795,7 +794,6 @@ label {
   z-index: 1;
   opacity: 1;
   clip-path: none;
-
 
   @include breakpoint(700) {
     clip-path: none;
@@ -854,7 +852,7 @@ label {
 
 .main-nav-li {
   margin-bottom: $section-spacing-small;
-  font-size: $medium-font-size ;
+  font-size: $medium-font-size;
 
   @include breakpoint(700) {
     text-align: center;
@@ -868,8 +866,8 @@ label {
 .nav-pull-button {
   @include heading-font-stack;
   position: fixed;
-  top: .85rem;
-  right: .85rem;
+  top: 0.85rem;
+  right: 0.85rem;
   color: $heading-colour;
   width: 7rem;
   height: 7rem;
@@ -885,6 +883,13 @@ label {
   z-index: 3;
   cursor: pointer;
   transition: opacity 0.9s ease 0.45s;
+
+  @include breakpoint(700) {
+    bottom: -0.6rem;
+    top: auto;
+    left: 0;
+    right: 0;
+  }
 
   &::before {
     content: "";
