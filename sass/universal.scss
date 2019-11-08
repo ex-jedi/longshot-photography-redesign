@@ -749,7 +749,6 @@ label {
 //*=========================================
 
 // @supports (-webkit-overflow-scrolling: touch) {
-
 //********** Nav Styles **********
 
 .main-nav {
@@ -760,7 +759,8 @@ label {
   background-color: $light-background-colour;
   background-image: url(/images/splodge-inverted.png);
   background-repeat: no-repeat;
-  background-position: left 0 top $section-spacing;
+  background-position: center center;
+  background-size: cover;
   pointer-events: none;
   width: 100vw;
   height: 100vh;
@@ -777,10 +777,6 @@ label {
     content: "";
     clip-path: circle(0);
   }
-}
-
-.button-scroll-hide {
-  bottom: -28rem;
 }
 
 #main-nav-selected {
@@ -846,16 +842,25 @@ label {
     right: 0;
     left: 0;
     top: auto;
+    bottom: $section-spacing-large;
+  }
+
+  @include breakpoint(500) {
     bottom: $section-spacing;
   }
 }
 
 .main-nav-li {
   margin-bottom: $section-spacing-small;
-  font-size: $medium-font-size;
+  font-size: $large-font-size;
 
   @include breakpoint(700) {
     text-align: center;
+    font-size: $medium-font-size;
+  }
+
+  @include breakpoint(350) {
+    font-size: $small-font-size;
   }
 }
 
@@ -882,7 +887,7 @@ label {
   border-radius: 100%;
   z-index: 3;
   cursor: pointer;
-  transition: opacity 0.9s ease 0.45s;
+  transition: opacity 0.9s ease 0.45s, transform 0.5s ease;
 
   @include breakpoint(700) {
     bottom: -0.6rem;
@@ -910,6 +915,10 @@ label {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.9s ease;
+}
+
+.button-scroll-hide {
+  transform: translateY(6rem);
 }
 
 .menu-closer {
@@ -942,5 +951,4 @@ label {
 .ios-menu-buttons {
   display: auto;
 }
-
 // } // IOS Styles End
