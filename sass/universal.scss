@@ -758,7 +758,7 @@ label {
   position: fixed;
   top: 0;
   right: 0;
-  background-color: $dark-brown;
+  background-color: $light-background-colour;
   width: 100vw;
   height: 100vh;
   clip-path: none;
@@ -772,18 +772,6 @@ label {
 
   &::before {
     content: "";
-    position: absolute;
-    background-color: $light-background-colour;
-    width: 1300px;
-    height: 1300px;
-    clip-path: none;
-    z-index: -1;
-
-    @include breakpoint(700) {
-      width: 100%;
-      height: 50rem;
-      clip-path: none;
-    }
   }
 }
 
@@ -808,18 +796,6 @@ label {
 
   &::before {
     content: "";
-    position: absolute;
-    background-color: $light-background-colour;
-    width: 1300px;
-    height: 1300px;
-    clip-path: none;
-    z-index: -1;
-
-    @include breakpoint(700) {
-      clip-path: none;
-      width: 100%;
-      height: 50rem;
-    }
   }
 }
 
@@ -881,23 +857,37 @@ label {
 .nav-pull-button {
   @include heading-font-stack;
   position: fixed;
-  top: $header-spacing-medium;
-  right: $header-spacing-medium;
+  top: .85rem;
+  right: .85rem;
   color: $heading-colour;
   width: 7rem;
   height: 7rem;
-  clip-path: circle(40%);
+  clip-path: circle(31%);
   font-weight: 900;
   margin: auto;
   display: block;
-  background-color: $light-background-colour;
+  background-color: $dark-brown;
   border: 0;
   font-size: $small-font-size;
   padding: 2rem;
   border-radius: 100%;
-  z-index: 2;
+  z-index: 3;
   cursor: pointer;
   transition: opacity 0.9s ease 0.45s;
+
+  &::before {
+    content: "";
+    width: 7rem;
+    height: 7rem;
+    background-color: $light-background-colour;
+    clip-path: circle(30%);
+    padding: 2rem;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
 }
 
 .button-hide {
@@ -934,7 +924,7 @@ label {
 }
 
 .ios-menu-buttons {
-  // display: auto;
+  display: auto;
 }
 
 // } // IOS Styles End
