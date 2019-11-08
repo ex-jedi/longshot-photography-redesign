@@ -803,9 +803,10 @@ label {
   @include flex(column);
   @include heading-font-stack;
   justify-content: flex-start;
+  align-items: center;
   position: fixed;
   top: $header-spacing-medium;
-  right: calc(#{$section-spacing-large} - 5rem);
+  left: 60%;
   list-style-type: none;
   color: $heading-colour;
   opacity: 0;
@@ -828,10 +829,11 @@ label {
 
 .main-nav-ul-reveal {
   opacity: 1;
-  right: $section-spacing-large;
+  right: 0;
+  left: 0;
   transform: scale(1);
   pointer-events: auto;
-  transition: all $transition-duration-slow $cubic-one 0.3s;
+  transition: all 1s $cubic-one 0.3s;
 
   @include breakpoint(700) {
     justify-content: center;
