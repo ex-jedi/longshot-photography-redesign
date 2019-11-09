@@ -107,6 +107,7 @@
 .homepage-featured-gallery-image {
   min-height: 1px;
   min-width: 1px;
+  width: 100%;
 }
 
 .homepage-featured-gallery-sub-heading {
@@ -208,6 +209,19 @@
 .homepage-collage-image-wrapper {
   flex: 1 1 auto;
   overflow: hidden;
+
+  @include breakpoint(700) {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.homepage-mobile-collage-image-wrapper {
+  display: none;
+
+  @include breakpoint(700) {
+    display: block;
+  }
 }
 
 .half-width-collage-image-wrapper {
