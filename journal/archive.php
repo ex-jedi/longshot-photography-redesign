@@ -5,7 +5,7 @@
 			<?php
 		        // defaults for all modes
 		        $posts_per_page = 10;
-		        $template 		= 'non_featured_posts.html';
+		        $template 		= 'archived_posts.html';
 		        $sort_order		= 'DESC';
 		        $sort_by		= 'postDateTime';
 		        $posts_displayed = false;

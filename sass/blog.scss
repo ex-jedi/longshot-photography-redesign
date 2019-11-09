@@ -136,6 +136,7 @@
     justify-content: flex-start;
     flex: 1 1 auto;
     width: 50%;
+    transition: all $transition-duration-slow $cubic-two;
 
     @include breakpoint(1100) {
       width: 100%;
