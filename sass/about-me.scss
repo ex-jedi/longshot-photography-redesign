@@ -18,23 +18,64 @@
   background-size: auto, cover;
   background-position: 580px -115px, -550px 1150px;
   width: 100%;
-  padding: 0 $section-spacing-extra-large $section-spacing-extra-large;
+  padding: 0 $section-spacing $section-spacing-extra-large;
+
+  @include breakpoint(1300) {
+    padding: 0 $section-spacing-extra-large $section-spacing-extra-large;
+  }
+
+  @include breakpoint(1100) {
+    padding: 0 $section-spacing-large $section-spacing-extra-large;
+  }
+
+  @include breakpoint(900) {
+    padding: 0 $section-spacing $section-spacing-large;
+  }
+
+  @include breakpoint(700) {
+    padding: 0 $section-spacing-tiny $section-spacing;
+  }
 }
 
 .about-me-content-wrapper {
   @include flex(row);
   position: relative;
+  justify-content: space-between;
+
+  @include breakpoint(1300) {
+    @include flex(column);
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+.about-me-image-wrapper,
+.about-me-text-wrapper {
+  width: 45%;
+
+  @include breakpoint(1300) {
+    width: 100%;
+  }
 }
 
 .about-me-main-image {
   position: relative;
-  width: 400px;
-  margin-right: $section-spacing-large;
   z-index: 1;
+  display: block;
+  width: 100%;
+
+  @include breakpoint(1300) {
+    margin-bottom: $section-spacing-large;
+  }
+
+  @include breakpoint(1100) {
+    margin-bottom: $section-spacing;
+  }
 }
 
 .about-me-text-wrapper {
   color: $dark-font-colour;
+  font-weight: bold;
 
   p {
     &:first-child {
@@ -45,19 +86,4 @@
       margin-bottom: 0;
     }
   }
-}
-
-.about-me-sub-text {
-  @include alt-font-stack;
-  font-weight: bold;
-  margin-top: $section-spacing;
-}
-
-.about-me-sub-image {
-  position: absolute;
-  z-index: 2;
-  top: 30rem;
-  left: 4rem;
-  width: 450px;
-  clip-path: circle(49%); //Removing slightly ragged photo outline
 }

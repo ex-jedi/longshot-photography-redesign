@@ -44,6 +44,15 @@
   justify-content: flex-start;
   @include horizontal-scrollbar;
   padding-bottom: $section-spacing;
+
+  &::before,
+  &::after {
+    content: "";
+    width: 1px;
+    height: 1px;
+    padding: 10px;
+    margin: 10px;
+  }
 }
 
 .homepage-featured-gallery {
@@ -93,6 +102,12 @@
       box-shadow: -2rem 2rem 0px 0px $image-shadow-three;
     }
   }
+}
+
+.homepage-featured-gallery-image {
+  min-height: 1px;
+  min-width: 1px;
+  width: 100%;
 }
 
 .homepage-featured-gallery-sub-heading {
@@ -194,6 +209,23 @@
 .homepage-collage-image-wrapper {
   flex: 1 1 auto;
   overflow: hidden;
+
+  @include breakpoint(700) {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.homepage-mobile-collage-image-wrapper {
+  display: none;
+
+  @include breakpoint(700) {
+    display: block;
+  }
+}
+
+.homepage-mobile-collage-image {
+  width: 100%;
 }
 
 .half-width-collage-image-wrapper {
@@ -202,4 +234,18 @@
 
 .full-width-collage-image-wrapper {
   width: 100%;
+}
+
+//*==============================================================================
+//** Browser Taming  **
+//*==============================================================================
+
+//*=========================================
+//** Firefox Styles **
+//*=========================================
+
+@-moz-document url-prefix() {
+  .homepage-featured-galleries-section {
+    width: 100vw;
+  }
 }

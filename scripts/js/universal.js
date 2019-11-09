@@ -76,6 +76,7 @@ loop();
 // =========================================
 let scrollPos = 0;
 const mainNav = document.querySelector('.main-nav');
+const iosNavPull = document.querySelector('.ios-nav-pull');
 // adding scroll event
 // eslint-disable-next-line func-names
 window.addEventListener('scroll', function() {
@@ -83,11 +84,22 @@ window.addEventListener('scroll', function() {
   // eslint-disable-next-line prettier/prettier
   if (
     document.body.getBoundingClientRect().top < scrollPos &&
-    !mainNav.classList.contains('nav-reveal')
+    !mainNav.classList.contains('nav-reveal') &&
+    window.scrollY > 10
   ) {
     mainNav.classList.add('menu-scroll-hide');
   } else {
     mainNav.classList.remove('menu-scroll-hide');
+  }
+
+  if (
+    document.body.getBoundingClientRect().top < scrollPos &&
+    window.innerWidth <= 700 &&
+    window.scrollY > 10
+  ) {
+    iosNavPull.classList.add('button-scroll-hide');
+  } else {
+    iosNavPull.classList.remove('button-scroll-hide');
   }
   // saves the new position for iteration.
   scrollPos = document.body.getBoundingClientRect().top;
@@ -104,5 +116,4 @@ let rellax = new Rellax('.rellax');
 // =========================================
 let lazyLoadInstance = new LazyLoad({
   elements_selector: '.lazy',
-  // ... more custom settings?
 });

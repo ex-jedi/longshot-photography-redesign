@@ -40,7 +40,7 @@
 
   img {
     width: 100%;
-    min-height: 30vh;
+    min-height: 1px;
   }
 
   &:nth-of-type(3n + 1) {
@@ -117,5 +117,16 @@
 
   @include breakpoint(700) {
     margin-bottom: $section-spacing-small;
+  }
+}
+
+//*=========================================
+//** Firefox Styles **
+//*=========================================
+
+@-moz-document url-prefix() {
+  .gallery-index-section {
+    width: 100vw;
+    overflow-x: scroll;
   }
 }
