@@ -480,8 +480,13 @@ main {
     padding: $h2-spacing-medium 0;
   }
 
+  @include breakpoint(700) {
+    padding: $h2-spacing-small 0;
+  }
+
   @include breakpoint(500) {
     font-size: $heading-size-medium;
+    padding: $h2-spacing-tiny 0;
   }
 }
 
@@ -590,7 +595,7 @@ footer {
   }
 
   @include breakpoint(700) {
-    padding: 0 $section-spacing-tiny $section-spacing-large;
+    padding: 0 $section-spacing-tiny $section-spacing;
   }
 }
 
@@ -950,5 +955,18 @@ label {
 
   .ios-menu-buttons {
     display: auto;
+  }
+
+  //********** Checkbox **********
+
+  .checkbox-div {
+    margin-bottom: $section-spacing-small;
+
+    input {
+      position: relative;
+      width: fit-content;
+      font-size: 0;
+      top: -7px;
+    }
   }
 } // IOS Styles End
