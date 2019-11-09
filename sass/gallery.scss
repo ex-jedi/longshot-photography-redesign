@@ -119,3 +119,14 @@
     margin-bottom: $section-spacing-small;
   }
 }
+
+//*=========================================
+//** Firefox Styles **
+//*=========================================
+
+@-moz-document url-prefix() {
+  .gallery-index-section {
+    width: 100vw;
+    overflow-x: scroll;
+  }
+}
