@@ -7,7 +7,7 @@
 </section>
 		<?php perch_layout('featured-galleries'); ?>
 		<?php perch_content("Homepage Testimonial One"); ?>
-		<?php perch_content("Homepage Image collage"); ?>
+		<?php perch_content("Homepage Image Collage"); ?>
 		<?php perch_content("Homepage Testimonial Two"); ?>
 		<?php perch_layout('homepage-mobile-collage-two'); ?>
 		<?php perch_content("General Contact Form"); ?>
