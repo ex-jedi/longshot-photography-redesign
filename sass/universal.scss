@@ -513,7 +513,6 @@ footer {
   @include flex(column);
   grid-area: f;
   justify-content: center;
-  min-height: 100vh;
   align-items: center;
   color: $dark-font-colour;
   padding: $section-spacing;
