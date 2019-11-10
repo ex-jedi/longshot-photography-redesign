@@ -12,6 +12,13 @@
   position: relative;
   background-color: $light-background-colour;
 
+  p {
+    a {
+      color: $dark-brown;
+      @include link-underline($dark-brown);
+    }
+  }
+
   @include breakpoint(1300) {
     padding: 0 $section-spacing-extra-large $section-spacing-large;
   }
