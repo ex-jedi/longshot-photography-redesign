@@ -309,11 +309,20 @@
 .blog-text-block {
   p {
     font-size: $base-font-size;
+    a {
+      color: $dark-brown;
+      @include link-underline($dark-brown);
+    }
   }
 }
 
 .blog-pull-quote {
   margin: $section-spacing 0;
+
+  a {
+    color: $dark-brown;
+    @include link-underline($dark-brown);
+  }
 }
 
 .pull-quote-text {

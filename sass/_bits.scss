@@ -99,18 +99,24 @@ $letter-spacing: 0.2rem;
 //Fancy Link Underline
 @mixin link-underline($colour) {
   transition: all $transition-duration;
-  border-bottom: 3px solid transparent;
+  border-bottom: 1px solid transparent;
   padding-bottom: 5px;
+
+  @include breakpoint(700) {
+    font-weight: 600;
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
 
   &:hover,
   &focus {
-    border-bottom: 3px solid $colour;
+    border-bottom: 1px solid $colour;
     padding-bottom: 0;
     margin-bottom: 5px;
     outline: 0;
 
-    @include breakpoint(menu) {
-      border-bottom: 3px solid transparent;
+    @include breakpoint(700) {
+      border-bottom: 0;
     }
   }
 }
@@ -118,31 +124,30 @@ $letter-spacing: 0.2rem;
 //Fancy Link Underline With Visited styles
 @mixin link-underline-visited($colour) {
   transition: all $transition-duration;
-  border-bottom: 3px solid transparent;
+  border-bottom: 1px solid transparent;
   padding-bottom: 5px;
 
-  @include breakpoint(menu) {
-    border-bottom: 3px solid transparent;
-    text-decoration: underline;
+  @include breakpoint(700) {
+    border-bottom: 1px solid transparent;
   }
 
   &:hover,
   &focus {
-    border-bottom: 3px solid $colour;
+    border-bottom: 1px solid $colour;
     padding-bottom: 0;
     margin-bottom: 5px;
     outline: 0;
 
-    @include breakpoint(menu) {
-      border-bottom: 3px solid transparent;
+    @include breakpoint(700) {
+      border-bottom: 1px solid transparent;
     }
   }
 
   &:visited {
-    border-bottom: 3px solid $link-visited;
+    border-bottom: 1px solid $link-visited;
 
-    @include breakpoint(menu) {
-      border-bottom: 3px solid transparent;
+    @include breakpoint(700) {
+      border-bottom: 1px solid transparent;
     }
   }
 }
