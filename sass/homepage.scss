@@ -129,6 +129,11 @@
   align-items: center;
   padding: $section-spacing-extra-large;
 
+  a {
+    color: $dark-brown;
+    @include link-underline($dark-brown);
+  }
+
   @include breakpoint(1600) {
     padding: $section-spacing-large;
   }
