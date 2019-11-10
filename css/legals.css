@@ -12,9 +12,12 @@
 
 .legals-section {
   color: #293c38;
-  padding: 0 15rem 10rem;
+  padding: 0 20rem 10rem;
   position: relative;
   background-color: #f3edeb; }
+  @media (max-width: 1300px) {
+    .legals-section {
+      padding: 0 15rem 10rem; } }
   @media (max-width: 1100px) {
     .legals-section {
       padding: 0 4rem 10rem; } }
