@@ -1,0 +1,22 @@
+//*==============================================================================
+//** Legals Page  **
+//*==============================================================================
+
+//********** Imports **********
+
+@import "bits";
+
+.legals-section {
+  color: $dark-font-colour;
+  padding: 0 $section-spacing-extra-large $section-spacing-large;
+  position: relative;
+  background-color: $light-background-colour;
+
+  @include breakpoint(1100) {
+    padding: 0 $section-spacing $section-spacing-large;
+  }
+
+  @include breakpoint(700) {
+    padding: 0 $section-spacing-tiny $section-spacing-large;
+  }
+}
