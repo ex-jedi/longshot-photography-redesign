@@ -114,6 +114,12 @@ let rellax = new Rellax('.rellax');
 // =========================================
 // ** Lazy load  **
 // =========================================
+
+//* Adding lazy load to iFrames
+
+const eyeFrame = document.querySelectorAll('iframe');
+eyeFrame.forEach(item => item.classList.add('lazy'));
+
 let lazyLoadInstance = new LazyLoad({
   elements_selector: '.lazy',
 });
