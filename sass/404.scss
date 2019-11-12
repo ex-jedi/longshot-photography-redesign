@@ -15,16 +15,23 @@
 @import "bits";
 
 .four-oh-four-section {
-  color: $dark-font-colour;
-  padding: 0 $section-spacing-super-size $section-spacing-large;
+  @include flex(column);
+  padding: 0 $section-spacing $section-spacing-tiny;
   position: relative;
   background-color: $light-background-colour;
+  background-image: url("/images/mountain-background-image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 
   @include breakpoint(1100) {
-    padding: 0 $section-spacing $section-spacing-large;
-  }
-
-  @include breakpoint(600) {
     padding: 0 $section-spacing-tiny $section-spacing;
   }
+}
+
+.four-oh-four-content {
+  @include heading-font-stack;
+  min-height: 90vh;
+
+  color: $light-font-colour;
+  font-size: $large-font-size;
 }
