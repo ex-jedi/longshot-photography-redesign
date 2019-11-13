@@ -114,6 +114,7 @@ let rellax = new Rellax('.rellax');
 // =========================================
 // ** Lazy load  **
 // =========================================
+
 let lazyLoadInstance = new LazyLoad({
   elements_selector: '.lazy',
 });

@@ -136,6 +136,7 @@
     justify-content: flex-start;
     flex: 1 1 auto;
     width: 50%;
+    transition: all $transition-duration-slow $cubic-two;
 
     @include breakpoint(1100) {
       width: 100%;
@@ -308,11 +309,20 @@
 .blog-text-block {
   p {
     font-size: $base-font-size;
+    a {
+      color: $dark-brown;
+      @include link-underline($dark-brown);
+    }
   }
 }
 
 .blog-pull-quote {
   margin: $section-spacing 0;
+
+  a {
+    color: $dark-brown;
+    @include link-underline($dark-brown);
+  }
 }
 
 .pull-quote-text {

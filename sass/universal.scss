@@ -514,6 +514,7 @@ footer {
   grid-area: f;
   justify-content: center;
   align-items: center;
+  min-height: 75vh;
   color: $dark-font-colour;
   padding: $section-spacing;
   font-size: $tiny-font-size;

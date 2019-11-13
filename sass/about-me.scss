@@ -78,6 +78,11 @@
   font-weight: bold;
 
   p {
+    a {
+      color: $dark-brown;
+      @include link-underline($dark-brown);
+    }
+
     &:first-child {
       margin-top: 0;
     }
