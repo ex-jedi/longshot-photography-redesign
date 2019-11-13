@@ -1,5 +1,6 @@
 <div class="homepage-featured-gallery fade-up-in">
-  <a href="/gallery/album.php?s=<perch:gallery id="albumSlug">">
+  <!-- TODO: Is having a link here bad UX? -->
+  <a href="/gallery/<perch:gallery id="albumSlug">">
 
         <img class="gallery-index-image homepage-featured-gallery-image lazy" data-src="<perch:gallery id="indexLarge" type="image" crop>" alt="<perch:gallery id="image-alt">"
         data-sizes="(max-width:600px) 90vw, (max-width:1000px) 50vw,(max-width:1300px) 40vw, 30vw"
@@ -9,7 +10,7 @@
     </a>
 
   <h3 class="homepage-featured-gallery-sub-heading">
-    <a class="homepage-gallery-link"  href="/gallery/album.php?s=<perch:gallery id="albumSlug">"><perch:gallery id="albumTitle"></a>
+    <a class="homepage-gallery-link"  href="/gallery/<perch:gallery id="albumSlug">"><perch:gallery id="albumTitle"></a>
   </h3>
 </div>
 
