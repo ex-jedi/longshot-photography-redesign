@@ -27,7 +27,7 @@
           'sort'       => 'postDateTime',
           'sort-order' => 'DESC',
           'start' => 3,
-          'count' => 20,
+          'count' => 18,
           'paginate' => false,
         ));
       ?>

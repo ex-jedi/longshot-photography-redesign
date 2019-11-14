@@ -56,9 +56,9 @@
 <!-- Perch Meta -->
 <?php perch_blog_post_meta(perch_get('s'));
 
-  perch_page_attributes(array(
-    'template' => 'favicons.html'
-  ));
+perch_page_attributes(array(
+	'template' => 'favicons.html'
+));
 
 ?>
 
