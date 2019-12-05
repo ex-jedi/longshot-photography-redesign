@@ -101,9 +101,9 @@ $letter-spacing: 0.2rem;
   transition: all $transition-duration;
   border-bottom: 1px solid transparent;
   padding-bottom: 5px;
+  font-weight: 400;
 
   @include breakpoint(700) {
-    font-weight: 600;
     padding-bottom: 0;
     border-bottom: 0;
   }

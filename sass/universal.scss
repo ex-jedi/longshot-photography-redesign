@@ -99,7 +99,7 @@ a {
 // =========================================
 
 header {
-  @include flex(col);
+  @include flex(column);
   grid-area: h;
   position: relative;
   overflow: hidden;

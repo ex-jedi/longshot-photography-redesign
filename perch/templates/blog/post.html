@@ -1,5 +1,5 @@
   <!-- Cover Image -->
-  <perch:blog id="blogIndexImage" type="image" label="Blog Listing Image" help="This image will appear on the blog homepage with the title." suppress="true" order="2" required="true" width="1350" height="900" crop>
+  <perch:blog id="blogIndexImage" type="image" label="Blog Listing Image" help="This image will appear on the blog homepage with the title." suppress="true" order="2" required="true" width="1350" height="900" help="Images must be over 1315 by 900 pixels to be properly cropped to fit the listing page" crop>
   <perch:blog id="blogIndexImage" type="image" suppress="true" width="1100" height="733" crop>
   <perch:blog id="blogIndexImage" type="image" suppress="true" width="800"  height="533" crop>
   <perch:blog id="blogIndexImage" type="image" suppress="true" width="600"  height="400" crop>
@@ -13,7 +13,7 @@
 
 
   <!-- Edit Slug -->
-  <perch:blog id="postSlug" type="slug" editable="true" label="Blog Post Slug" help="This is the text that goes after your web address, for example, longshot.photo/journal/this-bit-is-the-slug. You must use numbers, letters, and hyphens only, with no spaces, or the link won't work. If the slug is changed after the page has been published, links using the previous slug won't work anymore." for="postTitle" suppress="true" order="2" >
+  <perch:blog id="postSlug" type="slug" editable="true" label="Blog Post Slug" help="This is the text that goes after your web address, for example, longshot.photo/journal/this-bit-is-the-slug. You must use numbers, letters, and hyphens only, with no spaces or the link won't work. If the slug is changed after the page has been published, links using the previous slug won't work anymore." for="postTitle" suppress="true" order="2" >
 
   <!-- Excerpt Text -->
   <perch:blog id="blog-index-excerpt" type="textarea" divider-before="Blog Index Excerpt" help="This text will appear on the blog home page along with the cover image" editor="redactor" html="true" order="3" suppress="true" size="m" required="true" count="words" >
