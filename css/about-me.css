@@ -55,16 +55,16 @@
   background-size: auto, cover;
   background-position: 580px -115px, -550px 1150px;
   width: 100%;
-  padding: 0 4rem 15rem;
+  padding: 0 10rem 15rem;
 }
 @media (max-width: 1300px) {
   .about-me-section {
-    padding: 0 15rem 15rem;
+    padding: 0 8rem 15rem;
   }
 }
 @media (max-width: 1100px) {
   .about-me-section {
-    padding: 0 10rem 15rem;
+    padding: 0 4rem 15rem;
   }
 }
 @media (max-width: 900px) {
@@ -80,7 +80,6 @@
 
 .about-me-content-wrapper {
   position: relative;
-  margin: 0 4rem;
 }
 
 .about-me-main-image {
@@ -91,11 +90,27 @@
   float: left;
   margin: 0 4rem 4rem 0;
 }
+@media (max-width: 1300px) {
+  .about-me-main-image {
+    width: 40%;
+  }
+}
+@media (max-width: 1100px) {
+  .about-me-main-image {
+    width: 100%;
+    margin: 0 auto 4rem;
+  }
+}
 
 .about-me-text-wrapper {
   color: #293c38;
   font-size: 2rem;
   font-weight: bold;
+}
+@media (max-width: 1300px) {
+  .about-me-text-wrapper {
+    font-size: 1.5rem;
+  }
 }
 .about-me-text-wrapper p a {
   color: #875548;
