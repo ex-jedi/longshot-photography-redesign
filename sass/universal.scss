@@ -616,7 +616,7 @@ label {
 .text-area-input,
 .submit {
   font: inherit;
-  border-radius: 5px;
+  border-radius: 0;
   border: 0;
   padding: $form-spacing $form-spacing-large;
 }
@@ -652,7 +652,7 @@ label {
   width: fit-content;
   padding: $form-spacing $medium-font-size;
   margin: 0 auto;
-  border-radius: 5px;
+  border-radius: 0;
   border: 1px solid $light-background-colour;
   transition: 0.3s all ease;
   -webkit-appearance: none;

@@ -43,23 +43,32 @@
     min-height: 1px;
   }
 
-  &:nth-of-type(3n + 1) {
+  //TODO: Fix gubbins below
+
+  &:nth-of-type(4n + 1) {
     img {
       box-shadow: -2rem 2rem 0 0 $image-shadow-one;
     }
   }
 
-  &:nth-of-type(3n + 3) {
+  &:nth-of-type(4n + 2) {
     animation-delay: 0.2s;
     img {
       box-shadow: -2rem 2rem 0 0 $image-shadow-two;
     }
   }
 
-  &:nth-of-type(3n + 2) {
+  &:nth-of-type(4n + 3) {
     animation-delay: 0.4s;
     img {
       box-shadow: -2rem 2rem 0 0 $image-shadow-three;
+    }
+  }
+
+  &:nth-of-type(4n + 4) {
+    animation-delay: 0.4s;
+    img {
+      box-shadow: -2rem 2rem 0 0 $image-shadow-four;
     }
   }
 }
@@ -68,7 +77,6 @@
   text-align: center;
   margin: 1.5rem auto 0;
   font-size: 1rem;
-  background-color: transparent;
 }
 
 //*=========================================
