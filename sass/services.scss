@@ -10,11 +10,11 @@
   color: $dark-font-colour;
   padding: 0 $section-spacing-extra-large $section-spacing-extra-large;
   position: relative;
+  background-color: $light-background-colour;
   background-image: url("/images/splodge-rotated-medium.png"),
-    url("/images/blue-green-gouache-wash.png"),
     url("/images/splodge-rotated-medium.png");
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: top center, center, right -200px bottom;
+  background-repeat: no-repeat, no-repeat;
+  background-position: top center, right -200px bottom;
 
   @include breakpoint(1600) {
     padding: 0 $section-spacing $section-spacing-extra-large;
@@ -163,6 +163,7 @@
 .service-text-wrapper {
   p {
     @include font-stack;
+    font-weight: bold;
 
     a {
       color: $dark-brown;

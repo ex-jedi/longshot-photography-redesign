@@ -52,9 +52,10 @@
   color: #293c38;
   padding: 0 15rem 15rem;
   position: relative;
-  background-image: url("/images/splodge-rotated-medium.png"), url("/images/blue-green-gouache-wash.png"), url("/images/splodge-rotated-medium.png");
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: top center, center, right -200px bottom;
+  background-color: #f3edeb;
+  background-image: url("/images/splodge-rotated-medium.png"), url("/images/splodge-rotated-medium.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: top center, right -200px bottom;
 }
 @media (max-width: 1600px) {
   .services-section {
@@ -235,6 +236,7 @@
   font-family: "ff-dagny-web-pro", sans-serif;
   font-weight: 300;
   line-height: 1.5;
+  font-weight: bold;
 }
 .services-details-wrapper p a,
 .service-text-wrapper p a {
