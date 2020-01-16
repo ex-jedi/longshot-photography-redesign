@@ -38,43 +38,23 @@
 }
 
 .about-me-content-wrapper {
-  @include flex(row);
   position: relative;
-  justify-content: space-between;
-
-  @include breakpoint(1300) {
-    @include flex(column);
-    justify-content: flex-start;
-    align-items: center;
-  }
+  margin: 0 $section-spacing;
 }
 
-.about-me-image-wrapper,
-.about-me-text-wrapper {
-  width: 45%;
-
-  @include breakpoint(1300) {
-    width: 100%;
-  }
-}
 
 .about-me-main-image {
   position: relative;
-  z-index: 1;
   display: block;
-  width: 100%;
-
-  @include breakpoint(1300) {
-    margin-bottom: $section-spacing-large;
-  }
-
-  @include breakpoint(1100) {
-    margin-bottom: $section-spacing;
-  }
+  width: 30%;
+  height: auto;
+  float: left;
+  margin:  0 $section-spacing $section-spacing 0;
 }
 
 .about-me-text-wrapper {
   color: $dark-font-colour;
+  font-size: $large-font-size;
   font-weight: bold;
 
   p {
