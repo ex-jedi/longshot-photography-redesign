@@ -52,8 +52,9 @@
   position: relative;
   background-image: url("/images/splodge-rotated-medium.png"), url("/images/splodge-rotated-medium.png");
   background-repeat: no-repeat;
-  background-size: auto, cover;
-  background-position: 580px -115px, -550px 1150px;
+  background-size: auto, aut0;
+  background-position: left 120% top -10%, right -10% bottom -10%;
+  background-color: #f3edeb;
   width: 100%;
   padding: 0 10rem 15rem;
 }
