@@ -117,39 +117,29 @@
   width: 100%;
   min-height: 1px;
 }
-.gallery-index-album:nth-of-type(4n + 1) img {
-  -webkit-box-shadow: -2rem 2rem 0 0 #bda099;
-          box-shadow: -2rem 2rem 0 0 #bda099;
-}
-.gallery-index-album:nth-of-type(4n + 2) {
+.gallery-index-album:nth-of-type(1) {
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
 }
-.gallery-index-album:nth-of-type(4n + 2) img {
-  -webkit-box-shadow: -2rem 2rem 0 0 #b1bab5;
-          box-shadow: -2rem 2rem 0 0 #b1bab5;
-}
-.gallery-index-album:nth-of-type(4n + 3) {
+.gallery-index-album:nth-of-type(3) {
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
 }
-.gallery-index-album:nth-of-type(4n + 3) img {
-  -webkit-box-shadow: -2rem 2rem 0 0 #968d8a;
-          box-shadow: -2rem 2rem 0 0 #968d8a;
+.gallery-index-album:nth-of-type(5) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
 }
-.gallery-index-album:nth-of-type(4n + 4) {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
-}
-.gallery-index-album:nth-of-type(4n + 4) img {
-  -webkit-box-shadow: -2rem 2rem 0 0 #8d9491;
-          box-shadow: -2rem 2rem 0 0 #8d9491;
+.gallery-index-album:nth-of-type(7) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
 }
 
 .gallery-index-sub-heading {
   text-align: center;
-  margin: 1.5rem auto 0;
-  font-size: 1rem;
+  width: 100%;
+  margin: 0;
+  top: 50%;
+  font-size: 2.5rem;
 }
 
 .gallery-album-section {
