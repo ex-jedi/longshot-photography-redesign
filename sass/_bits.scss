@@ -283,6 +283,22 @@ $form-spacing: 0.7rem;
   }
 }
 
+//********** Bounce **********
+@keyframes bounce {
+  25% {
+    transform: translateY(-1rem);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-1rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 //********** Animation Variables **********
 
 //* Timings

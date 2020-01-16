@@ -551,6 +551,12 @@ footer {
 
 .footer-social-media-icon {
   height: $heading-size-large;
+  &:hover {
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-timing-function: $cubic-two;
+    animation-fill-mode: forwards;
+  }
 }
 
 //*=========================================
