@@ -540,7 +540,7 @@ footer {
 
 .footer-social-media {
   @include flex(row);
-  width: 275px;
+  width: 250px;
   margin-bottom: $section-spacing;
   justify-content: space-between;
 }
@@ -550,7 +550,7 @@ footer {
 }
 
 .footer-social-media-icon {
-  height: 90px;
+  height: $heading-size-large;
 }
 
 //*=========================================
