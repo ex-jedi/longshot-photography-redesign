@@ -162,7 +162,7 @@
 .services-details-wrapper,
 .service-text-wrapper {
   p {
-    @include alt-font-stack;
+    @include font-stack;
 
     a {
       color: $dark-brown;
