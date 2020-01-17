@@ -724,8 +724,8 @@ label {
   }
 
   label {
-    @include font-stack;
     font-size: $base-font-size;
+    font-weight: 300;
     text-transform: none;
     display: inline;
   }

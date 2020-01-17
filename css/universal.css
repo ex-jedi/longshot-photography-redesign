@@ -917,10 +917,8 @@ label {
           transform: rotate(-45deg) scale(1);
 }
 .checkbox-div label {
-  font-family: "ff-dagny-web-pro", sans-serif;
-  font-weight: 300;
-  line-height: 1.5;
   font-size: 1rem;
+  font-weight: 300;
   text-transform: none;
   display: inline;
 }
