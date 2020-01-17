@@ -7,7 +7,7 @@
 @import "bits";
 
 //*=========================================
-//** Header  **
+//** Main  **
 //*=========================================
 
 .about-me-section {
@@ -42,6 +42,8 @@
   position: relative;
 }
 
+//********** Image **********
+
 .about-me-main-image {
   position: relative;
   display: block;
@@ -49,6 +51,12 @@
   height: auto;
   float: left;
   margin: 0 $section-spacing $section-spacing 0;
+
+  animation-name: rise-and-fall;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
 
   @include breakpoint(1300) {
     width: 40%;
@@ -59,6 +67,20 @@
     margin: 0 auto $section-spacing;
   }
 }
+
+@keyframes rise-and-fall {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY($base-font-size);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+//********** Text **********
 
 .about-me-text-wrapper {
   color: $dark-font-colour;

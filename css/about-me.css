@@ -90,6 +90,16 @@
   height: auto;
   float: left;
   margin: 0 4rem 4rem 0;
+  -webkit-animation-name: rise-and-fall;
+          animation-name: rise-and-fall;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 @media (max-width: 1300px) {
   .about-me-main-image {
@@ -103,6 +113,35 @@
   }
 }
 
+@-webkit-keyframes rise-and-fall {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes rise-and-fall {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
 .about-me-text-wrapper {
   color: #293c38;
   font-size: 2rem;
