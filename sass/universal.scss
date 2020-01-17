@@ -99,7 +99,7 @@ a {
 // =========================================
 
 header {
-  @include flex(column);
+  @include flex(row);
   grid-area: h;
   position: relative;
   overflow: hidden;
@@ -540,7 +540,7 @@ footer {
 
 .footer-social-media {
   @include flex(row);
-  width: 275px;
+  width: 250px;
   margin-bottom: $section-spacing;
   justify-content: space-between;
 }
@@ -550,7 +550,13 @@ footer {
 }
 
 .footer-social-media-icon {
-  height: 90px;
+  height: $heading-size-large;
+  &:hover {
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-timing-function: $cubic-two;
+    animation-fill-mode: forwards;
+  }
 }
 
 //*=========================================
@@ -616,7 +622,7 @@ label {
 .text-area-input,
 .submit {
   font: inherit;
-  border-radius: 5px;
+  border-radius: 0;
   border: 0;
   padding: $form-spacing $form-spacing-large;
 }
@@ -652,7 +658,7 @@ label {
   width: fit-content;
   padding: $form-spacing $medium-font-size;
   margin: 0 auto;
-  border-radius: 5px;
+  border-radius: 0;
   border: 1px solid $light-background-colour;
   transition: 0.3s all ease;
   -webkit-appearance: none;
@@ -718,8 +724,8 @@ label {
   }
 
   label {
-    @include font-stack;
     font-size: $base-font-size;
+    font-weight: 300;
     text-transform: none;
     display: inline;
   }

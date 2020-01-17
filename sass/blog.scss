@@ -12,14 +12,6 @@
 //** General Styles  **
 //*=========================================
 
-.blog-post-article {
-  p {
-    font-family: "ff-tisa-web-pro", serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-}
-
 .blog-index-page-subtitle,
 .blog-categories-li,
 .blog-index-title {
@@ -202,6 +194,7 @@
   width: 100%;
   flex: 0 1 auto;
   font-size: $base-font-size;
+  font-weight: bold;
 }
 
 .blog-index-image {
@@ -308,7 +301,9 @@
 
 .blog-text-block {
   p {
-    font-size: $base-font-size;
+    font-size: $smaller-font-size;
+    font-weight: bold;
+
     a {
       color: $dark-brown;
       @include link-underline($dark-brown);

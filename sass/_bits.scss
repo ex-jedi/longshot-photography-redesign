@@ -23,11 +23,13 @@ $heading-colour: $dark-brown;
 //Background Colours
 $light-background-colour: $light-one;
 $dark-background-colour: $dark-green;
+$gallery-background-colour: #f3edebc7;
 
 //Image shadows
-$image-shadow-one: #87544880;
-$image-shadow-two: #70878080;
-$image-shadow-three: #3b2e2b80;
+$image-shadow-one: #bda099;
+$image-shadow-two: #b1bab5;
+$image-shadow-three: #968d8a;
+$image-shadow-four: #8d9491;
 
 // =========================================
 // ** Typography  **
@@ -52,12 +54,6 @@ $image-shadow-three: #3b2e2b80;
   font-family: "ff-dagny-web-pro", sans-serif;
   font-weight: 400;
   font-style: normal;
-  line-height: $line-height;
-}
-
-@mixin alt-font-stack {
-  font-family: "ff-tisa-web-pro", serif;
-  font-weight: 300;
   line-height: $line-height;
 }
 
@@ -277,6 +273,22 @@ $form-spacing: 0.7rem;
 @keyframes fade-up-in {
   100% {
     opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+//********** Bounce **********
+@keyframes bounce {
+  25% {
+    transform: translateY(-1rem);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-1rem);
+  }
+  100% {
     transform: translateY(0);
   }
 }
