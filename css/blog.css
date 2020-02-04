@@ -357,15 +357,18 @@
   }
 }
 
+.blog-post-title {
+  padding: 12rem 0 6rem;
+}
 @media (max-width: 1300px) {
   .blog-post-title {
     font-size: 3.5rem;
-    padding: 8rem 0;
+    padding: 8rem 0 4rem;
   }
 }
 @media (max-width: 900px) {
   .blog-post-title {
-    padding: 6rem 0;
+    padding: 6rem 0 4rem;
     font-size: 2rem;
   }
 }
@@ -377,6 +380,7 @@
 }
 
 .post-category-paragraph {
+  margin: 0 auto 6rem;
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
@@ -384,9 +388,9 @@
   width: 100%;
   font-size: 1.5rem;
 }
-@media (max-width: 900px) {
+@media (max-width: 1300px) {
   .post-category-paragraph {
-    margin: 0;
+    margin-bottom: 4rem;
   }
 }
 
@@ -421,6 +425,9 @@
   width: 100%;
   margin: 4rem 0;
 }
+.blog-figure:first-child {
+  margin-top: 0;
+}
 @media (max-width: 700px) {
   .blog-figure {
     margin: 2rem 0;
@@ -437,15 +444,25 @@
 }
 
 .blog-text-block p {
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-weight: bold;
+}
+@media (max-width: 1000px) {
+  .blog-text-block p {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .blog-text-block p {
+    font-size: 1.2rem;
+  }
 }
 .blog-text-block p a {
   color: #875548;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-  border-bottom: 1px solid transparent;
+  border-bottom: 2px solid transparent;
   padding-bottom: 5px;
   font-weight: 400;
 }
@@ -456,7 +473,7 @@
   }
 }
 .blog-text-block p a:hover, .blog-text-block p afocus {
-  border-bottom: 1px solid #875548;
+  border-bottom: 2px solid #875548;
   padding-bottom: 0;
   margin-bottom: 5px;
   outline: 0;
@@ -475,7 +492,7 @@
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-  border-bottom: 1px solid transparent;
+  border-bottom: 2px solid transparent;
   padding-bottom: 5px;
   font-weight: 400;
 }
@@ -486,7 +503,7 @@
   }
 }
 .blog-pull-quote a:hover, .blog-pull-quote afocus {
-  border-bottom: 1px solid #875548;
+  border-bottom: 2px solid #875548;
   padding-bottom: 0;
   margin-bottom: 5px;
   outline: 0;

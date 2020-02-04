@@ -238,13 +238,15 @@
 }
 
 .blog-post-title {
+  padding: $h2-spacing-large 0 $h2-spacing-small;
+
   @include breakpoint(1300) {
     font-size: $heading-size-large;
-    padding: $h2-spacing-medium 0;
+    padding: $h2-spacing-medium 0 $h2-spacing-tiny;
   }
 
   @include breakpoint(900) {
-    padding: $h2-spacing-small 0;
+    padding: $h2-spacing-small 0 $h2-spacing-tiny;
     font-size: $heading-size-medium;
   }
   @include breakpoint(500) {
@@ -254,13 +256,14 @@
 }
 
 .post-category-paragraph {
+  margin: 0 auto $h2-spacing-small;
   order: 2;
   text-align: center;
   width: 100%;
   font-size: $medium-font-size;
 
-  @include breakpoint(900) {
-    margin: 0;
+  @include breakpoint(1300) {
+    margin-bottom: $h2-spacing-tiny;
   }
 }
 
@@ -283,6 +286,10 @@
   width: 100%;
   margin: $section-spacing 0;
 
+  &:first-child {
+    margin-top: 0;
+  }
+
   @include breakpoint(700) {
     margin: $section-spacing-small 0;
   }
@@ -301,8 +308,16 @@
 
 .blog-text-block {
   p {
-    font-size: $smaller-font-size;
+    font-size: $large-font-size;
     font-weight: bold;
+
+    @include breakpoint(1000) {
+      font-size: $medium-font-size;
+    }
+
+    @include breakpoint(600) {
+      font-size: $smaller-font-size;
+    }
 
     a {
       color: $dark-brown;
