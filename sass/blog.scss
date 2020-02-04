@@ -301,8 +301,16 @@
 
 .blog-text-block {
   p {
-    font-size: $smaller-font-size;
+    font-size: $large-font-size;
     font-weight: bold;
+
+    @include breakpoint(1000) {
+      font-size: $medium-font-size;
+    }
+
+    @include breakpoint(600) {
+      font-size: $smaller-font-size;
+    }
 
     a {
       color: $dark-brown;

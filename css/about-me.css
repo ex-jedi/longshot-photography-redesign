@@ -157,7 +157,7 @@
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-  border-bottom: 1px solid transparent;
+  border-bottom: 2px solid transparent;
   padding-bottom: 5px;
   font-weight: 400;
 }
@@ -168,7 +168,7 @@
   }
 }
 .about-me-text-wrapper p a:hover, .about-me-text-wrapper p afocus {
-  border-bottom: 1px solid #875548;
+  border-bottom: 2px solid #875548;
   padding-bottom: 0;
   margin-bottom: 5px;
   outline: 0;
