@@ -121,8 +121,12 @@
   padding: $section-spacing-extra-large;
 
   a {
-    color: $dark-brown;
-    @include link-underline($dark-brown);
+    color: inherit;
+    @include link-underline($light-font-colour);
+
+    @include breakpoint(700) {
+      text-decoration: underline;
+    }
   }
 
   @include breakpoint(1600) {
@@ -173,6 +177,10 @@
   background-image: url("/images/splodge-rotated-medium.png");
   background-position: right -200px top 50%;
   background-repeat: no-repeat;
+
+  a {
+    @include link-underline($dark-font-colour);
+  }
 }
 
 // =========================================
