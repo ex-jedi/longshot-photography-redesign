@@ -121,8 +121,12 @@
   padding: $section-spacing-extra-large;
 
   a {
-    color: $dark-brown;
-    @include link-underline($dark-brown);
+    color: inherit;
+    @include link-underline($light-font-colour);
+
+    @include breakpoint(700) {
+      text-decoration: underline;
+    }
   }
 
   @include breakpoint(1600) {

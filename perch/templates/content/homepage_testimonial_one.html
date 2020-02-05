@@ -5,8 +5,13 @@
   </div>
 
   <div class="testimonial-source testimonial-source-one">
-    <!-- TODO: Add link -->
-    <perch:content id="testimonialSource" type="text" label="Testimonial Source"  required>
+    <perch:if exists="homepageTestimonialLink">
+      <a href="<perch:content id="homepageTestimonialLink" type="text" label="Testimonial Link">" class="homepage-testimonial-link">
+        <perch:content id="testimonialSource" type="text" label="Testimonial Source"  required>
+      </a>
+    <perch:else>
+      <perch:content id="testimonialSource" type="text" label="Testimonial Source"  required>
+    </perch:if>
   </div>
 
 </section>
