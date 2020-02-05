@@ -1,9 +1,9 @@
 <footer class="main-footer">
 	<div class="footer-social-media">
-		<a href="#" class="footer-social-media-link">
+		<a href="https://www.instagram.com/longshot_photo" class="footer-social-media-link">
 			<img class="footer-social-media-icon" src="/images/instagram-icon.svg">
 		</a>
-		<a href="#" class="footer-social-media-link">
+		<a href="https://twitter.com/longshot_photo" class="footer-social-media-link">
 			<img class="footer-social-media-icon" src="/images/twitter-icon.svg">
 		</a>
 	</div>
