@@ -276,6 +276,31 @@
   background-position: right -200px top 50%;
   background-repeat: no-repeat;
 }
+.homepage-testimonial-section-two a {
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 5px;
+  font-weight: 400;
+}
+@media (max-width: 700px) {
+  .homepage-testimonial-section-two a {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+}
+.homepage-testimonial-section-two a:hover, .homepage-testimonial-section-two afocus {
+  border-bottom: 2px solid #293c38;
+  padding-bottom: 0;
+  margin-bottom: 5px;
+  outline: 0;
+}
+@media (max-width: 700px) {
+  .homepage-testimonial-section-two a:hover, .homepage-testimonial-section-two afocus {
+    border-bottom: 0;
+  }
+}
 
 .homepage-collage-section {
   display: -webkit-box;
