@@ -83,7 +83,7 @@
 .blog-categories-ul-reveal {
   clip-path: inset(0 0 0 0);
   opacity: 1;
-  padding-top: 1rem;
+  transform: translateY(0.5rem);
 }
 
 .blog-category-link {
