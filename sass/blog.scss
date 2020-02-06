@@ -367,7 +367,13 @@
   overflow-x: hidden;
 
   h1 {
-    word-break: break-word;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+
+    @include breakpoint(400) {
+      font-size: $medium-font-size;
+    }
   }
 }
 

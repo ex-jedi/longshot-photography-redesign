@@ -538,7 +538,16 @@
   overflow-x: hidden;
 }
 .blog-archive-section h1 {
-  word-break: break-word;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+}
+@media (max-width: 400px) {
+  .blog-archive-section h1 {
+    font-size: 1.5rem;
+  }
 }
 
 @media (max-width: 1100px) {
