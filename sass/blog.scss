@@ -83,7 +83,7 @@
 .blog-categories-ul-reveal {
   clip-path: inset(0 0 0 0);
   opacity: 1;
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 
 .blog-category-link {
@@ -379,10 +379,6 @@
 
 .blog-index-page-subtitle {
   @include breakpoint(1100) {
-    margin-bottom: $section-spacing;
-  }
-
-  @include breakpoint(700) {
-    margin-bottom: $section-spacing-smaller;
+    margin-bottom: $h2-spacing-small;
   }
 }
