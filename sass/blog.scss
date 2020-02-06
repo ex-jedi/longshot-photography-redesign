@@ -83,6 +83,7 @@
 .blog-categories-ul-reveal {
   clip-path: inset(0 0 0 0);
   opacity: 1;
+  padding-top: 2rem;
 }
 
 .blog-category-link {
@@ -360,4 +361,28 @@
 
 .archive-section-heading {
   font-size: $heading-size-extra-large;
+}
+
+.blog-archive-section {
+  overflow-x: hidden;
+
+  h1 {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+
+    @include breakpoint(400) {
+      font-size: $medium-font-size;
+    }
+  }
+}
+
+.blog-index-page-subtitle {
+  @include breakpoint(1100) {
+    margin-bottom: $section-spacing;
+  }
+
+  @include breakpoint(700) {
+    margin-bottom: $section-spacing-smaller;
+  }
 }
