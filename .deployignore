@@ -6,5 +6,7 @@ scripts/js/**
 .scss-lint.yml
 package.json
 package-lock.json
-gulpfile.js
 .prettierrc.json
+prepros.config
+.eslintrc.json
+.gitmodules
