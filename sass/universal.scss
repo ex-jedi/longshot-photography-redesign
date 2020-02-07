@@ -35,6 +35,8 @@ body {
   width: 100%;
   margin: 0 auto;
   min-width: 320px;
+  //! Chrome layout breaks without this
+  overflow-x: hidden;
 }
 
 .site-wrapper {
@@ -102,9 +104,11 @@ header {
   @include flex(row);
   grid-area: h;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
   background-color: $dark-background-colour;
   justify-content: center;
+  //! Chrome breaks without this
+  max-width: 100vw;
 }
 
 .main-header {
@@ -169,7 +173,6 @@ header {
   }
 
   @include breakpoint(700) {
-    width: 100%;
     padding: 0 $section-spacing-tiny;
   }
 }
@@ -466,6 +469,9 @@ header {
 
 main {
   grid-area: m;
+  //! Chrome layout breaks without this
+  overflow-x: hidden;
+  max-width: 100vw;
 }
 
 .section-heading {
@@ -570,6 +576,7 @@ footer {
   justify-content: center;
   align-items: center;
   height: $simple-header-height;
+  width: 100%;
 }
 
 .simple-header-submark {
