@@ -42,10 +42,17 @@
   }
 }
 
-.blog-index-page-subtitle {
-  margin-bottom: $section-spacing;
+.blog-index-container {
+  &:first-of-type {
+    h3 {
+      margin-top: 0;
+    }
+  }
+}
 
+.blog-index-page-subtitle {
   @include breakpoint(1100) {
+    margin-bottom: $section-spacing-smaller;
     cursor: pointer;
   }
 }
@@ -83,7 +90,7 @@
 .blog-categories-ul-reveal {
   clip-path: inset(0 0 0 0);
   opacity: 1;
-  transform: translateY(0.5rem);
+  transform: translateY($section-spacing-tiny);
 }
 
 .blog-category-link {
@@ -374,11 +381,5 @@
     @include breakpoint(400) {
       font-size: $medium-font-size;
     }
-  }
-}
-
-.blog-index-page-subtitle {
-  @include breakpoint(1100) {
-    margin-bottom: $h2-spacing-small;
   }
 }
