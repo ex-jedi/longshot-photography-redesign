@@ -5,8 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<!-- Typekit Fonts -->
 	<link rel="stylesheet" href="https://use.typekit.net/mud2esb.css">
-  <link rel="stylesheet" href="/css/universal.css?v=2.1">
-  <link rel="stylesheet" href="/css/blog.css?v=2.1">
+  <link rel="stylesheet" href="/css/universal.css?v=2.3">
+  <link rel="stylesheet" href="/css/blog.css?v=2.3">
 
 	<!-- Perch Meta -->
 	<?php
