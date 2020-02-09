@@ -5,8 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<!-- Typekit Fonts -->
 	<link rel="stylesheet" href="https://use.typekit.net/mud2esb.css">
-	<link rel="stylesheet" href="/css/universal.css?v=2.3">
-	<link rel="stylesheet" href="/css/gallery.css?v=2.3">
+	<link rel="stylesheet" href="/css/universal.css?v=2.4">
+	<link rel="stylesheet" href="/css/gallery.css?v=2.4">
 	<!-- Perch Gallery Meta -->
 		<?php
 $domain        = 'https://'.$_SERVER["HTTP_HOST"];

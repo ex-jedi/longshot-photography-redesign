@@ -517,6 +517,7 @@ main {
 
 footer {
   @include flex(column);
+  width: 100vw;
   grid-area: f;
   justify-content: center;
   align-items: center;
@@ -717,11 +718,15 @@ label {
       color: $light-font-colour;
       border-left: 2px solid;
       border-bottom: 2px solid;
-      top: -1px;
+      top: 0;
       left: -1px;
       transform: rotate(-25deg) scale(0.75);
       opacity: 0;
       transition: all $transition-duration cubic-bezier(0.18, 1.96, 1, 1.96);
+
+      @include breakpoint(500) {
+        top: 3px;
+      }
     }
 
     &:checked:after {
