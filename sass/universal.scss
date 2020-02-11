@@ -425,6 +425,7 @@ header {
 .closer-reveal {
   opacity: 1;
   pointer-events: auto;
+  cursor: pointer;
   transition: opacity 0.9s ease 0.45s;
 }
 
