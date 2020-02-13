@@ -382,8 +382,10 @@ header {
 .nav-pull-button {
   @include heading-font-stack;
   color: $heading-colour;
-  width: fit-content;
   font-weight: 900;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
   margin: auto;
   display: block;
   background-color: transparent;
