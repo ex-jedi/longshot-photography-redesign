@@ -123,6 +123,7 @@
 
   @include breakpoint(1100) {
     @include flex(column);
+    margin-bottom: $section-spacing;
   }
 
   .blog-index-container {
@@ -188,6 +189,10 @@
 
   @include breakpoint(1300) {
     min-height: 5rem;
+  }
+
+  @include breakpoint(1100) {
+    min-height: auto;
   }
 }
 
