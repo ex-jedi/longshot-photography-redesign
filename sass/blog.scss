@@ -123,6 +123,7 @@
 
   @include breakpoint(1100) {
     @include flex(column);
+    margin-bottom: $section-spacing;
   }
 
   .blog-index-container {
