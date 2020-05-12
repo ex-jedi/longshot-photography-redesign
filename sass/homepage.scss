@@ -199,6 +199,8 @@
     transition: all 1s ease-out;
     pointer-events: auto;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   &:hover {
@@ -216,6 +218,11 @@
 .homepage-collage-image-wrapper {
   flex: 1 1 auto;
   overflow: hidden;
+  height: 60vh;
+
+  @include breakpoint(1600) {
+    height: calc(100vh / 3);
+  }
 
   @include breakpoint(700) {
     display: none;
