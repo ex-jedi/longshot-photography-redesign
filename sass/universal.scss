@@ -774,7 +774,11 @@ label {
 //** IOS Styles  **
 //*=========================================
 
-@supports (-webkit-overflow-scrolling: touch) {
+//*=========================================
+//** IOS **
+//*=========================================
+
+@media not all and (min-resolution: 0.001dpcm) {
   //********** Nav Styles **********
 
   .main-nav {
