@@ -9,7 +9,7 @@
 	</div>
 	<div class="footer-legal">
 		<p class="copyright" >&copy; <?php echo date("Y"); ?> KEN LONG</p>
-		<p class="privacy"><a href="/privacy-and-cookie-policy">PRIVACY &amp; COOKIE PRIVACY POLICY</a></p>
+		<p class="privacy"><a href="/privacy-and-cookie-policy">PRIVACY &amp; COOKIE POLICY</a></p>
 		<p class="terms"><a href="/terms">TERMS OF USE</a></p>
 	</div>
 	<div class="footer-promo">
