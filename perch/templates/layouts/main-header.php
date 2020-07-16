@@ -71,7 +71,7 @@
 				</nav>
 				<button class="nav-pull-button no-outline ios-menu-buttons ios-nav-pull" id="pull" @click="navPull = !navPull" :class="{'button-hide': navPull}" @click="navPull = !navPull" >Menu</button>
 				<!-- TODO: Change img to button -->
-    		<img class="menu-closer ios-menu-buttons" src="/images/dark-green-cross-icon.svg" @click="navPull = !navPull" :class="{'closer-reveal': navPull}">
+    		<img class="menu-closer ios-menu-buttons" src="/images/menu-closer.png" @click="navPull = !navPull" :class="{'closer-reveal': navPull}">
 				<?php perch_content("Main Header Logo"); ?>
 				<?php perch_content("Main Header Image"); ?>
 				<?php perch_content("Main Header Text"); ?>
