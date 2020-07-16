@@ -15,23 +15,44 @@
 @import "bits";
 
 .four-oh-four-section {
-  @include flex(column);
-  padding: 0 $section-spacing $section-spacing-tiny;
   position: relative;
   background-color: $light-background-colour;
-  background-image: url("/images/mountain-background-image.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-
-  @include breakpoint(1100) {
-    padding: 0 $section-spacing-tiny $section-spacing;
-  }
 }
 
-.four-oh-four-content {
-  @include heading-font-stack;
-  min-height: 90vh;
+.four-image {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  filter: blur(5px) opacity(70%);
+}
 
+.four-text-wrapper {
+  @include flex(column);
+  justify-content: center;
+  align-content: center;
+  @include heading-font-stack;
   color: $light-font-colour;
-  font-size: $large-font-size;
+  height: 100%;
+  font-size: $heading-size-large;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 $section-spacing-tiny;
+
+  @include breakpoint(1600) {
+    font-size: $extra-large-font-size;
+  }
+
+  @include breakpoint(1100) {
+    font-size: $large-font-size;
+  }
+
+  p:first-child {
+    margin-top: 0;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
 }

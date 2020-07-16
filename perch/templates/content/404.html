@@ -1,3 +1,13 @@
 <div class="four-oh-four-content">
-  <perch:content id="fourOhFourPageContent" type="textarea" editor="redactor" label="404 Page Text"  required  html>
+  <img class="four-image" src="<perch:content id="fourOhFourImage" type="image" width="2000" label="404 Image">" alt="<perch:content id="alt" type="text" label="Image description">"
+  sizes="100vw"
+  srcset="<perch:content type="image" id="fourOhFourImage" width="2000" > 2000w,
+  <perch:content type="image" id="fourOhFourImage" width="1600" > 1600w,
+  <perch:content type="image" id="fourOhFourImage" width="1200" > 1200w,
+  <perch:content type="image" id="fourOhFourImage" width="800" > 800w,
+  <perch:content type="image" id="fourOhFourImage" width="600" > 600w" >
+
+  <div class="four-text-wrapper">
+    <perch:content id="fourOhFourPageContent" type="textarea" editor="redactor" label="404 Page Text"  required  html>
+  </div>
 </div>
