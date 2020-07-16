@@ -1,10 +1,10 @@
 <footer class="main-footer">
 	<div class="footer-social-media">
 		<a href="https://www.instagram.com/longshot_photo" class="footer-social-media-link">
-			<img class="footer-social-media-icon" src="/images/instagram-icon.svg">
+			<img class="footer-social-media-icon" src="/images/instagram-icon-for-dark-background.svg">
 		</a>
 		<a href="https://twitter.com/longshot_photo" class="footer-social-media-link">
-			<img class="footer-social-media-icon" src="/images/twitter-icon.svg">
+			<img class="footer-social-media-icon" src="/images/twitter-icon-for-dark-background.svg">
 		</a>
 	</div>
 	<div class="footer-legal">
