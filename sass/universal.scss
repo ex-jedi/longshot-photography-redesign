@@ -525,12 +525,11 @@ footer {
   justify-content: center;
   align-items: center;
   min-height: 75vh;
-  color: $dark-font-colour;
+  color: $light-brown-font-colour;
   padding: $section-spacing;
   font-size: $tiny-font-size;
   letter-spacing: 1px;
-  background-color: $light-background-colour;
-  background-image: url("/images/splodge-rotated-medium.png");
+  background-color: $dark-background-colour;
   background-size: 1000px;
   background-position: center;
   background-repeat: no-repeat;
@@ -545,6 +544,10 @@ footer {
   p {
     margin: 0;
     text-align: center;
+  }
+
+  a {
+    color: $light-brown-font-colour;
   }
 }
 
@@ -592,9 +595,13 @@ footer {
 //*=========================================
 
 .general-contact-section {
-  background-color: $dark-background-colour;
-  color: $light-font-colour;
+  background-color: $dark-brown-background-colour;
+  color: $light-brown-font-colour;
   display: flow-root;
+}
+
+.general-contact-form-title {
+  color: $light-brown-font-colour;
 }
 
 .general-form-container {
@@ -636,17 +643,18 @@ label {
   border-radius: 0;
   border: 0;
   padding: $form-spacing $form-spacing-large;
+  background-color: $light-background-colour;
 }
 
 .name-input,
 .email-input,
 .text-area-input {
   width: 100%;
-  border: 3px solid $light-background-colour;
+  border: 3px solid $light-brown-font-colour;
   transition: border $transition-duration ease;
 
   &:focus {
-    border: 3px solid #708780;
+    border: 3px solid $dark-background-colour;
     outline: none;
   }
 }
@@ -663,7 +671,7 @@ label {
 .submit {
   @include heading-font-stack;
   font-size: $smaller-font-size;
-  color: $dark-font-colour;
+  color: $heading-colour;
   background-color: $light-background-colour;
   letter-spacing: 0.1rem;
   width: fit-content;
@@ -679,7 +687,7 @@ label {
   }
 
   &:hover {
-    background-color: $dark-background-colour;
+    background-color: $dark-brown-background-colour;
     color: $light-font-colour;
   }
 }
@@ -704,7 +712,7 @@ label {
       margin-left: -4px;
       border: 1px solid $light-background-colour;
       border-radius: 0.25em;
-      background: $dark-background-colour;
+      background: $light-background-colour;
 
       @include breakpoint(500) {
         width: 1rem;
@@ -716,13 +724,13 @@ label {
     &:after {
       content: "";
       position: absolute;
-      height: 7px;
-      width: 15px;
-      color: $light-font-colour;
-      border-left: 2px solid;
-      border-bottom: 2px solid;
+      height: 9px;
+      width: 16px;
+      color: $heading-colour;
+      border-left: 4px solid;
+      border-bottom: 4px solid;
       top: 0;
-      left: -1px;
+      left: -2px;
       transform: rotate(-25deg) scale(0.75);
       opacity: 0;
       transition: all $transition-duration cubic-bezier(0.18, 1.96, 1, 1.96);
@@ -752,7 +760,7 @@ label {
 
 .contact-form-consent {
   a {
-    color: $light-font-colour;
+    color: $light-brown-font-colour;
     text-decoration: underline;
   }
 }
