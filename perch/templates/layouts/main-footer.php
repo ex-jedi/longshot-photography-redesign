@@ -25,12 +25,11 @@
 <script type="text/javascript" src="/scripts/minified/rellax.min.js" ></script>
 <!-- Lazy Load -->
 <script src="/scripts/minified/lazyload.min.js"></script>
-<!-- General JS file -->
 <!-- ScrollMagic -->
 <script src="/scripts/minified/ScrollMagic.min.js"></script>
 <!-- TODO: Remove indicators -->
 <script src="/scripts/minified/debug.addIndicators.min.js"></script>
-<!-- Local universal JS files -->
+<!-- General JS file -->
 <script type="text/javascript" src="/scripts/minified/universal-min.js"></script>
 </body>
 </html>

@@ -29,10 +29,6 @@ document.addEventListener('keyup', evt => {
 // ** ScrollMagic  **
 // *=========================================
 
-// * matchMedia media queries
-const mediaTwelveHundred = window.matchMedia('(max-width: 1200px)');
-const mediaSevenHundred = window.matchMedia('(max-width: 700px)');
-
 // * Init ScrollMagic
 const controller = new ScrollMagic.Controller();
 
@@ -47,17 +43,12 @@ fadeUpIn.forEach(function(item) {
     reverse: false,
   })
     .setClassToggle(item, 'fade-up-in-reveal')
-    .addIndicators()
+    // TODO: Remove indicators
+    // .addIndicators()
     .addTo(controller);
 });
 
 // ********** Footer and contact form **********
-
-// Trigger hook
-let responsiveTriggerHookTwo = 0.5;
-if (mediaTwelveHundred.matches) {
-  responsiveTriggerHookTwo = 0.8;
-}
 
 const footer = document.querySelector('.main-footer');
 const colourChange = document.querySelectorAll('.colour-will-change');
@@ -65,11 +56,12 @@ const colourChange = document.querySelectorAll('.colour-will-change');
 colourChange.forEach(item => {
   const sceneTwo = new ScrollMagic.Scene({
     triggerElement: footer,
-    triggerHook: responsiveTriggerHookTwo,
+    triggerHook: 0.8,
     // reverse: false,
   })
     .setClassToggle(item, 'colour-change')
-    .addIndicators({ colorTrigger: '#f00' })
+    // TODO: Remove indicators
+    // .addIndicators({ colorTrigger: '#f00' })
     .addTo(controller);
 });
 
