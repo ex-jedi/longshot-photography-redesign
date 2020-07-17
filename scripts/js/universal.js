@@ -33,13 +33,6 @@ document.addEventListener('keyup', evt => {
 const mediaTwelveHundred = window.matchMedia('(max-width: 1200px)');
 const mediaSevenHundred = window.matchMedia('(max-width: 700px)');
 
-// * Responsive trigger hooks for ScrollMagic
-
-let responsiveTriggerHookOne = 0.6;
-if (mediaSevenHundred.matches) {
-  responsiveTriggerHookOne = 0.9;
-}
-
 // * Init ScrollMagic
 const controller = new ScrollMagic.Controller();
 
@@ -50,7 +43,7 @@ const fadeUpIn = document.querySelectorAll('.fade-up-in');
 fadeUpIn.forEach(function(item) {
   const sceneOne = new ScrollMagic.Scene({
     triggerElement: item,
-    triggerHook: responsiveTriggerHookOne,
+    triggerHook: 0.95,
     reverse: false,
   })
     .setClassToggle(item, 'fade-up-in-reveal')
