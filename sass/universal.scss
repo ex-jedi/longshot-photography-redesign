@@ -797,13 +797,18 @@ label {
 .general-contact-section.colour-change {
   background-color: $light-background-colour;
   color: $dark-font-colour;
-  a {
+
+  .general-contact-form-title {
     color: $dark-font-colour;
   }
 
   input,
   textarea {
     border: 3px solid $dark-background-colour;
+  }
+
+  a {
+    color: $dark-font-colour;
   }
 
   .checkbox-div {
