@@ -36,7 +36,7 @@ const controller = new ScrollMagic.Controller();
 const fadeUpIn = document.querySelectorAll('.fade-up-in');
 
 // Loop through elements to add animation
-fadeUpIn.forEach(function(item) {
+fadeUpIn.forEach(item => {
   const sceneOne = new ScrollMagic.Scene({
     triggerElement: item,
     triggerHook: 0.95,
