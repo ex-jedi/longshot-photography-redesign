@@ -5,8 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<!-- Typekit Fonts -->
 	<link rel="stylesheet" href="https://use.typekit.net/mud2esb.css">
-	<link rel="stylesheet" href="/css/universal.css?v=2.5">
-	<link rel="stylesheet" href="<?php perch_page_attribute('css', array('template' => 'bits.html')) ;?>?css.v=2.4">
+	<link rel="stylesheet" href="/css/universal.css?v=3.1">
+	<link rel="stylesheet" href="<?php perch_page_attribute('css', array('template' => 'bits.html')) ;?>?css.v=3.1">
 	<!-- Perch Meta -->
 	<?php
 	$domain        = 'https://'.$_SERVER["HTTP_HOST"];
