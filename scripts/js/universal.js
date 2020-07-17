@@ -33,15 +33,11 @@ document.addEventListener('keyup', evt => {
 const mediaTwelveHundred = window.matchMedia('(max-width: 1200px)');
 const mediaSevenHundred = window.matchMedia('(max-width: 700px)');
 
-// Responsive trigger hooks for ScrollMagic
+// * Responsive trigger hooks for ScrollMagic
+
 let responsiveTriggerHookOne = 0.6;
 if (mediaSevenHundred.matches) {
   responsiveTriggerHookOne = 0.9;
-}
-
-let responsiveTriggerHookTwo = 0.5;
-if (mediaTwelveHundred.matches) {
-  responsiveTriggerHookTwo = 0.8;
 }
 
 // * Init ScrollMagic
@@ -54,60 +50,36 @@ const fadeUpIn = document.querySelectorAll('.fade-up-in');
 fadeUpIn.forEach(function(item) {
   const sceneOne = new ScrollMagic.Scene({
     triggerElement: item,
-    triggerHook: responsiveTriggerHookTwo,
-    // reverse: false,
+    triggerHook: responsiveTriggerHookOne,
+    reverse: false,
   })
     .setClassToggle(item, 'fade-up-in-reveal')
     .addIndicators()
     .addTo(controller);
 });
 
-// // =========================================
-// // ** Scroll Zone  **
-// // =========================================
+// ********** Footer and contact form **********
 
-// // Based on a CSS Animation Rocks tutorial - https://cssanimation.rocks/scroll-animations/
+// Trigger hook
+let responsiveTriggerHookTwo = 0.5;
+if (mediaTwelveHundred.matches) {
+  responsiveTriggerHookTwo = 0.8;
+}
 
-// // Detect request animation frame
-// const scroll =
-//   window.requestAnimationFrame ||
-//   // IE Fallback
-//   // eslint-disable-next-line func-names
-//   function(callback) {
-//     window.setTimeout(callback, 1000 / 60);
-//   };
-// const elementsToShow = document.querySelectorAll('.fade-up-in');
+const footer = document.querySelector('.main-footer');
+const colourChange = document.querySelectorAll('.colour-will-change');
 
-// // Helper function from: http://stackoverflow.com/a/7557433/274826
-// function isElementInViewport(el) {
-//   const rect = el.getBoundingClientRect();
-//   return (
-//     (rect.top <= 0 && rect.bottom >= 0) ||
-//     (rect.bottom >=
-//       (window.innerHeight || document.documentElement.clientHeight) &&
-//       rect.top <=
-//         (window.innerHeight || document.documentElement.clientHeight)) ||
-//     (rect.top >= 0 &&
-//       rect.bottom <=
-//         (window.innerHeight || document.documentElement.clientHeight))
-//   );
-// }
+colourChange.forEach(item => {
+  const sceneTwo = new ScrollMagic.Scene({
+    triggerElement: footer,
+    triggerHook: responsiveTriggerHookTwo,
+    // reverse: false,
+  })
+    .setClassToggle(item, 'colour-change')
+    .addIndicators({ colorTrigger: '#f00' })
+    .addTo(controller);
+});
 
-// // Loop through target elements
-
-// function loop() {
-//   // eslint-disable-next-line func-names
-//   elementsToShow.forEach(function(element) {
-//     if (isElementInViewport(element)) {
-//       element.classList.add('fade-up-in-reveal');
-//     }
-//   });
-
-//   scroll(loop);
-// }
-
-// // Call the loop for the first time
-// loop();
 // =========================================
 // ** Menu Scroll Hide  **
 // =========================================

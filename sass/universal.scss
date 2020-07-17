@@ -514,9 +514,9 @@ main {
   animation-fill-mode: forwards;
 }
 
-// =========================================
-// ** Footer  **
-// =========================================
+//*=========================================
+//** Footer **
+//*=========================================
 
 footer {
   @include flex(column);
@@ -525,14 +525,15 @@ footer {
   justify-content: center;
   align-items: center;
   min-height: 75vh;
-  color: $light-brown-font-colour;
+  color: $dark-font-colour;
   padding: $section-spacing;
   font-size: $tiny-font-size;
   letter-spacing: 1px;
-  background-color: $dark-background-colour;
+  background-color: $light-background-colour;
   background-size: 1000px;
   background-position: center;
   background-repeat: no-repeat;
+  transition: all 0.5s;
 }
 
 .footer-promo,
@@ -547,7 +548,7 @@ footer {
   }
 
   a {
-    color: $light-brown-font-colour;
+    color: $dark-font-colour;
   }
 }
 
@@ -564,11 +565,27 @@ footer {
 
 .footer-social-media-icon {
   height: $heading-size-large;
+  filter: invert(80%);
   &:hover {
     animation-name: bounce;
     animation-duration: 1s;
     animation-timing-function: $cubic-two;
     animation-fill-mode: forwards;
+  }
+}
+
+//********** Colour change **********
+
+.main-footer.colour-change {
+  background-color: $dark-background-colour;
+  color: $light-font-colour;
+
+  .footer-social-media-icon {
+    filter: invert(0);
+  }
+
+  a {
+    color: $light-font-colour;
   }
 }
 

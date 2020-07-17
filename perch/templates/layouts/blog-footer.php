@@ -1,4 +1,4 @@
-<footer class="main-footer">
+<footer class="main-footer colour-will-change">
 	<div class="footer-social-media">
 		<a href="https://www.instagram.com/longshot_photo" class="footer-social-media-link">
 			<img class="footer-social-media-icon" src="/images/instagram-icon-for-dark-background.svg">
