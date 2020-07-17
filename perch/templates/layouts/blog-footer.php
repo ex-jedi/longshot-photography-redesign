@@ -1,4 +1,4 @@
-<footer class="main-footer">
+<footer class="main-footer colour-will-change">
 	<div class="footer-social-media">
 		<a href="https://www.instagram.com/longshot_photo" class="footer-social-media-link">
 			<img class="footer-social-media-icon" src="/images/instagram-icon-for-dark-background.svg">
@@ -27,6 +27,10 @@
 <script src="/scripts/minified/vanilla-fitvids.js"></script>
 <!-- Lazy Load -->
 <script src="/scripts/minified/lazyload.min.js"></script>
+<!-- ScrollMagic -->
+<script src="/scripts/minified/ScrollMagic.min.js"></script>
+<!-- TODO: Remove indicators -->
+<script src="/scripts/minified/debug.addIndicators.min.js"></script>
 <!-- General JS file -->
 <script type="text/javascript" src="/scripts/minified/universal-min.js"></script><!-- Local universal JS files -->
 </body>

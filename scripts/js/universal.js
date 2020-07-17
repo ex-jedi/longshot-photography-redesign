@@ -25,52 +25,46 @@ document.addEventListener('keyup', evt => {
   }
 });
 
-// =========================================
-// ** Scroll Zone  **
-// =========================================
+// *=========================================
+// ** ScrollMagic  **
+// *=========================================
 
-// Based on a CSS Animation Rocks tutorial - https://cssanimation.rocks/scroll-animations/
+// * Init ScrollMagic
+const controller = new ScrollMagic.Controller();
 
-// Detect request animation frame
-const scroll =
-  window.requestAnimationFrame ||
-  // IE Fallback
-  // eslint-disable-next-line func-names
-  function(callback) {
-    window.setTimeout(callback, 1000 / 60);
-  };
-const elementsToShow = document.querySelectorAll('.fade-up-in');
+// Collect elements to fade in
+const fadeUpIn = document.querySelectorAll('.fade-up-in');
 
-// Helper function from: http://stackoverflow.com/a/7557433/274826
-function isElementInViewport(el) {
-  const rect = el.getBoundingClientRect();
-  return (
-    (rect.top <= 0 && rect.bottom >= 0) ||
-    (rect.bottom >=
-      (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.top <=
-        (window.innerHeight || document.documentElement.clientHeight)) ||
-    (rect.top >= 0 &&
-      rect.bottom <=
-        (window.innerHeight || document.documentElement.clientHeight))
-  );
-}
+// Loop through elements to add animation
+fadeUpIn.forEach(item => {
+  const sceneOne = new ScrollMagic.Scene({
+    triggerElement: item,
+    triggerHook: 0.95,
+    reverse: false,
+  })
+    .setClassToggle(item, 'fade-up-in-reveal')
+    // TODO: Remove indicators
+    // .addIndicators()
+    .addTo(controller);
+});
 
-// Loop through target elements
+// ********** Footer and contact form **********
 
-function loop() {
-  // eslint-disable-next-line func-names
-  elementsToShow.forEach(function(element) {
-    if (isElementInViewport(element)) {
-      element.classList.add('fade-up-in-reveal');
-    }
-  });
+const footer = document.querySelector('.main-footer');
+const colourChange = document.querySelectorAll('.colour-will-change');
 
-  scroll(loop);
-}
+colourChange.forEach(item => {
+  const sceneTwo = new ScrollMagic.Scene({
+    triggerElement: footer,
+    triggerHook: 0.8,
+    // reverse: false,
+  })
+    .setClassToggle(item, 'colour-change')
+    // TODO: Remove indicators
+    // .addIndicators({ colorTrigger: '#f00' })
+    .addTo(controller);
+});
 
-// Call the loop for the first time
-loop();
 // =========================================
 // ** Menu Scroll Hide  **
 // =========================================
@@ -109,12 +103,12 @@ window.addEventListener('scroll', function() {
 // ** Rellax  **
 // =========================================
 
-let rellax = new Rellax('.rellax');
+const rellax = new Rellax('.rellax');
 
 // =========================================
 // ** Lazy load  **
 // =========================================
 
-let lazyLoadInstance = new LazyLoad({
+const lazyLoadInstance = new LazyLoad({
   elements_selector: '.lazy',
 });

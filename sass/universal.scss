@@ -514,9 +514,9 @@ main {
   animation-fill-mode: forwards;
 }
 
-// =========================================
-// ** Footer  **
-// =========================================
+//*=========================================
+//** Footer **
+//*=========================================
 
 footer {
   @include flex(column);
@@ -525,14 +525,15 @@ footer {
   justify-content: center;
   align-items: center;
   min-height: 75vh;
-  color: $light-brown-font-colour;
+  color: $dark-font-colour;
   padding: $section-spacing;
   font-size: $tiny-font-size;
   letter-spacing: 1px;
-  background-color: $dark-background-colour;
+  background-color: $light-background-colour;
   background-size: 1000px;
   background-position: center;
   background-repeat: no-repeat;
+  transition: all 0.75s;
 }
 
 .footer-promo,
@@ -547,7 +548,7 @@ footer {
   }
 
   a {
-    color: $light-brown-font-colour;
+    color: $dark-font-colour;
   }
 }
 
@@ -564,11 +565,27 @@ footer {
 
 .footer-social-media-icon {
   height: $heading-size-large;
+  filter: invert(80%);
   &:hover {
     animation-name: bounce;
     animation-duration: 1s;
     animation-timing-function: $cubic-two;
     animation-fill-mode: forwards;
+  }
+}
+
+//********** Colour change **********
+
+.main-footer.colour-change {
+  background-color: $dark-background-colour;
+  color: $light-font-colour;
+
+  .footer-social-media-icon {
+    filter: invert(0);
+  }
+
+  a {
+    color: $light-font-colour;
   }
 }
 
@@ -595,9 +612,10 @@ footer {
 //*=========================================
 
 .general-contact-section {
-  background-color: $dark-brown-background-colour;
+  background-color: $dark-background-colour;
   color: $light-brown-font-colour;
   display: flow-root;
+  transition: all 0.75s;
 }
 
 .general-contact-form-title {
@@ -671,7 +689,7 @@ label {
 .submit {
   @include heading-font-stack;
   font-size: $smaller-font-size;
-  color: $heading-colour;
+  color: $dark-font-colour;
   background-color: $light-background-colour;
   letter-spacing: 0.1rem;
   width: fit-content;
@@ -687,7 +705,7 @@ label {
   }
 
   &:hover {
-    background-color: $dark-brown-background-colour;
+    background-color: $dark-font-colour;
     color: $light-font-colour;
   }
 }
@@ -726,7 +744,7 @@ label {
       position: absolute;
       height: 9px;
       width: 16px;
-      color: $heading-colour;
+      color: $dark-font-colour;
       border-left: 4px solid;
       border-bottom: 4px solid;
       top: 0;
@@ -772,6 +790,32 @@ label {
   position: absolute;
   z-index: -10;
   opacity: 0;
+}
+
+//********** Colour Change **********
+
+.general-contact-section.colour-change {
+  background-color: $light-background-colour;
+  color: $dark-font-colour;
+
+  .general-contact-form-title {
+    color: $dark-font-colour;
+  }
+
+  input,
+  textarea {
+    border: 3px solid $dark-background-colour;
+  }
+
+  a {
+    color: $dark-font-colour;
+  }
+
+  .checkbox-div {
+    input:before {
+      border: 1px solid $dark-font-colour;
+    }
+  }
 }
 
 //*==============================================================================
