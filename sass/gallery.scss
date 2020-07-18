@@ -74,7 +74,7 @@
 //*=========================================
 
 .gallery-album-section {
-  padding: 0 $section-spacing-extra-large
+  padding: 0 $section-spacing-small
     calc(#{$section-spacing-extra-large} - #{$section-spacing});
   background-color: $light-background-colour;
 
@@ -99,21 +99,11 @@
   }
 }
 
-.gallery-album-image-div {
-  width: 100%;
-  min-height: 40vh;
-  animation-delay: 0.5s;
-  transform: translateY($section-spacing-medium);
-
-  @include breakpoint(800) {
-    min-height: 20vh;
-  }
-}
-
 .gallery-album-image {
-  max-width: 100%;
+  width: 100%;
   height: 100%;
-  max-height: 95vh;
+  height: 90vh;
+  object-fit: contain;
 }
 
 //*=========================================
@@ -122,6 +112,8 @@
 // Version: 2.9.2
 
 .tns-outer {
+  position: relative;
+  height: 92vh;
   padding: 0 !important; // remove padding: clientWidth = width + padding (0) = width
   [hidden] {
     display: none !important;
@@ -144,14 +136,26 @@
 }
 
 .tns-nav {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 100%;
   button {
     width: 15px;
     height: 15px;
-    transform: scale(0.5);
+    transform: scale(0.7);
     border-radius: 60%;
-    margin: 10px;
-    border: 1px solid #000;
-    background-color: #fff;
+    margin: 0 5px;
+    border: 2px solid $dark-background-colour;
+    outline: none;
+    background-color: $white;
+    transition: all 0.3s;
+  }
+
+  .tns-nav-active {
+    border: 2px solid $dark-background-colour;
+    background-color: $dark-background-colour;
+    outline: none;
   }
 }
 
