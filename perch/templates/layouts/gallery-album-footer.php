@@ -33,12 +33,13 @@
 <!-- Flickity -->
 <script src="/scripts/minified/flickity.pkgd.min.js"></script>
 <script>
-  var elem = document.querySelector('.main-carousel');
-var flkty = new Flickity(elem, {
-  // options
-  // cellAlign: 'center',
-  contain: true,
-});
+  const elem = document.querySelector('.main-carousel');
+  const flkty = new Flickity(elem, {
+    // options
+    cellAlign: 'center',
+    contain: true,
+    wrapAround: true,
+  });
 </script>
 
 </body>
