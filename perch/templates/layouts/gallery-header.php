@@ -7,6 +7,8 @@
 	<link rel="stylesheet" href="https://use.typekit.net/mud2esb.css">
 	<link rel="stylesheet" href="/css/universal.css?v=3.1">
 	<link rel="stylesheet" href="/css/gallery.css?v=3.1">
+
+
 	<!-- Perch Gallery Meta -->
 		<?php
 $domain        = 'https://'.$_SERVER["HTTP_HOST"];
