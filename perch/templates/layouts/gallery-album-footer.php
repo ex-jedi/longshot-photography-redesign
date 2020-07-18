@@ -28,9 +28,18 @@
 <script src="/scripts/minified/ScrollMagic.min.js"></script>
 <!-- TODO: Remove indicators -->
 <script src="/scripts/minified/debug.addIndicators.min.js"></script>
-<!-- Flickity -->
-<script src="/scripts/minified/flickity.pkgd.min.js"></script>
 <!-- General JS file -->
 <script type="text/javascript" src="/scripts/minified/universal-min.js"></script>
+<!-- Flickity -->
+<script src="/scripts/minified/flickity.pkgd.min.js"></script>
+<script>
+  var elem = document.querySelector('.main-carousel');
+var flkty = new Flickity(elem, {
+  // options
+  // cellAlign: 'center',
+  contain: true,
+});
+</script>
+
 </body>
 </html>
