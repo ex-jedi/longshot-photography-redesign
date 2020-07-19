@@ -74,29 +74,8 @@
 //*=========================================
 
 .gallery-album-section {
-  padding: 0 $section-spacing-extra-large
-    calc(#{$section-spacing-extra-large} - #{$section-spacing});
+  padding: 0 $section-spacing-small $section-spacing-medium;
   background-color: $light-background-colour;
-
-  @include breakpoint(1600) {
-    padding: 0 $section-spacing-large
-      calc(#{$section-spacing-extra-large} - #{$section-spacing});
-  }
-
-  @include breakpoint(1300) {
-    padding: 0 $section-spacing
-      calc(#{$section-spacing-extra-large} - #{$section-spacing});
-  }
-
-  @include breakpoint(1100) {
-    padding: 0 $section-spacing-small
-      calc(#{$section-spacing-extra-large} - #{$section-spacing});
-  }
-
-  @include breakpoint(700) {
-    padding: 0 $section-spacing-tiny
-      calc(#{$section-spacing-extra-large} - #{$section-spacing});
-  }
 }
 
 .gallery-album-image {
@@ -204,6 +183,7 @@ https://flickity.metafizzy.co
   border-radius: 50%;
   /* vertically center */
   transform: translateY(-50%);
+  // display: none;
 }
 
 .flickity-prev-next-button.previous {
@@ -256,6 +236,7 @@ https://flickity.metafizzy.co
   border-radius: 50%;
   opacity: 0.25;
   cursor: pointer;
+  transition: all 0.3s;
 }
 
 .flickity-page-dots .dot.is-selected {

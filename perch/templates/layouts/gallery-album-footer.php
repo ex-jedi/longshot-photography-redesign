@@ -35,6 +35,7 @@
 <script>
   const elem = document.querySelector('.main-carousel');
   const flkty = new Flickity(elem, {
+		adaptiveHeight: true
   });
 </script>
 
