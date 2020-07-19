@@ -19,15 +19,10 @@
 	</div>
 </footer>
 </div> <!-- wrapper div -->
-<!-- TODO: Change Vue to production  version -->
+<!-- Vue -->
 <script type="text/javascript" src="/scripts/minified/vue-min.js" ></script>
-<!-- Lazy Load -->
-<script src="/scripts/minified/lazyload.min.js"></script>
-<!-- TODO: Remove ScrollMagic -->
 <!-- ScrollMagic -->
 <script src="/scripts/minified/ScrollMagic.min.js"></script>
-<!-- TODO: Remove indicators -->
-<script src="/scripts/minified/debug.addIndicators.min.js"></script>
 <!-- General JS file -->
 <script type="text/javascript" src="/scripts/minified/universal-min.js"></script>
 <!-- Flickity -->
