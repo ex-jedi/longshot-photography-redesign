@@ -36,6 +36,5 @@
   const elem = document.querySelector('.main-carousel');
   const flkty = new Flickity(elem, {});
 </script>
-
 </body>
 </html>
