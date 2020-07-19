@@ -27,6 +27,9 @@
 }
 
 .gallery-index-album {
+  @include flex(row);
+  justify-content: center;
+  align-items: flex-end;
   flex: 1 0 auto;
   position: relative;
   width: 25%;
@@ -58,11 +61,12 @@
 }
 
 .gallery-index-sub-heading {
-  text-align: center;
-  width: 100%;
-  margin: 0;
-  top: 50%;
   font-size: $extra-large-font-size;
+  writing-mode: vertical-rl;
+  text-orientation: sideways;
+  margin-right: -0.5rem;
+  transform: rotate(180deg);
+  width: 100%;
 }
 
 //*=========================================

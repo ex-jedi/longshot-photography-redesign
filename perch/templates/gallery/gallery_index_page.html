@@ -1,13 +1,13 @@
 <div class="gallery-index-album fade-up-in">
+  <h3 class="gallery-index-sub-heading">
+    <a class="gallery-index-link"  href="/gallery/<perch:gallery id="albumSlug">"><perch:gallery id="albumTitle"></a>
+  </h3>
         <img class="gallery-index-image lazy" data-src="<perch:gallery id="indexLarge" type="image"/>" alt="<perch:gallery id="image-alt" />"
         data-sizes="(max-width:1000px) 100vw, 30vw"
     	  data-srcset="<perch:gallery type="image" id="indexLarge" crop> 1000w,
                 <perch:gallery type="image" id="indexMedium" crop> 750w,
                 <perch:gallery type="image" id="indexSmall" crop> 500w" >
 
-  <h3 class="gallery-index-sub-heading">
-    <a class="gallery-index-link"  href="/gallery/<perch:gallery id="albumSlug">"><perch:gallery id="albumTitle"></a>
-  </h3>
 </div>
 <div class="spacer-div"></div>
 
