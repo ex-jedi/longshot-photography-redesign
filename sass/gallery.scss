@@ -150,8 +150,9 @@ https://flickity.metafizzy.co
   background: transparent;
   border: none;
   color: $dark-background-colour;
-  opacity: 0.5;
+  opacity: 0.3;
   position: absolute;
+  transition: all 0.3s;
 }
 
 .flickity-button:hover {

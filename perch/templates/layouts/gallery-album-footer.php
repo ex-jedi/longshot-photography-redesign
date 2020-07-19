@@ -34,9 +34,7 @@
 <script src="/scripts/minified/flickity.pkgd.min.js"></script>
 <script>
   const elem = document.querySelector('.main-carousel');
-  const flkty = new Flickity(elem, {
-		adaptiveHeight: true
-  });
+  const flkty = new Flickity(elem, {});
 </script>
 
 </body>
