@@ -47,7 +47,7 @@
   align-content: center;
   color: $light-font-colour;
   font-size: calc(1rem + 2.5vw);
-  margin: 0 0 0 $section-spacing-small;
+  margin: 0 0 0 calc(#{$section-spacing-small} + 1rem);
   word-break: break-word;
   line-height: $line-height;
   letter-spacing: $letter-spacing;
