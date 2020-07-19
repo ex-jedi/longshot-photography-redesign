@@ -74,49 +74,174 @@
 //*=========================================
 
 .gallery-album-section {
-  padding: 0 $section-spacing-extra-large
-    calc(#{$section-spacing-extra-large} - #{$section-spacing});
+  padding: 0 $section-spacing-small $section-spacing-medium;
   background-color: $light-background-colour;
-
-  @include breakpoint(1600) {
-    padding: 0 $section-spacing-large
-      calc(#{$section-spacing-extra-large} - #{$section-spacing});
-  }
-
-  @include breakpoint(1300) {
-    padding: 0 $section-spacing
-      calc(#{$section-spacing-extra-large} - #{$section-spacing});
-  }
-
-  @include breakpoint(1100) {
-    padding: 0 $section-spacing-small
-      calc(#{$section-spacing-extra-large} - #{$section-spacing});
-  }
-
-  @include breakpoint(700) {
-    padding: 0 $section-spacing-tiny
-      calc(#{$section-spacing-extra-large} - #{$section-spacing});
-  }
-}
-
-.gallery-album-image-div {
-  width: 100%;
-  min-height: 40vh;
-  animation-delay: 0.5s;
-  transform: translateY($section-spacing-medium);
-
-  @include breakpoint(800) {
-    min-height: 20vh;
-  }
 }
 
 .gallery-album-image {
   width: 100%;
-  margin-bottom: $section-spacing;
+  height: 100%;
+  object-fit: contain;
+}
 
-  @include breakpoint(700) {
-    margin-bottom: $section-spacing-small;
-  }
+//*=========================================
+//** Flickity **
+//*=========================================
+
+/*! Flickity v2.2.1
+https://flickity.metafizzy.co
+---------------------------------------------- */
+
+.carousel-cell {
+  @include flex(column);
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* full width */
+  height: 90vh; /* height of carousel */
+  margin-right: 20px;
+  overflow: hidden;
+}
+
+.flickity-enabled {
+  position: relative;
+}
+
+.flickity-enabled:focus {
+  outline: none;
+}
+
+.flickity-viewport {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+.flickity-slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* draggable */
+
+.flickity-enabled.is-draggable {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.flickity-enabled.is-draggable .flickity-viewport {
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+/* ---- flickity-button ---- */
+
+.flickity-button {
+  position: absolute;
+  background: transparent;
+  border: none;
+  color: $dark-background-colour;
+  opacity: 0.3;
+  position: absolute;
+  transition: all 0.3s;
+}
+
+.flickity-button:hover {
+  opacity: 1;
+}
+
+.flickity-button:focus {
+  outline: none;
+}
+
+.flickity-button:active {
+  opacity: 1;
+}
+
+.flickity-button:disabled {
+  display: none;
+}
+
+.flickity-button-icon {
+  fill: $dark-background-colour;
+}
+
+/* ---- previous/next buttons ---- */
+
+.flickity-prev-next-button {
+  top: 50%;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  /* vertically center */
+  transform: translateY(-50%);
+  // display: none;
+}
+
+.flickity-prev-next-button.previous {
+  left: -2rem;
+}
+.flickity-prev-next-button.next {
+  right: -2rem;
+}
+/* right to left */
+.flickity-rtl .flickity-prev-next-button.previous {
+  left: auto;
+  right: 10px;
+}
+.flickity-rtl .flickity-prev-next-button.next {
+  right: auto;
+  left: 10px;
+}
+
+.flickity-prev-next-button .flickity-button-icon {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  width: 60%;
+  height: 60%;
+}
+
+/* ---- page dots ---- */
+
+.flickity-page-dots {
+  position: absolute;
+  width: 100%;
+  bottom: -25px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  line-height: 1;
+}
+
+.flickity-rtl .flickity-page-dots {
+  direction: rtl;
+}
+
+.flickity-page-dots .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 8px;
+  background: $dark-background-colour;
+  border-radius: 50%;
+  opacity: 0.25;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.flickity-page-dots .dot.is-selected {
+  opacity: 1;
 }
 
 //*=========================================
