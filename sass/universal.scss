@@ -398,9 +398,9 @@ header {
   }
 }
 
-// =========================================
+//* =========================================
 // ** Body **
-// =========================================
+// *=========================================
 
 main {
   grid-area: m;
@@ -537,6 +537,29 @@ footer {
 
 .simple-header-submark {
   width: 100px;
+}
+
+//********** Cookie Warning **********
+.cookie-warning-wrapper {
+  @include flex(row);
+  justify-content: space-between;
+  padding: $section-spacing-tiny $section-spacing-small;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: $dark-brown-background-colour;
+  width: 100%;
+}
+
+.cookie-warning-text {
+  p {
+    margin: 0 1rem 0 0;
+  }
+  a {
+    color: inherit;
+    text-decoration: underline;
+  }
 }
 
 //*=========================================
