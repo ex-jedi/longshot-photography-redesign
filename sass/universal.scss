@@ -776,6 +776,8 @@ label {
 //********** Honeypot **********
 
 .form-identification-number {
+  //TODO: Check if visibility hidden harms anti spam
+  visibility: hidden;
   overflow: hidden;
   position: absolute;
   z-index: -10;
