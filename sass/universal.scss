@@ -560,22 +560,18 @@ footer {
   }
 }
 
-.cookie-warning-text {
-  p {
-    margin: 0 $section-spacing-tiny 0 0;
-
-    @include breakpoint(1100) {
-      margin: 0 0 $section-spacing-tiny;
-    }
-  }
-  a {
-    color: inherit;
-    text-decoration: underline;
-  }
+.cookie-warning-paragraph {
+  margin: 0 $section-spacing-tiny 0 0;
 
   @include breakpoint(1100) {
+    margin: 0 0 $section-spacing-tiny;
     text-align: center;
   }
+}
+
+.cookie-warning-link {
+  color: inherit;
+  text-decoration: underline;
 }
 
 .cookie-warning-button {
@@ -584,7 +580,6 @@ footer {
   color: $light-font-colour;
   font-size: inherit;
   padding: 5px $section-spacing-small;
-  outline: none;
   width: fit-content;
   flex: 0 0 auto;
 
