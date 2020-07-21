@@ -398,9 +398,9 @@ header {
   }
 }
 
-// =========================================
+//* =========================================
 // ** Body **
-// =========================================
+// *=========================================
 
 main {
   grid-area: m;
@@ -539,6 +539,64 @@ footer {
   width: 100px;
 }
 
+//********** Cookie Warning **********
+.cookie-warning-wrapper {
+  @include flex(row);
+  justify-content: space-between;
+  padding: $section-spacing-tiny $section-spacing-small;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: $dark-brown-background-colour;
+  width: 100%;
+  font-size: $base-font-size;
+  z-index: 15;
+  transition: all 0.5s;
+  opacity: 0;
+
+  @include breakpoint(1100) {
+    @include flex(column);
+  }
+}
+
+.cookie-warning-paragraph {
+  margin: 0 $section-spacing-tiny 0 0;
+
+  @include breakpoint(1100) {
+    margin: 0 0 $section-spacing-tiny;
+    text-align: center;
+  }
+}
+
+.cookie-warning-link {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.cookie-warning-button {
+  background-color: transparent;
+  border: 2px solid $light-font-colour;
+  color: $light-font-colour;
+  font-size: inherit;
+  padding: 5px $section-spacing-small;
+  width: fit-content;
+  flex: 0 0 auto;
+
+  @include breakpoint(1100) {
+    padding: 5px $section-spacing-medium;
+  }
+
+  @include breakpoint(500) {
+    padding: 5px $section-spacing-small;
+    width: 80%;
+  }
+}
+
+.cookie-warning-wrapper.show-cookie-warning {
+  opacity: 1;
+  transition: all 1s 1s;
+}
 //*=========================================
 //** Contact Form  **
 //*=========================================

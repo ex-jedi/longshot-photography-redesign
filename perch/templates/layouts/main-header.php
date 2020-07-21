@@ -30,27 +30,6 @@
 <!-- Google Analytics -->
 <?php perch_content('Analytics'); ?>
 
-<!-- Cookie Consent -->
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
-	<script>
-	window.addEventListener("load", function(){
-	window.cookieconsent.initialise({
-		"palette": {
-			"popup": {
-				"background": "#875548"
-			},
-			"button": {
-				"background": "transparent",
-				"text": "#F3EDEB",
-				"border": "#F3EDEB"
-			}
-		},
-		"content": {
-			"href": "/privacy-and-cookie-policy"
-		}
-	})});
-	</script>
 <!-- Main attributes template -->
 <?php perch_page_attributes(array(
 		'template' => 'default.html'
@@ -75,4 +54,5 @@
 				<?php perch_content("Main Header Logo"); ?>
 				<?php perch_content("Main Header Image"); ?>
 				<?php perch_content("Main Header Text"); ?>
+				<?php perch_content("Cookie Warning"); ?>
 			</header>
