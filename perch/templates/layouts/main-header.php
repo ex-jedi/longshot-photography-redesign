@@ -31,7 +31,7 @@
 <?php perch_content('Analytics'); ?>
 
 <!-- Cookie Consent -->
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
 	<script>
 	window.addEventListener("load", function(){
@@ -50,7 +50,7 @@
 			"href": "/privacy-and-cookie-policy"
 		}
 	})});
-	</script>
+	</script> -->
 <!-- Main attributes template -->
 <?php perch_page_attributes(array(
 		'template' => 'default.html'
@@ -75,4 +75,5 @@
 				<?php perch_content("Main Header Logo"); ?>
 				<?php perch_content("Main Header Image"); ?>
 				<?php perch_content("Main Header Text"); ?>
+				<?php perch_content("Cookie Warning"); ?>
 			</header>
