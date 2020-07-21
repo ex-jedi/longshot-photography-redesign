@@ -50,28 +50,6 @@ perch_page_attributes(array(
 ?>
 <!-- Google Analytics -->
 <?php perch_content('Analytics'); ?>
-
-<!-- Cookie Consent -->
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
-	<script>
-	window.addEventListener("load", function(){
-	window.cookieconsent.initialise({
-		"palette": {
-			"popup": {
-				"background": "#875548"
-			},
-			"button": {
-				"background": "transparent",
-				"text": "#F3EDEB",
-				"border": "#F3EDEB"
-			}
-		},
-		"content": {
-			"href": "/privacy-and-cookie-policy"
-		}
-	})});
-	</script>
 </head>
 	<body class="<?php perch_page_attribute('bodyClass', array('template' => 'bits.html' )); ?>">
 		<div id="vue-wrapper" class="site-wrapper" :class="{'hide-outline': outlineHide}" @keydown.9="outlineHide = !outlineHide" itemscope itemtype="http://schema.org/LocalBusiness" >
@@ -85,4 +63,5 @@ perch_page_attributes(array(
 				<button class="nav-pull-button no-outline ios-menu-buttons ios-nav-pull" id="pull" @click="navPull = !navPull" :class="{'button-hide': navPull}" @click="navPull = !navPull" >Menu</button>
     		<img class="menu-closer ios-menu-buttons" src="/images/menu-closer.png" @click="navPull = !navPull" :class="{'closer-reveal': navPull}">
 				<?php perch_content("Simple Header Submark"); ?>
+				<?php perch_content("Cookie Warning"); ?>
 			</header>
