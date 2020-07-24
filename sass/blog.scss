@@ -235,11 +235,11 @@
   }
 
   @include breakpoint(1100) {
-    padding: 0 $section-spacing $section-spacing-large;
+    padding: 0 $section-spacing $section-spacing-medium;
   }
 
   @include breakpoint(700) {
-    padding: 0 $section-spacing-tiny $section-spacing-large;
+    padding: 0 $section-spacing-tiny $section-spacing-small;
   }
 }
 
@@ -330,6 +330,10 @@
       font-size: $smaller-font-size;
     }
 
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
     a {
       color: $dark-brown;
       @include link-underline($dark-brown);
@@ -363,7 +367,25 @@
 .blog-post-date-author {
   p {
     text-align: center;
-    margin: 0;
+    font-weight: bold;
+    margin: $section-spacing-large 0 0;
+    font-size: $large-font-size;
+
+    @include breakpoint(1100) {
+      margin: $section-spacing-medium 0 0;
+    }
+
+    @include breakpoint(1000) {
+      font-size: $medium-font-size;
+    }
+
+    @include breakpoint(700) {
+      margin: $section-spacing-small 0 0;
+    }
+
+    @include breakpoint(600) {
+      font-size: $smaller-font-size;
+    }
   }
 }
 
