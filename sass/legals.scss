@@ -12,6 +12,18 @@
   position: relative;
   background-color: $light-background-colour;
 
+  h4 {
+    text-decoration: underline;
+    text-align: center;
+  }
+
+  h4,
+  p,
+  li {
+    font-size: $large-font-size;
+    font-weight: bold;
+  }
+
   p {
     a {
       color: $dark-brown;
