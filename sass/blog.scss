@@ -318,7 +318,8 @@
 }
 
 .blog-text-block {
-  p {
+  p,
+  li {
     font-size: $large-font-size;
     font-weight: bold;
 
