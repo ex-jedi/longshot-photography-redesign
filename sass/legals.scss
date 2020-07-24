@@ -33,6 +33,12 @@
 
   @include breakpoint(1300) {
     padding: 0 $section-spacing-extra-large $section-spacing-large;
+
+    h4,
+    p,
+    li {
+      font-size: $medium-font-size;
+    }
   }
 
   @include breakpoint(1100) {
@@ -41,5 +47,11 @@
 
   @include breakpoint(600) {
     padding: 0 $section-spacing-tiny $section-spacing;
+
+    h4,
+    p,
+    li {
+      font-size: $smaller-font-size;
+    }
   }
 }
