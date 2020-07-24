@@ -40,12 +40,19 @@
   @include breakpoint(500) {
     padding: 0 $section-spacing-tiny;
   }
+
+  .section-heading {
+    @include breakpoint(1100) {
+      padding-bottom: $h2-spacing-small;
+    }
+  }
 }
 
 .blog-index-page-subtitle {
   margin-bottom: $section-spacing;
 
   @include breakpoint(1100) {
+    margin-top: 0;
     cursor: pointer;
   }
 }
@@ -414,6 +421,6 @@
 
 .blog-index-page-subtitle {
   @include breakpoint(1100) {
-    margin-bottom: $h2-spacing-small;
+    margin-bottom: $h2-spacing-medium;
   }
 }
