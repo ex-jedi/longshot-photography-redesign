@@ -178,6 +178,10 @@
   @include breakpoint(1100) {
     grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
   }
+
+  @include breakpoint(600) {
+    gap: $section-spacing;
+  }
 }
 
 .blog-index-wrapper {
