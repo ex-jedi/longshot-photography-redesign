@@ -145,6 +145,7 @@
 
     @include breakpoint(1100) {
       width: 100%;
+      margin-bottom: $section-spacing-small;
     }
 
     &:first-of-type {
