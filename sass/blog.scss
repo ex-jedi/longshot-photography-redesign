@@ -31,14 +31,14 @@
   background-repeat: no-repeat, no-repeat;
   background-position: left 0 top -14rem, right 40% top;
   background-size: auto, 35rem;
-  padding: 0 $section-spacing;
+  padding: 0 $section-spacing $section-spacing-medium;
 
   @include breakpoint(1100) {
-    padding: 0 $section-spacing-small;
+    padding: 0 $section-spacing-small $section-spacing-medium;
   }
 
   @include breakpoint(500) {
-    padding: 0 $section-spacing-tiny;
+    padding: 0 $section-spacing-tiny $section-spacing;
   }
 
   .section-heading {
