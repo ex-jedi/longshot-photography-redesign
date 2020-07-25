@@ -128,6 +128,10 @@
   margin-bottom: $section-spacing-large;
   transition: all $transition-duration-slow $cubic-two;
 
+  @include breakpoint(1300) {
+    margin-bottom: $section-spacing-medium;
+  }
+
   @include breakpoint(1100) {
     @include flex(column);
     margin-bottom: $section-spacing;
@@ -196,6 +200,7 @@
 
   @include breakpoint(1300) {
     min-height: 5rem;
+    margin: 0;
   }
 
   @include breakpoint(1100) {
