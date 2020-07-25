@@ -321,6 +321,23 @@
   width: 100%;
 }
 
+.homepage-collage-image {
+  opacity: 0;
+}
+
+.homepage-collage-image.collage-image-reveal {
+  animation-name: collage-reveal;
+  animation-duration: 1s;
+  animation-timing-function: $cubic-two;
+  animation-fill-mode: forwards;
+}
+
+@keyframes collage-reveal {
+  100% {
+    opacity: 1;
+  }
+}
+
 //*==============================================================================
 //** Browser Taming  **
 //*==============================================================================

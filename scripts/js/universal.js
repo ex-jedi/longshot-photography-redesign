@@ -44,7 +44,6 @@ fadeUpIn.forEach(item => {
   })
     .setClassToggle(item, 'fade-up-in-reveal')
     // TODO: Remove indicators
-    // .addIndicators()
     .addTo(controller);
 });
 

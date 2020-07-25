@@ -1,0 +1,2 @@
+const collageImage=document.querySelectorAll(".homepage-collage-image"),collageWrapper=document.querySelector(".homepage-collage-section");collageImage.forEach(e=>{e.style.animationDelay=`0.${Math.floor(1e3*Math.random())}s`;new ScrollMagic.Scene({triggerElement:collageImage,triggerHook:.5,reverse:!1}).setClassToggle(collageImage,"collage-image-reveal").addTo(controller)});
+//# sourceMappingURL=homepage-min.js.map

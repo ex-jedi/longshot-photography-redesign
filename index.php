@@ -12,6 +12,6 @@
 		<?php perch_layout('homepage-mobile-collage-two'); ?>
 		<?php perch_content("General Contact Form"); ?>
 </main>
-<?php perch_layout('main-footer'); ?>
+<?php perch_layout('homepage-footer'); ?>
 <!-- TODO: Remove debug -->
 <?php PerchUtil::output_debug(); ?>

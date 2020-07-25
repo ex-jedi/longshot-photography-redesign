@@ -53,6 +53,7 @@
   margin: 0 $section-spacing $section-spacing 0;
 
   animation-name: rise-and-fall;
+  animation-delay: 3s;
   animation-duration: 5s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
@@ -64,6 +65,8 @@
 
   @include breakpoint(1100) {
     width: 100%;
+    max-height: 90vh;
+    object-fit: contain;
     margin: 0 auto $section-spacing;
   }
 }
@@ -78,6 +81,13 @@
   100% {
     transform: translateY(0);
   }
+}
+
+.fade-up-in-reveal {
+  // Longhand to allow animation delay in other classes
+  opacity: 1;
+  transition: all ease-out 2s 1s;
+  transform: translateY(0rem);
 }
 
 //********** Text **********
