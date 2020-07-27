@@ -274,15 +274,9 @@
     object-fit: cover;
   }
 
-  &:hover {
-    img {
-      opacity: 0.5;
-
-      &:hover {
-        opacity: 1;
-        transform: scale(1.1);
-      }
-    }
+  img:hover {
+    opacity: 1 !important;
+    transform: scale(1.1);
   }
 }
 
