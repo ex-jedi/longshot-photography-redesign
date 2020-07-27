@@ -19,7 +19,6 @@
 	</div>
 </footer>
 </div> <!-- wrapper div -->
-<!-- TODO: Change Vue to production  version -->
 <script type="text/javascript" src="/scripts/minified/vue-min.js" ></script>
 <!-- Rellax -->
 <script type="text/javascript" src="/scripts/minified/rellax.min.js" ></script>
@@ -28,6 +27,8 @@
 <!-- ScrollMagic -->
 <script src="/scripts/minified/ScrollMagic.min.js"></script>
 <!-- General JS file -->
+<!-- TODO: Indicators -->
+<script src="/scripts/minified/debug.addIndicators.min.js"></script>
 <script type="text/javascript" src="/scripts/minified/universal-min.js"></script>
 <!-- Homepage JS  -->
 <script src="/scripts/minified/homepage-min.js"></script>
