@@ -10,7 +10,7 @@ const collageWrapper = document.querySelector('.homepage-collage-section');
 collageImage.forEach(item => {
   item.style.animationDelay = `0.${Math.floor(Math.random() * 1000)}s`;
   const sceneOne = new ScrollMagic.Scene({
-    triggerElement: collageImage,
+    triggerElement: collageWrapper,
     triggerHook: 0.5,
     reverse: false,
   })
@@ -23,8 +23,6 @@ collageImage.forEach(item => {
 const mobileCollageImage = document.querySelectorAll(
   '.homepage-mobile-collage-image',
 );
-
-console.log(mobileCollageImage);
 
 mobileCollageImage.forEach(item => {
   const sceneTwo = new ScrollMagic.Scene({
