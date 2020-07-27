@@ -33,6 +33,5 @@ mobileCollageImage.forEach(item => {
     reverse: false,
   })
     .setClassToggle(item, 'mobile-collage-image-reveal')
-    .addIndicators()
     .addTo(controller);
 });
