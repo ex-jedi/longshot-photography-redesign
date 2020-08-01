@@ -1,0 +1,2 @@
+const carousel=document.querySelector(".main-carousel"),flkty=new Flickity(carousel,{imagesLoaded:!0,percentPosition:!1}),imgs=carousel.querySelectorAll(".gallery-album-image"),docStyle=document.documentElement.style,transformProp="string"==typeof docStyle.transform?"transform":"WebkitTransform";flkty.on("scroll",(function(){flkty.slides.forEach((function(t,e){const o=imgs[e],r=-1*(t.target+flkty.x)/3;o.style[transformProp]=`translateX(${r}px)`}))}));
+//# sourceMappingURL=gallery-album-min.js.map

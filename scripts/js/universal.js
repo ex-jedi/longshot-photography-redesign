@@ -85,11 +85,7 @@ window.addEventListener('scroll', function() {
     mainNav.classList.remove('menu-scroll-hide');
   }
 
-  if (
-    document.body.getBoundingClientRect().top < scrollPos &&
-    window.innerWidth <= 700 &&
-    window.scrollY > 10
-  ) {
+  if (document.body.getBoundingClientRect().top < scrollPos && window.innerWidth <= 700 && window.scrollY > 10) {
     iosNavPull.classList.add('button-scroll-hide');
   } else {
     iosNavPull.classList.remove('button-scroll-hide');
@@ -97,12 +93,6 @@ window.addEventListener('scroll', function() {
   // saves the new position for iteration.
   scrollPos = document.body.getBoundingClientRect().top;
 });
-
-// =========================================
-// ** Rellax  **
-// =========================================
-
-const rellax = new Rellax('.rellax');
 
 // =========================================
 // ** Lazy load  **
@@ -134,11 +124,5 @@ cookieWarningButton.addEventListener(
       cookieBanner.style.display = 'none';
     });
   },
-  { once: true },
+  { once: true }
 );
-
-// window.addEventListener('keyup', e => {
-//   if (e.key === 'Tab' && e.target === cookieWarningButton) {
-//     cookieWarningButton.style.outline = '2px dashed #f00';
-//   }
-// });

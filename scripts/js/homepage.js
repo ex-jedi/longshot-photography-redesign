@@ -20,9 +20,7 @@ collageImage.forEach(item => {
 
 // ********** Mobile Collage Animation **********
 
-const mobileCollageImage = document.querySelectorAll(
-  '.homepage-mobile-collage-image',
-);
+const mobileCollageImage = document.querySelectorAll('.homepage-mobile-collage-image');
 
 mobileCollageImage.forEach(item => {
   const sceneTwo = new ScrollMagic.Scene({
@@ -33,3 +31,9 @@ mobileCollageImage.forEach(item => {
     .setClassToggle(item, 'mobile-collage-image-reveal')
     .addTo(controller);
 });
+
+// =========================================
+// ** Rellax  **
+// =========================================
+
+const rellax = new Rellax('.rellax');
