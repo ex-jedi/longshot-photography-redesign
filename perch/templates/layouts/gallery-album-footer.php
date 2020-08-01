@@ -27,7 +27,7 @@
 <script src="/scripts/minified/flickity.pkgd.min.js"></script>
 <!-- General JS file -->
 <script type="text/javascript" src="/scripts/minified/universal-min.js"></script>
-gallery album JS
+<!-- Gallery album JS -->
 <script src="/scripts/minified/gallery-album-min.js"></script>
 
 </body>
