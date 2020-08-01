@@ -3,7 +3,7 @@
 //*==============================================================================
 
 //********** Import **********
-@import "bits";
+@import 'bits';
 
 //*=========================================
 //** Galleries Index  **
@@ -12,6 +12,20 @@
 .gallery-index-section {
   background-color: $light-background-colour;
   padding-bottom: $section-spacing-extra-large;
+}
+
+.section-heading {
+  @include breakpoint(700) {
+    font-size: $large-font-size;
+  }
+
+  @include breakpoint(500) {
+    font-size: $smaller-font-size;
+  }
+
+  @include breakpoint(350) {
+    font-size: $base-font-size;
+  }
 }
 
 .gallery-index-wrapper {
@@ -85,12 +99,8 @@
 }
 
 //*=========================================
-//** Flickity **
+//** Flickity v2.2.1 **
 //*=========================================
-
-/*! Flickity v2.2.1
-https://flickity.metafizzy.co
----------------------------------------------- */
 
 .carousel-cell {
   @include flex(column);
@@ -100,6 +110,20 @@ https://flickity.metafizzy.co
   height: 90vh; /* height of carousel */
   margin-right: 20px;
   overflow: hidden;
+
+  @include breakpoint(1100) {
+    height: auto;
+    max-height: 98vh;
+    width: 100%;
+    margin-bottom: $section-spacing-small;
+    .gallery-album-image {
+      //Overrides FLickity positioning, hence !important 😢
+      transform: translateX(0) !important;
+      width: 100%;
+      height: 100%;
+      max-height: 100vh;
+    }
+  }
 }
 
 .flickity-enabled {
@@ -150,13 +174,14 @@ https://flickity.metafizzy.co
   background: transparent;
   border: none;
   color: $dark-background-colour;
-  opacity: 0.3;
+  opacity: 0.4;
   position: absolute;
   transition: all 0.3s;
-}
 
-.flickity-button:hover {
-  opacity: 1;
+  &:active,
+  &:hover {
+    opacity: 1;
+  }
 }
 
 .flickity-button:focus {

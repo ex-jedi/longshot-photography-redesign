@@ -21,8 +21,6 @@
 </div> <!-- wrapper div -->
 <!-- TODO: Change Vue to production  version -->
 <script type="text/javascript" src="/scripts/minified/vue-min.js" ></script>
-<!-- Rellax -->
-<script type="text/javascript" src="/scripts/minified/rellax.min.js" ></script>
 <!-- Liquidvids -->
 <script src="/scripts/minified/vanilla-fitvids.js"></script>
 <!-- Lazy Load -->
