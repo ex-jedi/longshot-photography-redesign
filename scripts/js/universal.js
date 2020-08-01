@@ -94,14 +94,6 @@ window.addEventListener('scroll', function() {
   scrollPos = document.body.getBoundingClientRect().top;
 });
 
-// =========================================
-// ** Lazy load  **
-// =========================================
-
-const lazyLoadInstance = new LazyLoad({
-  elements_selector: '.lazy',
-});
-
 // *=========================================
 // ** Cookie Warning  **
 // *=========================================
@@ -126,3 +118,11 @@ cookieWarningButton.addEventListener(
   },
   { once: true }
 );
+
+// =========================================
+// ** Lazy load  **
+// =========================================
+
+const lazyLoadInstance = new LazyLoad({
+  elements_selector: '.lazy',
+});
