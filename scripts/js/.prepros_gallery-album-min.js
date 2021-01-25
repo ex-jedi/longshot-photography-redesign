@@ -26,3 +26,5 @@ function sliderHide() {
 sliderHide();
 
 window.addEventListener('resize', sliderHide);
+
+//# sourceMappingURL=.prepros_gallery-album-min.js.map
